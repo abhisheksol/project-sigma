@@ -1,0 +1,2 @@
+sigmatech-DEV-abhishek/core_utils/region_data/pincode_boundaries.geojson filter=lfs diff=lfs merge=lfs -text
+sigmatech-DEV-abhishek/project_utils/loaddata/RegionAppPublicData.json filter=lfs diff=lfs merge=lfs -text

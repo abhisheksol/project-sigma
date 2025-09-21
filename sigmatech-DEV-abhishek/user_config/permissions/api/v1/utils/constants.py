@@ -1,0 +1,7 @@
+INCORRECT_USER_ID_ERROR_MESSAGE = "Invalid user id"
+INCORRECT_PAYLOAD_FORMAT_INCORRECT_ERROR = "Please check the payload format"
+PERMISSION_ID_INCORRECT_ERROR_MESSAGE = "Invalid permission id"
+
+USER_CONFIG_PERMISSIONS_ASSIGNMENT_SUCCESS_MESSAGE = {
+    "POST": "Permission updated successfully"
+}

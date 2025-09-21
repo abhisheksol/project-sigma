@@ -1,0 +1,2843 @@
+[
+  {
+    "model": "region_data.countrymodel",
+    "pk": 1,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:43:02.258Z",
+      "core_generic_updated_at": "2025-08-18T14:43:02.258Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "code": "IN",
+      "name": "India"
+    }
+  },
+  {
+    "model": "region_data.statemodel",
+    "pk": 1,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:43:09.155Z",
+      "core_generic_updated_at": "2025-08-18T14:43:09.155Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "code": "AP",
+      "name": "Andhra Pradesh",
+      "country": 1
+    }
+  },
+  {
+    "model": "region_data.statemodel",
+    "pk": 2,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:50:17.262Z",
+      "core_generic_updated_at": "2025-08-18T14:50:17.262Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "code": "TN",
+      "name": "Telangana",
+      "country": 1
+    }
+  },
+  {
+    "model": "region_data.pincodemodel",
+    "pk": 1,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:43:46.558Z",
+      "core_generic_updated_at": "2025-08-18T14:43:46.558Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": "530013",
+      "district": "visakapatnam",
+      "circle_name": "visakapatnam",
+      "region_name": "visakapatnam",
+      "division_name": "visakapatnam",
+      "state": 1,
+      "country": 1,
+      "coordinates": null
+    }
+  },
+  {
+    "model": "region_data.pincodemodel",
+    "pk": 2,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:50:23.036Z",
+      "core_generic_updated_at": "2025-08-18T14:50:23.036Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": "500032",
+      "district": "Hyderabad",
+      "circle_name": "Gachibowli",
+      "region_name": "Gachibowli",
+      "division_name": "Gachibowli",
+      "state": 2,
+      "country": 1,
+      "coordinates": null
+    }
+  },
+  {
+    "model": "region_data.pincodemodel",
+    "pk": 3,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:55:10.166Z",
+      "core_generic_updated_at": "2025-08-18T14:55:10.166Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": "500072",
+      "district": "kukatpally",
+      "circle_name": "kukatpally",
+      "region_name": "kukatpally",
+      "division_name": "kukatpally",
+      "state": 2,
+      "country": 1,
+      "coordinates": null
+    }
+  },
+  {
+    "model": "region_data.pincodemodel",
+    "pk": 4,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:00:53.716Z",
+      "core_generic_updated_at": "2025-08-18T15:00:53.716Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": "500050",
+      "district": "Miyapur",
+      "circle_name": "Miyapur",
+      "region_name": "Miyapur",
+      "division_name": "Miyapur",
+      "state": 2,
+      "country": 1,
+      "coordinates": null
+    }
+  },
+  {
+    "model": "region_data.pincodemodel",
+    "pk": 5,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:09:18.961Z",
+      "core_generic_updated_at": "2025-08-18T15:09:18.961Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": "500084",
+      "district": "kondapur",
+      "circle_name": "kondapur",
+      "region_name": "kondapur",
+      "division_name": "kondapur",
+      "state": 2,
+      "country": 1,
+      "coordinates": null
+    }
+  },
+  {
+    "model": "region_data.pincodemodel",
+    "pk": 6,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:10:20.551Z",
+      "core_generic_updated_at": "2025-08-18T15:10:20.551Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": "500085",
+      "district": "kphb",
+      "circle_name": "kphb",
+      "region_name": "kphb",
+      "division_name": "kphb",
+      "state": 2,
+      "country": 1,
+      "coordinates": null
+    }
+  },
+  {
+    "model": "region_data.pincodemodel",
+    "pk": 7,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:12:28.069Z",
+      "core_generic_updated_at": "2025-08-18T15:12:28.069Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": "500049",
+      "district": "chanda nagar",
+      "circle_name": "chanda nagar",
+      "region_name": "chanda nagar",
+      "division_name": "chanda nagar",
+      "state": 2,
+      "country": 1,
+      "coordinates": null
+    }
+  },
+  {
+    "model": "region_data.pincodemodel",
+    "pk": 8,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T12:03:58.821Z",
+      "core_generic_updated_at": "2025-08-19T12:03:58.821Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": "500048",
+      "district": "Mythri Nagar",
+      "circle_name": "Mythri Nagar",
+      "region_name": "Mythri Nagar",
+      "division_name": "Mythri Nagar",
+      "state": 2,
+      "country": 1,
+      "coordinates": null
+    }
+  },
+  {
+    "model": "region_data.pincodemodel",
+    "pk": 9,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T12:04:38.509Z",
+      "core_generic_updated_at": "2025-08-19T12:04:38.509Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": "500047",
+      "district": "Mythri Nagar-1",
+      "circle_name": "Mythri Nagar-1",
+      "region_name": "Mythri Nagar-2",
+      "division_name": "Mythri Nagar-3",
+      "state": 2,
+      "country": 1,
+      "coordinates": null
+    }
+  },
+  {
+    "model": "region_data.citymodel",
+    "pk": 1,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:44:14.398Z",
+      "core_generic_updated_at": "2025-08-18T14:44:14.398Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "name": "maddilapalem",
+      "latitude": null,
+      "longitude": null,
+      "wiki_data_id": "maddilapalem",
+      "pincode": 1,
+      "state": 1,
+      "country": 1
+    }
+  },
+  {
+    "model": "region_data.citymodel",
+    "pk": 2,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:50:44.557Z",
+      "core_generic_updated_at": "2025-08-18T14:50:44.557Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "name": "Gachibowli",
+      "latitude": null,
+      "longitude": null,
+      "wiki_data_id": "Gachibowli",
+      "pincode": 2,
+      "state": 2,
+      "country": 1
+    }
+  },
+  {
+    "model": "region_data.citymodel",
+    "pk": 3,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:00:09.181Z",
+      "core_generic_updated_at": "2025-08-18T15:00:09.181Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "name": "kukatpally",
+      "latitude": null,
+      "longitude": null,
+      "wiki_data_id": "kukatpally",
+      "pincode": 3,
+      "state": 2,
+      "country": 1
+    }
+  },
+  {
+    "model": "region_data.citymodel",
+    "pk": 4,
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:01:02.424Z",
+      "core_generic_updated_at": "2025-08-18T15:01:02.424Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "name": "Miyapur",
+      "latitude": null,
+      "longitude": null,
+      "wiki_data_id": "Miyapur",
+      "pincode": 4,
+      "state": 2,
+      "country": 1
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "49c5972d-7c2f-11f0-84fd-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:39.350Z",
+      "core_generic_updated_at": "2025-08-18T12:31:39.350Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "49e531ef-7c2f-11f0-9aea-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:39.547Z",
+      "core_generic_updated_at": "2025-08-18T14:40:00.140Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": ["3761397b-7c41-11f0-98f8-00155df395db"],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "4a032649-7c2f-11f0-ab96-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:39.741Z",
+      "core_generic_updated_at": "2025-08-18T15:14:20.360Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": [],
+      "assigned_pincode": [
+        "64d136c6-7c45-11f0-a130-00155df395db",
+        "7bd3a698-7c45-11f0-9629-00155df395db"
+      ],
+      "assigned_area": ["01b03513-7c46-11f0-8981-00155df395db"]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "4a20d4b1-7c2f-11f0-980a-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:39.934Z",
+      "core_generic_updated_at": "2025-08-18T14:45:51.331Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["e847c254-7c41-11f0-93df-00155df395db"],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "4a3e5a5d-7c2f-11f0-9d64-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:40.126Z",
+      "core_generic_updated_at": "2025-08-18T15:01:08.547Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["2ab93fe8-7c44-11f0-98d4-00155df395db"],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "4a5ba8ed-7c2f-11f0-b2f3-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:40.316Z",
+      "core_generic_updated_at": "2025-08-18T15:15:11.103Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": [],
+      "assigned_pincode": [
+        "2cc0f3f0-7c45-11f0-b72e-00155df395db",
+        "528a1640-7c45-11f0-ad46-00155df395db"
+      ],
+      "assigned_area": ["214dc1c4-7c46-11f0-bf5a-00155df395db"]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "4a78abc5-7c2f-11f0-9899-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:40.508Z",
+      "core_generic_updated_at": "2025-08-18T14:39:19.764Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": ["19b4bbf7-7c41-11f0-b2aa-00155df395db"],
+      "assigned_zone": [],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "4a95d84f-7c2f-11f0-832c-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:40.703Z",
+      "core_generic_updated_at": "2025-08-18T14:40:51.333Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": ["552cadd6-7c41-11f0-9740-00155df395db"],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "4ab3840b-7c2f-11f0-b3db-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:40.898Z",
+      "core_generic_updated_at": "2025-08-18T14:52:40.531Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["c0e8023d-7c42-11f0-87cd-00155df395db"],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "4aef30cb-7c2f-11f0-8741-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:41.287Z",
+      "core_generic_updated_at": "2025-08-18T15:13:24.911Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": [],
+      "assigned_pincode": [
+        "c5e80dc1-7c45-11f0-b657-00155df395db",
+        "af0d16e3-7c45-11f0-8a00-00155df395db"
+      ],
+      "assigned_area": ["e1cb752d-7c45-11f0-bc9e-00155df395db"]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "cd479a38-7d07-11f0-918a-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T14:21:31.259Z",
+      "core_generic_updated_at": "2025-08-19T14:23:05.098Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": [],
+      "assigned_pincode": ["046d1a48-7d08-11f0-988c-00155d4d8337"],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "dca17d55-7c2f-11f0-8baf-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:35:45.731Z",
+      "core_generic_updated_at": "2025-08-18T15:00:14.717Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["0a9c7816-7c44-11f0-a77d-00155df395db"],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "f1bc5be7-7cf3-11f0-b32a-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T11:59:22.490Z",
+      "core_generic_updated_at": "2025-08-19T12:02:06.752Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["2ab93fe8-7c44-11f0-98d4-00155df395db"],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "f1d99efc-7cf3-11f0-b3f4-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T11:59:22.670Z",
+      "core_generic_updated_at": "2025-08-19T12:04:06.369Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": [],
+      "assigned_pincode": ["992c9e5a-7cf4-11f0-88d9-00155d4d8337"],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "user_auth.userrolemodel",
+    "pk": "42f6ed74-7c16-11f0-a48b-00155db89949",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T09:32:30.314Z",
+      "core_generic_updated_at": "2025-08-18T12:21:24.679Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Sr. Manager",
+      "role": "SR_MANAGER",
+      "icons": "https://objectstore.e2enetworks.net/sigmatech/455014d6-37fb-4581-81f2-729a49e17559_sr-manager-icon.svg",
+      "reports_to": "76f4b5c2-7bf6-11f0-bcf7-00155da401aa"
+    }
+  },
+  {
+    "model": "user_auth.userrolemodel",
+    "pk": "49a48947-7c16-11f0-b6c8-00155db89949",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T09:32:41.515Z",
+      "core_generic_updated_at": "2025-08-18T12:21:00.857Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Manager",
+      "role": "MANAGER",
+      "icons": "https://objectstore.e2enetworks.net/sigmatech/1a20cbca-5727-43e8-910e-c4d10178dc76_manager-icon.svg",
+      "reports_to": "42f6ed74-7c16-11f0-a48b-00155db89949"
+    }
+  },
+  {
+    "model": "user_auth.userrolemodel",
+    "pk": "51500d16-7c16-11f0-9c59-00155db89949",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T09:32:54.383Z",
+      "core_generic_updated_at": "2025-08-18T12:20:39.551Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Supervisor",
+      "role": "SUPERVISOR",
+      "icons": "https://objectstore.e2enetworks.net/sigmatech/38979b3a-dd0a-469e-9ff4-ad087550f4ce_supervisor-icon.svg",
+      "reports_to": "49a48947-7c16-11f0-b6c8-00155db89949"
+    }
+  },
+  {
+    "model": "user_auth.userrolemodel",
+    "pk": "59f31c50-7c16-11f0-beaf-00155db89949",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T09:33:08.874Z",
+      "core_generic_updated_at": "2025-08-18T12:20:17.310Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Field Officer",
+      "role": "FIELD_OFFICER",
+      "icons": "https://objectstore.e2enetworks.net/sigmatech/3576539f-d299-4c3b-ba4f-da58a051d937_fo-icon.svg",
+      "reports_to": "51500d16-7c16-11f0-9c59-00155db89949"
+    }
+  },
+  {
+    "model": "user_auth.userrolemodel",
+    "pk": "76f4b5c2-7bf6-11f0-bcf7-00155da401aa",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T05:44:53.660Z",
+      "core_generic_updated_at": "2025-08-18T05:44:53.660Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "ADMIN",
+      "role": "ADMIN",
+      "icons": null,
+      "reports_to": null
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "49c5972d-7c2f-11f0-84fd-00155df395db",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$dky3qsI5IQfcwzld5lVZ1y$QW3m5xbb0MKwWcIfJYikguybTgu6HBxGJWUShnWG490=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:39.149Z",
+      "core_generic_updated_at": "2025-08-25T13:50:30.270Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "admin",
+      "email": "admin@admin.com",
+      "login_id": "admin",
+      "user_role": "76f4b5c2-7bf6-11f0-bcf7-00155da401aa",
+      "reports_to": null,
+      "phone_number": "9876543210",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": "2025-08-25T13:50:30.270Z",
+      "created_date": "2025-08-18T12:31:39.149Z",
+      "updated_date": "2025-08-25T13:50:30.270Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "49e531ef-7c2f-11f0-9aea-00155df395db",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$KQgStZL8HjObzkhgZy8OMw$xWimahwcGU9ui2tpF8sIsGPjgomDYIN2lxg1NqqQdKA=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:39.355Z",
+      "core_generic_updated_at": "2025-08-25T15:09:50.770Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "koushik",
+      "email": "koushik.kumar@aptagrim.com",
+      "login_id": "koushik",
+      "user_role": "49a48947-7c16-11f0-b6c8-00155db89949",
+      "reports_to": "4a78abc5-7c2f-11f0-9899-00155df395db",
+      "phone_number": "8123296486",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": "2025-08-25T15:09:50.770Z",
+      "created_date": "2025-08-18T12:31:39.355Z",
+      "updated_date": "2025-08-25T15:09:50.770Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "4a032649-7c2f-11f0-ab96-00155df395db",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$k7ZZbUtKhOl2fqghFEwnXv$ZlKx5LccTyhfHHUm0+ufRM149zixR6XqBew55rkX8Jw=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:39.552Z",
+      "core_generic_updated_at": "2025-08-18T12:39:28.824Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "Vamsi Madugundu",
+      "email": "vamsi.madugundu@aptagrim.com",
+      "login_id": "vamsi",
+      "user_role": "59f31c50-7c16-11f0-beaf-00155db89949",
+      "reports_to": "dca17d55-7c2f-11f0-8baf-00155df395db",
+      "phone_number": "9441038593",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": null,
+      "created_date": "2025-08-18T12:31:39.552Z",
+      "updated_date": "2025-08-18T12:39:28.824Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "4a20d4b1-7c2f-11f0-980a-00155df395db",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$JJk4s7cbpkdoVcyDGpO9Ob$CSHxg7IWkNM+QVdpTrSAkQMIgqHvjjj5q52YJ1t8yLo=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:39.746Z",
+      "core_generic_updated_at": "2025-08-18T14:34:08.975Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "Likhita Parcha",
+      "email": "likhita.parcha@aptagrim.com",
+      "login_id": "likhita",
+      "user_role": "51500d16-7c16-11f0-9c59-00155db89949",
+      "reports_to": "4a95d84f-7c2f-11f0-832c-00155df395db",
+      "phone_number": "8008709849",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": null,
+      "created_date": "2025-08-18T12:31:39.746Z",
+      "updated_date": "2025-08-18T14:34:08.975Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "4a3e5a5d-7c2f-11f0-9d64-00155df395db",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$R21hxS6RPYwpxzans15EgA$l4hLUWAnv7+croGLWrd41bWTzCIzjjUVyOfrolKv/bw=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:39.940Z",
+      "core_generic_updated_at": "2025-08-18T14:33:57.849Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "Abhishek Mekala",
+      "email": "abhishek@aptagrim.com",
+      "login_id": "abhishek",
+      "user_role": "51500d16-7c16-11f0-9c59-00155db89949",
+      "reports_to": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "phone_number": "8867874100",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": null,
+      "created_date": "2025-08-18T12:31:39.940Z",
+      "updated_date": "2025-08-18T14:33:57.849Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "4a5ba8ed-7c2f-11f0-b2f3-00155df395db",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$LtH06l3VZWSfKBgLIugrBG$dRk0xbGpzOhcrqG9tX9AyloyCztBMrbr84k0G9ezUnw=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:40.132Z",
+      "core_generic_updated_at": "2025-08-18T14:33:50.329Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "Abhishek Solapure",
+      "email": "abhishek.solapure@aptagrim.com",
+      "login_id": "abhisheks",
+      "user_role": "59f31c50-7c16-11f0-beaf-00155db89949",
+      "reports_to": "4ab3840b-7c2f-11f0-b3db-00155df395db",
+      "phone_number": "9561435141",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": null,
+      "created_date": "2025-08-18T12:31:40.132Z",
+      "updated_date": "2025-08-18T14:33:50.329Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "4a78abc5-7c2f-11f0-9899-00155df395db",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$NXYpr3EucplYoYrWCQALA1$azxCYb76CBZMf7QOCVCzNYCUBZf1fm2sye9uSSIrUtA=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:40.322Z",
+      "core_generic_updated_at": "2025-08-19T06:17:58.819Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "Krishn Yenamandra",
+      "email": "krishn@aptagrim.com",
+      "login_id": "krishnyenamandra",
+      "user_role": "42f6ed74-7c16-11f0-a48b-00155db89949",
+      "reports_to": null,
+      "phone_number": "9177580929",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": "2025-08-19T06:17:58.819Z",
+      "created_date": "2025-08-18T12:31:40.322Z",
+      "updated_date": "2025-08-19T06:17:58.819Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "4a95d84f-7c2f-11f0-832c-00155df395db",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$WQnkA3ccEgDpje9FHUezVk$E7YnmBuGn29cnjC9zjIQ0zNTjXLS0zhCJWkivsYVE5M=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:40.513Z",
+      "core_generic_updated_at": "2025-08-18T14:33:36.719Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "Monica Waghray",
+      "email": "monica.waghray@aptagrim.com",
+      "login_id": "Monica",
+      "user_role": "49a48947-7c16-11f0-b6c8-00155db89949",
+      "reports_to": "4a78abc5-7c2f-11f0-9899-00155df395db",
+      "phone_number": "7304155063",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": null,
+      "created_date": "2025-08-18T12:31:40.513Z",
+      "updated_date": "2025-08-18T14:33:36.719Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "4ab3840b-7c2f-11f0-b3db-00155df395db",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$xUAiWTmVZFLIgKID9tW7ha$sK9frVIKWp30SI8AgG+b6ZpvGKk2HQvzg+LRlMZY0cI=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:40.708Z",
+      "core_generic_updated_at": "2025-08-18T14:33:24.024Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "rohith baggam",
+      "email": "rohith.baggam@aptagrim.com",
+      "login_id": "rohithbaggam",
+      "user_role": "51500d16-7c16-11f0-9c59-00155db89949",
+      "reports_to": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "phone_number": "7093389378",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": null,
+      "created_date": "2025-08-18T12:31:40.708Z",
+      "updated_date": "2025-08-18T14:33:24.024Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "4aef30cb-7c2f-11f0-8741-00155df395db",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$XuCFyZFmwEBbzBO2XQ9NaK$yN7yx+KJV4U8W154rVFhJscCWXysJx4qKe6SjnSckYY=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:31:41.099Z",
+      "core_generic_updated_at": "2025-08-18T14:33:16.544Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "Harini Aduri",
+      "email": "harini.aduri@aptagrim.com",
+      "login_id": "harini",
+      "user_role": "59f31c50-7c16-11f0-beaf-00155db89949",
+      "reports_to": "4a3e5a5d-7c2f-11f0-9d64-00155df395db",
+      "phone_number": "9885149081",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": null,
+      "created_date": "2025-08-18T12:31:41.099Z",
+      "updated_date": "2025-08-18T14:33:16.544Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "cd479a38-7d07-11f0-918a-00155d4d8337",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$waR4ulY1Yyx7iTP7M9D5lb$29jFllM+NLYizB9gL+MsxJ6F3Um93eqh3yM26Bugl2U=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T14:21:31.076Z",
+      "core_generic_updated_at": "2025-08-20T14:49:36.151Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "monica fo user",
+      "email": "monicafofouser@gmail.com",
+      "login_id": "monicafofouser",
+      "user_role": "59f31c50-7c16-11f0-beaf-00155db89949",
+      "reports_to": "4a95d84f-7c2f-11f0-832c-00155df395db",
+      "phone_number": "2574120931",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": null,
+      "created_date": "2025-08-19T14:21:31.076Z",
+      "updated_date": "2025-08-20T14:49:36.151Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "dca17d55-7c2f-11f0-8baf-00155df395db",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$pzKMpXpkF3N9ZweMq46j09$vH/59/VftVF7h30rALwXXqlhJ/q3laaDtA8M2mrDO84=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T12:35:45.537Z",
+      "core_generic_updated_at": "2025-08-19T12:01:32.051Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "Sairam Gaddam",
+      "email": "sairam@aptagrim.com",
+      "login_id": "sairam",
+      "user_role": "51500d16-7c16-11f0-9c59-00155db89949",
+      "reports_to": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "phone_number": "6548782101",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": null,
+      "created_date": "2025-08-18T12:35:45.537Z",
+      "updated_date": "2025-08-19T12:01:32.051Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "f1bc5be7-7cf3-11f0-b32a-00155d4d8337",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$oirb1TyC4cAZE1QyP1bJpg$B0yoQZI9L0jQq7bplyob7uPQMzuEyRCaewBBWI+tzmU=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T11:59:22.304Z",
+      "core_generic_updated_at": "2025-08-19T12:01:10.653Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "supervsior user",
+      "email": "supervsioruser@gmail.com",
+      "login_id": "supervsioruser",
+      "user_role": "51500d16-7c16-11f0-9c59-00155db89949",
+      "reports_to": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "phone_number": "6574120932",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": null,
+      "created_date": "2025-08-19T11:59:22.304Z",
+      "updated_date": "2025-08-19T12:01:10.653Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.usermodel",
+    "pk": "f1d99efc-7cf3-11f0-b3f4-00155d4d8337",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$Bw62UQCduWQADDGCHoT6u4$OpkkjXMrm/OaucGINXRpS2rlPj+fHKRuik5jo8nQi74=",
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T11:59:22.496Z",
+      "core_generic_updated_at": "2025-08-25T13:48:41.692Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "username": "fo user",
+      "email": "fouser@gmail.com",
+      "login_id": "fouser",
+      "user_role": "59f31c50-7c16-11f0-beaf-00155db89949",
+      "reports_to": "f1bc5be7-7cf3-11f0-b32a-00155d4d8337",
+      "phone_number": "6574120931",
+      "is_staff": true,
+      "is_active": true,
+      "is_verified": true,
+      "is_superuser": true,
+      "is_approved": true,
+      "last_login": "2025-08-25T13:48:41.692Z",
+      "created_date": "2025-08-19T11:59:22.496Z",
+      "updated_date": "2025-08-25T13:48:41.692Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "0ec871d4-7dc4-11f0-8e9a-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-20T12:49:06.356Z",
+      "core_generic_updated_at": "2025-08-20T12:49:06.356Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1Njk0MTQ2LCJleHAiOjE3NTgyODYxNDYsImp0aSI6ImQ5YjVkNjQxLTg2MDEtNGI2Mi1hN2I4LTk3MTY0Nzk3ZTViOSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.XyF11HgJH2DpacA6uDkoahWziMfZkKjOFc4_ECZHqO4",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "0fea2efe-81be-11f0-8928-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T14:16:15.926Z",
+      "core_generic_updated_at": "2025-08-25T14:16:15.926Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTYxMzEzNzUsImV4cCI6MTc1ODcyMzM3NSwianRpIjoiOTc3MTAyNzEtZWJlYi00ODNiLTg3N2ItNjZhOWUwNDcxZWNhIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.0bYAnFlI4vw2olZ8ZkOvwL8kQohsZDaAngPWULf_rkM",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "12a8f287-7cc4-11f0-bbf6-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T06:16:41.698Z",
+      "core_generic_updated_at": "2025-08-19T06:16:41.698Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTU1ODQyMDEsImV4cCI6MTc1ODE3NjIwMSwianRpIjoiZjNiOTA4YmMtMzkyNi00MzkzLWJkMTctMDkwMzI2MDhlZDExIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.sspLiN2lY7Mhn5xUymCh7xWtB8rdEuNB7o0m6-kqsNo",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "1f5dc7db-819b-11f0-a074-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T10:06:09.464Z",
+      "core_generic_updated_at": "2025-08-25T10:06:09.464Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvdXNlciIsImlhdCI6MTc1NjExNjM2OSwiZXhwIjoxNzU4NzA4MzY5LCJqdGkiOiJiN2ZhZTk3MS0xMGRiLTRjMWEtODdkNy01ZjQ4ZTExOGE3MGYiLCJ1c2VyX2lkIjoiZjFkOTllZmMtN2NmMy0xMWYwLWIzZjQtMDAxNTVkNGQ4MzM3In0.KYHNmdmAL84OZ7PWLDPdMrT9NWCLiuj9lwmzllcQYZ0",
+      "user": "f1d99efc-7cf3-11f0-b3f4-00155d4d8337",
+      "is_login": true,
+      "is_delete": false
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "244cfd7d-81b5-11f0-b947-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T13:12:24.657Z",
+      "core_generic_updated_at": "2025-08-25T13:12:24.657Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU2MTI3NTQ0LCJleHAiOjE3NTg3MTk1NDQsImp0aSI6ImFmODFkMjE3LWFlZGUtNGM0ZS04OTc4LWQzNWNkZTZjOGQzMiIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.qYsQ_A9J19JvA0trFByQBPkk9J08oHWik4-vjtexS-c",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": true,
+      "is_delete": false
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "257323d8-7c4b-11f0-b4bb-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:51:04.118Z",
+      "core_generic_updated_at": "2025-08-18T15:51:04.118Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1NTMyMjY0LCJleHAiOjE3NTgxMjQyNjQsImp0aSI6IjNmMzIzNDdiLWU0MTItNGY0Mi04MDU0LTc5Yzk5NGI5ODFkMCIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.UXpUtjzNLRoFa7Dm8wDJczuvun23NTQC5_b-RbQ_8_0",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "2fa01bef-7e8a-11f0-a659-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:27:21.809Z",
+      "core_generic_updated_at": "2025-08-21T12:27:21.809Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1Nzc5MjQxLCJleHAiOjE3NTgzNzEyNDEsImp0aSI6IjY0NmYzZGI2LTgxMzQtNGNlMS04ZTFmLWM0YjcxZTZkNmI1YyIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.NZVurXhlE611iw7uXaWyvVZ_GTduXkmE4OsdkDBynvg",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "35e86712-81ba-11f0-8b2f-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T13:48:41.681Z",
+      "core_generic_updated_at": "2025-08-25T13:48:41.681Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvdXNlciIsImlhdCI6MTc1NjEyOTcyMSwiZXhwIjoxNzU4NzIxNzIxLCJqdGkiOiIxMWJhMDc0Yi0xMzMxLTQ4MzQtYmRhMS1hMWJhZTg5MjBlMWUiLCJ1c2VyX2lkIjoiZjFkOTllZmMtN2NmMy0xMWYwLWIzZjQtMDAxNTVkNGQ4MzM3In0.6dZzou3g3DpBJE2Mg-x3HaA9twfsFMgzBnOqfgeID8Q",
+      "user": "f1d99efc-7cf3-11f0-b3f4-00155d4d8337",
+      "is_login": true,
+      "is_delete": false
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "409f18c3-7cc4-11f0-a6b6-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T06:17:58.808Z",
+      "core_generic_updated_at": "2025-08-19T06:17:58.808Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtyaXNobnllbmFtYW5kcmEiLCJpYXQiOjE3NTU1ODQyNzgsImV4cCI6MTc1ODE3NjI3OCwianRpIjoiNDM2NDc1MWQtZmJjMC00Zjk0LWIwNzktYzUzZjM0ZmZjYzI3IiwidXNlcl9pZCI6IjRhNzhhYmM1LTdjMmYtMTFmMC05ODk5LTAwMTU1ZGYzOTVkYiJ9.zxQ7Hl5GBlE2RTZz89Uo2FSyyx2Y-B6GQyP_k6kSdwM",
+      "user": "4a78abc5-7c2f-11f0-9899-00155df395db",
+      "is_login": true,
+      "is_delete": false
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "4ea72cba-8193-11f0-8ccc-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T09:10:12.824Z",
+      "core_generic_updated_at": "2025-08-25T09:10:12.824Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvdXNlciIsImlhdCI6MTc1NjExMzAxMiwiZXhwIjoxNzU4NzA1MDEyLCJqdGkiOiI5NzljOGMxNi1kNjcwLTQ0ZDEtOWE3MS1kNmE3YzcwN2E3MTIiLCJ1c2VyX2lkIjoiZjFkOTllZmMtN2NmMy0xMWYwLWIzZjQtMDAxNTVkNGQ4MzM3In0.EZC33-LtsLmCfpjqtYTV2_M9-2m61K8H7Fx0bH4QoeU",
+      "user": "f1d99efc-7cf3-11f0-b3f4-00155d4d8337",
+      "is_login": true,
+      "is_delete": false
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "4f715198-7e8a-11f0-9586-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:28:15.189Z",
+      "core_generic_updated_at": "2025-08-21T12:28:15.189Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1Nzc5Mjk1LCJleHAiOjE3NTgzNzEyOTUsImp0aSI6IjUxZTQ4ZTBjLWM5YjYtNDhhZC04NjhlLTUxNjRhYjY2MjBkNCIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.bdWLaC2LDb2CfMdr4qQvZNX0kJ4fPO8vsfbJs55bbjk",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "50a1e92b-819b-11f0-ae44-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T10:07:32.118Z",
+      "core_generic_updated_at": "2025-08-25T10:07:32.118Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU2MTE2NDUyLCJleHAiOjE3NTg3MDg0NTIsImp0aSI6IjgwNzRiNzQxLTA1YzctNDA3OS05YmQ1LWNkY2EwMzMzMzBkOSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ._VLdy3FigKpdUUiysUlS8VKHpfPJutOxrOOcLxrYQ98",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": true,
+      "is_delete": false
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "5919634e-81ba-11f0-9b5c-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T13:49:40.722Z",
+      "core_generic_updated_at": "2025-08-25T13:49:40.722Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTYxMjk3ODAsImV4cCI6MTc1ODcyMTc4MCwianRpIjoiMTMyNTg1ZjAtODMzMC00MjJiLTg1OGEtNzJjZWQyZDliY2MyIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.S3vnOKmIV_XVRx1FvJx-h_V_TXQF1BM8FjwF6hp0koQ",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "5a54b52d-7e8a-11f0-85f1-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:28:33.457Z",
+      "core_generic_updated_at": "2025-08-21T12:28:33.457Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1Nzc5MzEzLCJleHAiOjE3NTgzNzEzMTMsImp0aSI6ImIwYWZkOTE1LWExMWMtNDQ1My04MGE5LWMwNTA1Y2UyYjNhNyIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.Ztcuq7W6QsE5XsLw5GkMXJPzmxxarw1awB8ygL4Wjaw",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "6008f160-7f17-11f0-828f-00155d4d8566",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-22T05:18:02.066Z",
+      "core_generic_updated_at": "2025-08-22T05:18:02.066Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1ODM5ODgyLCJleHAiOjE3NTg0MzE4ODIsImp0aSI6IjE0NzQ3OTMwLTJiMmYtNDQxNi1iMTJiLTA4OWFmYzQ3YzJmMCIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.utOzNG8nxtmJhi_h5cjVPxXGiVQjOk-I_AUDvaF7YJw",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "7108e786-819a-11f0-ad2b-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T10:01:16.984Z",
+      "core_generic_updated_at": "2025-08-25T10:01:16.984Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU2MTE2MDc2LCJleHAiOjE3NTg3MDgwNzYsImp0aSI6ImFiNmFhYmUwLTExYjktNGIyMi05YjQ3LWE3OWI0YTU1MTNjMCIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.FkM2uNlF0ueZ6q-LndQ5ac51Ui0fQIz0a5xxntmKaww",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": true,
+      "is_delete": false
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "76a05d15-81ba-11f0-b263-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T13:50:30.260Z",
+      "core_generic_updated_at": "2025-08-25T13:50:30.260Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU2MTI5ODMwLCJleHAiOjE3NTg3MjE4MzAsImp0aSI6IjZmYmE2ZDkwLTg5ZGItNDJhNS1hYTA2LWIyZmU4ZDNmZDU0MSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.d0Va3KccOCX7Lo_4VIPp6z01SG7SNHwpahvSFWhoMDI",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": true,
+      "is_delete": false
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "7f3e99bc-7ccc-11f0-8ed1-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T07:16:59.846Z",
+      "core_generic_updated_at": "2025-08-19T07:16:59.846Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTU1ODc4MTksImV4cCI6MTc1ODE3OTgxOSwianRpIjoiNjZlZmE3NDYtYTZmOS00MGViLTg4MDYtMTM2MTMyMjU0MjNiIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.xrFgkwWZGxkt0xak5fhBbR3_NzMXFM0rHk-S88zbDQY",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "8c1ac9a1-81c5-11f0-9adc-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T15:09:50.759Z",
+      "core_generic_updated_at": "2025-08-25T15:09:50.759Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTYxMzQ1OTAsImV4cCI6MTc1ODcyNjU5MCwianRpIjoiMGM0ZTEzMDQtNWJiOS00MWYxLTk0YzMtNGNmY2VjODMwNzVlIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.mwTgaJTXE9s73F_Gkes0-UHnGa7Eqp-sGWAc3FYro7A",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "is_login": true,
+      "is_delete": false
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "93d6a579-7e4d-11f0-bc57-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T05:13:30.639Z",
+      "core_generic_updated_at": "2025-08-21T05:13:30.639Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1NzUzMjEwLCJleHAiOjE3NTgzNDUyMTAsImp0aSI6IjRjZTNlMWZmLWZlM2QtNGIzZS04NTAxLWEyYWZiNGZiMmY4YSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.N7rKtN_8LMlQ2VxTEVOZfiQXdeeqPnFDdt-wnlXqBis",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "93e206fa-7c39-11f0-b25f-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T13:45:18.453Z",
+      "core_generic_updated_at": "2025-08-18T13:45:18.453Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1NTI0NzE4LCJleHAiOjE3NTgxMTY3MTgsImp0aSI6ImRmZWNmNGYwLWY2NjEtNGJlMC1hZjRmLWY3OGY3ZDg0MTE3MCIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.7hrBkxLF6Cc-x11leu2-Q7v7AbkSrY55cHF3zsooo2M",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "a684cfe4-7c3e-11f0-821f-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:21:37.202Z",
+      "core_generic_updated_at": "2025-08-18T14:21:37.202Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTU1MjY4OTcsImV4cCI6MTc1ODExODg5NywianRpIjoiYjRiYzNjNWQtMTg4MS00ZDc3LWIwZWMtZmEzZmJhODI4YzgwIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.CvV2RfUoV-l6ta7v6qt0xtz0C4ZkrVo_O5RU4gwDGxM",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "a96f2100-7f51-11f0-9d3e-00155d4d8566",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-22T12:15:16.019Z",
+      "core_generic_updated_at": "2025-08-22T12:15:16.019Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1ODY0OTE2LCJleHAiOjE3NTg0NTY5MTYsImp0aSI6Ijk2MWIzNWQ4LTc0MjMtNGRmZi04OGI3LTYyZmZjODRlNmM0ZSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.jPGg9s3g9ZGbx0adM_lj1GKjW1hOSQ9E4zMPGvbhA7Y",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "aa5d322e-7e51-11f0-a04c-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T05:42:46.417Z",
+      "core_generic_updated_at": "2025-08-21T05:42:46.417Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1NzU0OTY2LCJleHAiOjE3NTgzNDY5NjYsImp0aSI6ImVhZjdjMGIxLTAxYmEtNGJhNC04Yzc4LTY4NGEyOGUyOGMzZSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.MdgmyZW-svfVKJPwyYu8YkYK9sXS5qes9qmrmM-CCus",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "d6f1fce7-7cda-11f0-96ab-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T08:59:39.938Z",
+      "core_generic_updated_at": "2025-08-19T08:59:39.938Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1NTkzOTc5LCJleHAiOjE3NTgxODU5NzksImp0aSI6IjE2ODhlNTYwLWIwYWEtNGZjYS04ZGQzLTJlZjlmMTRlOGFmMiIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.liaL9dT7n_xDFjuOrvzGHFQrWsxC4mb__iO3_x7hqR8",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "ec51bfff-81bd-11f0-9ec9-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T14:15:16.207Z",
+      "core_generic_updated_at": "2025-08-25T14:15:16.207Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTYxMzEzMTYsImV4cCI6MTc1ODcyMzMxNiwianRpIjoiMzdiMTY5NTEtZTQ4NS00MmZkLWI3OWEtMmUxMTY3MTdkNDNjIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.RcG2XDeUgGB34dfsl51XKKdX6zLOc3CJQYfgex1TD1k",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.blacklisttokenmodel",
+    "pk": "ed871240-7f56-11f0-84be-00155d4d8566",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-22T12:52:57.745Z",
+      "core_generic_updated_at": "2025-08-22T12:52:57.745Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1ODY3MTc3LCJleHAiOjE3NTg0NTkxNzcsImp0aSI6IjVhYjJhZmViLTFjNzEtNDRjOC1hNzE3LWY0ZjMyZmM3YTk4MSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.5FWyNhorSP_ymCITdCHADiLdiKJZ1X-VLTXCXSCj8qg",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "is_login": false,
+      "is_delete": true
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "0ecb3a89-7dc4-11f0-a069-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-20T12:49:06.374Z",
+      "core_generic_updated_at": "2025-08-20T12:49:06.374Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 4,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1Njk0MTQ2LCJleHAiOjE3NTgyODYxNDYsImp0aSI6ImQ5YjVkNjQxLTg2MDEtNGI2Mi1hN2I4LTk3MTY0Nzk3ZTViOSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.XyF11HgJH2DpacA6uDkoahWziMfZkKjOFc4_ECZHqO4"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "0feb786c-81be-11f0-8b7d-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T14:16:15.934Z",
+      "core_generic_updated_at": "2025-08-25T14:16:15.934Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "login_count": 6,
+      "device_name": "axios/1.10.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTYxMzEzNzUsImV4cCI6MTc1ODcyMzM3NSwianRpIjoiOTc3MTAyNzEtZWJlYi00ODNiLTg3N2ItNjZhOWUwNDcxZWNhIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.0bYAnFlI4vw2olZ8ZkOvwL8kQohsZDaAngPWULf_rkM"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "12ab48da-7cc4-11f0-a444-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T06:16:41.713Z",
+      "core_generic_updated_at": "2025-08-19T06:16:41.713Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "login_count": 2,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTU1ODQyMDEsImV4cCI6MTc1ODE3NjIwMSwianRpIjoiZjNiOTA4YmMtMzkyNi00MzkzLWJkMTctMDkwMzI2MDhlZDExIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.sspLiN2lY7Mhn5xUymCh7xWtB8rdEuNB7o0m6-kqsNo"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "1f5fa033-819b-11f0-9c4e-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T10:06:09.476Z",
+      "core_generic_updated_at": "2025-08-25T10:06:09.476Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "f1d99efc-7cf3-11f0-b3f4-00155d4d8337",
+      "login_count": 2,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvdXNlciIsImlhdCI6MTc1NjExNjM2OSwiZXhwIjoxNzU4NzA4MzY5LCJqdGkiOiJiN2ZhZTk3MS0xMGRiLTRjMWEtODdkNy01ZjQ4ZTExOGE3MGYiLCJ1c2VyX2lkIjoiZjFkOTllZmMtN2NmMy0xMWYwLWIzZjQtMDAxNTVkNGQ4MzM3In0.KYHNmdmAL84OZ7PWLDPdMrT9NWCLiuj9lwmzllcQYZ0"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "244f3d18-81b5-11f0-a744-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T13:12:24.672Z",
+      "core_generic_updated_at": "2025-08-25T13:12:24.672Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 15,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU2MTI3NTQ0LCJleHAiOjE3NTg3MTk1NDQsImp0aSI6ImFmODFkMjE3LWFlZGUtNGM0ZS04OTc4LWQzNWNkZTZjOGQzMiIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.qYsQ_A9J19JvA0trFByQBPkk9J08oHWik4-vjtexS-c"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "2574f9c6-7c4b-11f0-b36e-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:51:04.130Z",
+      "core_generic_updated_at": "2025-08-18T15:51:04.130Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 2,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1NTMyMjY0LCJleHAiOjE3NTgxMjQyNjQsImp0aSI6IjNmMzIzNDdiLWU0MTItNGY0Mi04MDU0LTc5Yzk5NGI5ODFkMCIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.UXpUtjzNLRoFa7Dm8wDJczuvun23NTQC5_b-RbQ_8_0"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "2fa5a670-7e8a-11f0-bc9b-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:27:21.845Z",
+      "core_generic_updated_at": "2025-08-21T12:27:21.845Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 7,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1Nzc5MjQxLCJleHAiOjE3NTgzNzEyNDEsImp0aSI6IjY0NmYzZGI2LTgxMzQtNGNlMS04ZTFmLWM0YjcxZTZkNmI1YyIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.NZVurXhlE611iw7uXaWyvVZ_GTduXkmE4OsdkDBynvg"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "35e9404a-81ba-11f0-b532-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T13:48:41.686Z",
+      "core_generic_updated_at": "2025-08-25T13:48:41.686Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "f1d99efc-7cf3-11f0-b3f4-00155d4d8337",
+      "login_count": 3,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvdXNlciIsImlhdCI6MTc1NjEyOTcyMSwiZXhwIjoxNzU4NzIxNzIxLCJqdGkiOiIxMWJhMDc0Yi0xMzMxLTQ4MzQtYmRhMS1hMWJhZTg5MjBlMWUiLCJ1c2VyX2lkIjoiZjFkOTllZmMtN2NmMy0xMWYwLWIzZjQtMDAxNTVkNGQ4MzM3In0.6dZzou3g3DpBJE2Mg-x3HaA9twfsFMgzBnOqfgeID8Q"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "409fcb4c-7cc4-11f0-848d-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T06:17:58.813Z",
+      "core_generic_updated_at": "2025-08-19T06:17:58.813Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "4a78abc5-7c2f-11f0-9899-00155df395db",
+      "login_count": 1,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtyaXNobnllbmFtYW5kcmEiLCJpYXQiOjE3NTU1ODQyNzgsImV4cCI6MTc1ODE3NjI3OCwianRpIjoiNDM2NDc1MWQtZmJjMC00Zjk0LWIwNzktYzUzZjM0ZmZjYzI3IiwidXNlcl9pZCI6IjRhNzhhYmM1LTdjMmYtMTFmMC05ODk5LTAwMTU1ZGYzOTVkYiJ9.zxQ7Hl5GBlE2RTZz89Uo2FSyyx2Y-B6GQyP_k6kSdwM"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "4eaa2397-8193-11f0-abd6-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T09:10:12.843Z",
+      "core_generic_updated_at": "2025-08-25T09:10:12.843Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "f1d99efc-7cf3-11f0-b3f4-00155d4d8337",
+      "login_count": 1,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvdXNlciIsImlhdCI6MTc1NjExMzAxMiwiZXhwIjoxNzU4NzA1MDEyLCJqdGkiOiI5NzljOGMxNi1kNjcwLTQ0ZDEtOWE3MS1kNmE3YzcwN2E3MTIiLCJ1c2VyX2lkIjoiZjFkOTllZmMtN2NmMy0xMWYwLWIzZjQtMDAxNTVkNGQ4MzM3In0.EZC33-LtsLmCfpjqtYTV2_M9-2m61K8H7Fx0bH4QoeU"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "4f7287e1-7e8a-11f0-8964-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:28:15.197Z",
+      "core_generic_updated_at": "2025-08-21T12:28:15.197Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 8,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1Nzc5Mjk1LCJleHAiOjE3NTgzNzEyOTUsImp0aSI6IjUxZTQ4ZTBjLWM5YjYtNDhhZC04NjhlLTUxNjRhYjY2MjBkNCIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.bdWLaC2LDb2CfMdr4qQvZNX0kJ4fPO8vsfbJs55bbjk"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "50a2c057-819b-11f0-abb6-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T10:07:32.124Z",
+      "core_generic_updated_at": "2025-08-25T10:07:32.124Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 14,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU2MTE2NDUyLCJleHAiOjE3NTg3MDg0NTIsImp0aSI6IjgwNzRiNzQxLTA1YzctNDA3OS05YmQ1LWNkY2EwMzMzMzBkOSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ._VLdy3FigKpdUUiysUlS8VKHpfPJutOxrOOcLxrYQ98"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "591a81fc-81ba-11f0-bcf1-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T13:49:40.729Z",
+      "core_generic_updated_at": "2025-08-25T13:49:40.729Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "login_count": 4,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTYxMjk3ODAsImV4cCI6MTc1ODcyMTc4MCwianRpIjoiMTMyNTg1ZjAtODMzMC00MjJiLTg1OGEtNzJjZWQyZDliY2MyIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.S3vnOKmIV_XVRx1FvJx-h_V_TXQF1BM8FjwF6hp0koQ"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "5a55c4f5-7e8a-11f0-81ab-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:28:33.464Z",
+      "core_generic_updated_at": "2025-08-21T12:28:33.464Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 9,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1Nzc5MzEzLCJleHAiOjE3NTgzNzEzMTMsImp0aSI6ImIwYWZkOTE1LWExMWMtNDQ1My04MGE5LWMwNTA1Y2UyYjNhNyIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.Ztcuq7W6QsE5XsLw5GkMXJPzmxxarw1awB8ygL4Wjaw"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "600ba5c6-7f17-11f0-bf48-00155d4d8566",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-22T05:18:02.083Z",
+      "core_generic_updated_at": "2025-08-22T05:18:02.083Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 10,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1ODM5ODgyLCJleHAiOjE3NTg0MzE4ODIsImp0aSI6IjE0NzQ3OTMwLTJiMmYtNDQxNi1iMTJiLTA4OWFmYzQ3YzJmMCIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.utOzNG8nxtmJhi_h5cjVPxXGiVQjOk-I_AUDvaF7YJw"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "710bd33a-819a-11f0-8784-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T10:01:17.003Z",
+      "core_generic_updated_at": "2025-08-25T10:01:17.003Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 13,
+      "device_name": "axios/1.10.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU2MTE2MDc2LCJleHAiOjE3NTg3MDgwNzYsImp0aSI6ImFiNmFhYmUwLTExYjktNGIyMi05YjQ3LWE3OWI0YTU1MTNjMCIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.FkM2uNlF0ueZ6q-LndQ5ac51Ui0fQIz0a5xxntmKaww"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "76a1269c-81ba-11f0-8eec-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T13:50:30.265Z",
+      "core_generic_updated_at": "2025-08-25T13:50:30.265Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 16,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU2MTI5ODMwLCJleHAiOjE3NTg3MjE4MzAsImp0aSI6IjZmYmE2ZDkwLTg5ZGItNDJhNS1hYTA2LWIyZmU4ZDNmZDU0MSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.d0Va3KccOCX7Lo_4VIPp6z01SG7SNHwpahvSFWhoMDI"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "7f433e12-7ccc-11f0-a87e-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T07:16:59.877Z",
+      "core_generic_updated_at": "2025-08-19T07:16:59.877Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "login_count": 3,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTU1ODc4MTksImV4cCI6MTc1ODE3OTgxOSwianRpIjoiNjZlZmE3NDYtYTZmOS00MGViLTg4MDYtMTM2MTMyMjU0MjNiIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.xrFgkwWZGxkt0xak5fhBbR3_NzMXFM0rHk-S88zbDQY"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "8c1c0ecd-81c5-11f0-8d85-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T15:09:50.767Z",
+      "core_generic_updated_at": "2025-08-25T15:09:50.767Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "login_count": 7,
+      "device_name": "axios/1.10.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTYxMzQ1OTAsImV4cCI6MTc1ODcyNjU5MCwianRpIjoiMGM0ZTEzMDQtNWJiOS00MWYxLTk0YzMtNGNmY2VjODMwNzVlIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.mwTgaJTXE9s73F_Gkes0-UHnGa7Eqp-sGWAc3FYro7A"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "93d9c2d8-7e4d-11f0-bdaa-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T05:13:30.659Z",
+      "core_generic_updated_at": "2025-08-21T05:13:30.659Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "152.57.185.27",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 5,
+      "device_name": "axios/1.10.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1NzUzMjEwLCJleHAiOjE3NTgzNDUyMTAsImp0aSI6IjRjZTNlMWZmLWZlM2QtNGIzZS04NTAxLWEyYWZiNGZiMmY4YSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.N7rKtN_8LMlQ2VxTEVOZfiQXdeeqPnFDdt-wnlXqBis"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "93e4ec59-7c39-11f0-9a07-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T13:45:18.472Z",
+      "core_generic_updated_at": "2025-08-18T13:45:18.472Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 1,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1NTI0NzE4LCJleHAiOjE3NTgxMTY3MTgsImp0aSI6ImRmZWNmNGYwLWY2NjEtNGJlMC1hZjRmLWY3OGY3ZDg0MTE3MCIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.7hrBkxLF6Cc-x11leu2-Q7v7AbkSrY55cHF3zsooo2M"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "a687428b-7c3e-11f0-ac76-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:21:37.218Z",
+      "core_generic_updated_at": "2025-08-18T14:21:37.218Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "login_count": 1,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTU1MjY4OTcsImV4cCI6MTc1ODExODg5NywianRpIjoiYjRiYzNjNWQtMTg4MS00ZDc3LWIwZWMtZmEzZmJhODI4YzgwIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.CvV2RfUoV-l6ta7v6qt0xtz0C4ZkrVo_O5RU4gwDGxM"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "a97102bd-7f51-11f0-8569-00155d4d8566",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-22T12:15:16.032Z",
+      "core_generic_updated_at": "2025-08-22T12:15:16.032Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 11,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1ODY0OTE2LCJleHAiOjE3NTg0NTY5MTYsImp0aSI6Ijk2MWIzNWQ4LTc0MjMtNGRmZi04OGI3LTYyZmZjODRlNmM0ZSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.jPGg9s3g9ZGbx0adM_lj1GKjW1hOSQ9E4zMPGvbhA7Y"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "aa5f620e-7e51-11f0-a537-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T05:42:46.431Z",
+      "core_generic_updated_at": "2025-08-21T05:42:46.431Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 6,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1NzU0OTY2LCJleHAiOjE3NTgzNDY5NjYsImp0aSI6ImVhZjdjMGIxLTAxYmEtNGJhNC04Yzc4LTY4NGEyOGUyOGMzZSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.MdgmyZW-svfVKJPwyYu8YkYK9sXS5qes9qmrmM-CCus"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "d6f406b4-7cda-11f0-82db-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T08:59:39.951Z",
+      "core_generic_updated_at": "2025-08-19T08:59:39.951Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 3,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1NTkzOTc5LCJleHAiOjE3NTgxODU5NzksImp0aSI6IjE2ODhlNTYwLWIwYWEtNGZjYS04ZGQzLTJlZjlmMTRlOGFmMiIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.liaL9dT7n_xDFjuOrvzGHFQrWsxC4mb__iO3_x7hqR8"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "ec548a81-81bd-11f0-926c-00155d4d818f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T14:15:16.225Z",
+      "core_generic_updated_at": "2025-08-25T14:15:16.225Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "login_count": 5,
+      "device_name": "axios/1.10.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImtvdXNoaWsiLCJpYXQiOjE3NTYxMzEzMTYsImV4cCI6MTc1ODcyMzMxNiwianRpIjoiMzdiMTY5NTEtZTQ4NS00MmZkLWI3OWEtMmUxMTY3MTdkNDNjIiwidXNlcl9pZCI6IjQ5ZTUzMWVmLTdjMmYtMTFmMC05YWVhLTAwMTU1ZGYzOTVkYiJ9.RcG2XDeUgGB34dfsl51XKKdX6zLOc3CJQYfgex1TD1k"
+    }
+  },
+  {
+    "model": "user_auth.loginanalyticsmodel",
+    "pk": "ed88e78b-7f56-11f0-86cf-00155d4d8566",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-22T12:52:57.757Z",
+      "core_generic_updated_at": "2025-08-22T12:52:57.757Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "ip_address": "127.0.0.1",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "login_count": 12,
+      "device_name": "PostmanRuntime/7.45.0",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzU1ODY3MTc3LCJleHAiOjE3NTg0NTkxNzcsImp0aSI6IjVhYjJhZmViLTFjNzEtNDRjOC1hNzE3LWY0ZjMyZmM3YTk4MSIsInVzZXJfaWQiOiI0OWM1OTcyZC03YzJmLTExZjAtODRmZC0wMDE1NWRmMzk1ZGIifQ.5FWyNhorSP_ymCITdCHADiLdiKJZ1X-VLTXCXSCj8qg"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsactionsmodel",
+    "pk": "ba016594-7e85-11f0-a65c-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T11:55:26.489Z",
+      "core_generic_updated_at": "2025-08-21T11:55:26.489Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Add"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsactionsmodel",
+    "pk": "bd302d79-7e85-11f0-a17d-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T11:55:31.828Z",
+      "core_generic_updated_at": "2025-08-21T11:55:31.828Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Edit"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsactionsmodel",
+    "pk": "c4140337-7e85-11f0-8f61-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T11:55:43.388Z",
+      "core_generic_updated_at": "2025-08-21T11:55:43.388Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Activate"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsactionsmodel",
+    "pk": "c8161239-7e85-11f0-b8ae-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T11:55:50.112Z",
+      "core_generic_updated_at": "2025-08-21T11:55:50.112Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Inactivate"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "0580c888-7e87-11f0-bb9c-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:04:42.651Z",
+      "core_generic_updated_at": "2025-08-21T12:04:42.651Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Buckets Management",
+      "parent_permission": "e34ab39b-7e85-11f0-908a-00155d4d8337"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "094b8491-7e86-11f0-baf7-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T11:57:39.516Z",
+      "core_generic_updated_at": "2025-08-21T11:57:39.516Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Product Management",
+      "parent_permission": "e34ab39b-7e85-11f0-908a-00155d4d8337"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "0ec80778-7e87-11f0-8ea7-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:04:58.217Z",
+      "core_generic_updated_at": "2025-08-21T12:04:58.217Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Cycles Management",
+      "parent_permission": "e34ab39b-7e85-11f0-908a-00155d4d8337"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "122a33bc-7e98-11f0-9ad3-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T14:06:45.339Z",
+      "core_generic_updated_at": "2025-08-21T16:41:41.025Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Manage Sub-area",
+      "parent_permission": "1b11da24-7e87-11f0-a3ad-00155d4d8337"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "1b11da24-7e87-11f0-a3ad-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:05:18.832Z",
+      "core_generic_updated_at": "2025-08-21T12:05:18.832Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Region Configurations",
+      "parent_permission": null
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "1ff5e6a0-7e98-11f0-949f-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T14:07:08.482Z",
+      "core_generic_updated_at": "2025-08-21T14:07:08.482Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "User Management",
+      "parent_permission": null
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "314c6768-7e87-11f0-983c-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:05:56.127Z",
+      "core_generic_updated_at": "2025-08-21T12:05:56.127Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Manage Regions",
+      "parent_permission": "1b11da24-7e87-11f0-a3ad-00155d4d8337"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "3548b721-7e98-11f0-aa67-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T14:07:44.259Z",
+      "core_generic_updated_at": "2025-08-21T14:07:44.259Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "User Accounts",
+      "parent_permission": "1ff5e6a0-7e98-11f0-949f-00155d4d8337"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "3d7832c3-7e87-11f0-bf35-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:06:16.548Z",
+      "core_generic_updated_at": "2025-08-21T12:06:16.548Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Manage Zones",
+      "parent_permission": "1b11da24-7e87-11f0-a3ad-00155d4d8337"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "476b848b-7e87-11f0-8cae-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:06:33.241Z",
+      "core_generic_updated_at": "2025-08-21T12:06:33.241Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Manage City/Area",
+      "parent_permission": "1b11da24-7e87-11f0-a3ad-00155d4d8337"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "4ee83a8a-7e87-11f0-9c0f-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T12:06:45.802Z",
+      "core_generic_updated_at": "2025-08-21T12:06:45.802Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Manage Pin Codes",
+      "parent_permission": "1b11da24-7e87-11f0-a3ad-00155d4d8337"
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "e34ab39b-7e85-11f0-908a-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T11:56:35.756Z",
+      "core_generic_updated_at": "2025-08-21T11:56:35.756Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Process Configurations",
+      "parent_permission": null
+    }
+  },
+  {
+    "model": "permissions.userconfigpermissionsmodel",
+    "pk": "ec9f6145-7e85-11f0-83dd-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T11:56:51.415Z",
+      "core_generic_updated_at": "2025-08-21T11:57:22.159Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Process Management",
+      "parent_permission": "e34ab39b-7e85-11f0-908a-00155d4d8337"
+    }
+  },
+  {
+    "model": "permissions.userconfiguserassignedpermissionsmodel",
+    "pk": "73adacab-7eac-11f0-a380-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T16:32:38.872Z",
+      "core_generic_updated_at": "2025-08-21T16:32:38.872Z",
+      "core_generic_created_by": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "core_generic_updated_by": null,
+      "permission": "476b848b-7e87-11f0-8cae-00155d4d8337",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "read_only_access": false,
+      "all_access": false
+    }
+  },
+  {
+    "model": "permissions.userconfiguserassignedpermissionsmodel",
+    "pk": "73adf4ba-7eac-11f0-ac19-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T16:32:38.874Z",
+      "core_generic_updated_at": "2025-08-21T16:32:38.874Z",
+      "core_generic_created_by": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "core_generic_updated_by": null,
+      "permission": "ec9f6145-7e85-11f0-83dd-00155d4d8337",
+      "user": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "read_only_access": false,
+      "all_access": false
+    }
+  },
+  {
+    "model": "permissions.userconfiguserassignedpermissionsmodel",
+    "pk": "c56f8bfe-7ea8-11f0-96f3-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T16:06:18.051Z",
+      "core_generic_updated_at": "2025-08-21T16:06:18.051Z",
+      "core_generic_created_by": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "core_generic_updated_by": null,
+      "permission": "476b848b-7e87-11f0-8cae-00155d4d8337",
+      "user": "dca17d55-7c2f-11f0-8baf-00155df395db",
+      "read_only_access": false,
+      "all_access": false
+    }
+  },
+  {
+    "model": "permissions.userconfiguserassignedpermissionsmodel",
+    "pk": "c57053d1-7ea8-11f0-bc24-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T16:06:18.056Z",
+      "core_generic_updated_at": "2025-08-21T16:06:18.056Z",
+      "core_generic_created_by": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "core_generic_updated_by": null,
+      "permission": "ec9f6145-7e85-11f0-83dd-00155d4d8337",
+      "user": "dca17d55-7c2f-11f0-8baf-00155df395db",
+      "read_only_access": false,
+      "all_access": false
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsprocessmodel",
+    "pk": "b9e21d0c-9faf-4102-91cf-5b3e9edf79e6",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T13:47:30.536Z",
+      "core_generic_updated_at": "2025-08-25T13:47:30.537Z",
+      "core_generic_created_by": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "core_generic_updated_by": null,
+      "title": "Koktak115",
+      "logo": null,
+      "contact_person_name": "sdfsdfsdfsd",
+      "contact_person_email": "sdfgdsfsdf@dfgfdg.fdf",
+      "contact_person_phone_number": "7875215000"
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsprocessmodel",
+    "pk": "c9a8d203-571e-46b8-8eab-b4b2ee821070",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T14:16:41.658Z",
+      "core_generic_updated_at": "2025-08-25T14:16:41.660Z",
+      "core_generic_created_by": "49e531ef-7c2f-11f0-9aea-00155df395db",
+      "core_generic_updated_by": null,
+      "title": "Axis",
+      "logo": null,
+      "contact_person_name": "Rohith Baggam",
+      "contact_person_email": "baggamrohithraj@gmail.com",
+      "contact_person_phone_number": "7093389378"
+    }
+  },
+  {
+    "model": "loan_config.bucketrangemodel",
+    "pk": "5ac3ebdd-9ba5-42d2-a1d0-d9a0a5c55e9a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-13T12:03:36.307Z",
+      "core_generic_updated_at": "2025-08-13T12:03:36.307Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "label": "30 Days",
+      "value": "30"
+    }
+  },
+  {
+    "model": "loan_config.bucketrangemodel",
+    "pk": "68d801b6-4c6e-44d9-ab81-73fd1feb0b3f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-13T12:03:56.890Z",
+      "core_generic_updated_at": "2025-08-13T12:03:56.890Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "label": "120 Days",
+      "value": "120"
+    }
+  },
+  {
+    "model": "loan_config.bucketrangemodel",
+    "pk": "690d684b-3d05-4619-88b9-2ecc15df7957",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-13T12:03:43.157Z",
+      "core_generic_updated_at": "2025-08-13T12:03:43.157Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "label": "60 Days",
+      "value": "60"
+    }
+  },
+  {
+    "model": "loan_config.bucketrangemodel",
+    "pk": "b1760bb2-8411-49e5-907b-a7cd78c1ca1e",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-13T12:04:13.324Z",
+      "core_generic_updated_at": "2025-08-13T12:04:13.324Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "label": ">180 Days",
+      "value": "180"
+    }
+  },
+  {
+    "model": "loan_config.bucketrangemodel",
+    "pk": "e15f3592-35ef-475e-bf98-b29f918b9456",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-13T12:03:48.778Z",
+      "core_generic_updated_at": "2025-08-13T12:03:48.778Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "label": "90 Days",
+      "value": "90"
+    }
+  },
+  {
+    "model": "loan_config.bucketrangemodel",
+    "pk": "e444e86f-2b1e-48df-9681-de54541d35b3",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-13T12:04:07.339Z",
+      "core_generic_updated_at": "2025-08-13T12:04:07.339Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "label": "150 Days",
+      "value": "150"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationregionmodel",
+    "pk": "19b4bbf7-7c41-11f0-b2aa-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:39:09.448Z",
+      "core_generic_updated_at": "2025-08-25T15:07:16.750Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": "49c5972d-7c2f-11f0-84fd-00155df395db",
+      "title": "South Region",
+      "description": null
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "3761397b-7c41-11f0-98f8-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:39:59.234Z",
+      "core_generic_updated_at": "2025-08-18T14:39:59.234Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Greater Hyderabad",
+      "region": "19b4bbf7-7c41-11f0-b2aa-00155df395db",
+      "description": null
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "552cadd6-7c41-11f0-9740-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:40:49.222Z",
+      "core_generic_updated_at": "2025-08-18T14:40:49.222Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Greater Vskp",
+      "region": "19b4bbf7-7c41-11f0-b2aa-00155df395db",
+      "description": null
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "0a9c7816-7c44-11f0-a77d-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:00:12.617Z",
+      "core_generic_updated_at": "2025-08-22T10:12:55.655Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "kukatpally",
+      "zone": "3761397b-7c41-11f0-98f8-00155df395db",
+      "description": null
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "2ab93fe8-7c44-11f0-98d4-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:01:06.492Z",
+      "core_generic_updated_at": "2025-08-22T10:13:04.644Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Miyapur",
+      "zone": "3761397b-7c41-11f0-98f8-00155df395db",
+      "description": null
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "c0e8023d-7c42-11f0-87cd-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:50:59.463Z",
+      "core_generic_updated_at": "2025-08-22T10:12:45.337Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Gachibowli",
+      "zone": "3761397b-7c41-11f0-98f8-00155df395db",
+      "description": null
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "e847c254-7c41-11f0-93df-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T14:44:56.026Z",
+      "core_generic_updated_at": "2025-08-22T10:12:27.069Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "maddilapalem",
+      "zone": "552cadd6-7c41-11f0-9740-00155df395db",
+      "description": null
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "046d1a48-7d08-11f0-988c-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T14:23:03.598Z",
+      "core_generic_updated_at": "2025-08-19T14:23:03.598Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 1,
+      "city": "e847c254-7c41-11f0-93df-00155df395db"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "2cc0f3f0-7c45-11f0-b72e-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:08:19.394Z",
+      "core_generic_updated_at": "2025-08-18T15:08:19.394Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 2,
+      "city": "c0e8023d-7c42-11f0-87cd-00155df395db"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "528a1640-7c45-11f0-ad46-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:09:22.788Z",
+      "core_generic_updated_at": "2025-08-18T15:09:22.788Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 5,
+      "city": "c0e8023d-7c42-11f0-87cd-00155df395db"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "64d136c6-7c45-11f0-a130-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:09:53.455Z",
+      "core_generic_updated_at": "2025-08-18T15:09:53.455Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 3,
+      "city": "0a9c7816-7c44-11f0-a77d-00155df395db"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "7bd3a698-7c45-11f0-9629-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:10:32.057Z",
+      "core_generic_updated_at": "2025-08-18T15:10:32.057Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 6,
+      "city": "0a9c7816-7c44-11f0-a77d-00155df395db"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "992c9e5a-7cf4-11f0-88d9-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T12:04:03.225Z",
+      "core_generic_updated_at": "2025-08-19T12:04:03.225Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 8,
+      "city": "2ab93fe8-7c44-11f0-98d4-00155df395db"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "af0d16e3-7c45-11f0-8a00-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:11:57.998Z",
+      "core_generic_updated_at": "2025-08-18T15:11:57.998Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 4,
+      "city": "2ab93fe8-7c44-11f0-98d4-00155df395db"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "b9993bfa-7d17-11f0-bb41-00155d4d8337",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-19T16:15:30.007Z",
+      "core_generic_updated_at": "2025-08-19T16:15:30.007Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 9,
+      "city": "2ab93fe8-7c44-11f0-98d4-00155df395db"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "c5e80dc1-7c45-11f0-b657-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:12:36.342Z",
+      "core_generic_updated_at": "2025-08-18T15:12:36.342Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 7,
+      "city": "2ab93fe8-7c44-11f0-98d4-00155df395db"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "01b03513-7c46-11f0-8981-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:14:16.639Z",
+      "core_generic_updated_at": "2025-08-18T15:14:16.639Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Balaji nagar",
+      "pincode": "64d136c6-7c45-11f0-a130-00155df395db"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "214dc1c4-7c46-11f0-bf5a-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:15:09.681Z",
+      "core_generic_updated_at": "2025-08-18T15:15:09.681Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "kothaguda",
+      "pincode": "528a1640-7c45-11f0-ad46-00155df395db"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "e1cb752d-7c45-11f0-bc9e-00155df395db",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-18T15:13:23.131Z",
+      "core_generic_updated_at": "2025-08-18T15:13:23.131Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Mythri nagar",
+      "pincode": "af0d16e3-7c45-11f0-8a00-00155df395db"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitymonitoringlinkedentitymodel",
+    "pk": "0c50dc41-6565-40d2-8f3d-7a2b6fc5d0bb",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T17:04:16.019Z",
+      "core_generic_updated_at": "2025-08-21T17:04:16.019Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Region Management"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitymonitoringlinkedentitymodel",
+    "pk": "5a1ab9f9-84ba-4ef4-b1e6-6e98e42ed6ef",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T17:04:30.173Z",
+      "core_generic_updated_at": "2025-08-21T17:04:30.173Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Process Management"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitymonitoringlinkedentitymodel",
+    "pk": "7c07f05f-6a33-4d5c-8fdd-6f5e78ebea35",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T17:04:40.516Z",
+      "core_generic_updated_at": "2025-08-21T17:04:40.516Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "User Management"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitymonitoringlinkedentitymodel",
+    "pk": "d80d1e51-7118-488c-beb7-b0361860345c",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T17:05:40.325Z",
+      "core_generic_updated_at": "2025-08-21T17:05:40.325Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Authentication"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "01d058d1-a1e6-44b8-bb2c-a843673dc2f2",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-11T05:36:45.562Z",
+      "core_generic_updated_at": "2025-08-21T17:06:53.560Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "CONFIGURATION_PRODUCT_ACTIVITY_LOG",
+      "lable": null,
+      "linked_entity": "5a1ab9f9-84ba-4ef4-b1e6-6e98e42ed6ef"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "1108481d-9cc8-442c-a0e7-636299886009",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-22T09:51:19.387Z",
+      "core_generic_updated_at": "2025-08-22T09:51:19.387Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "CONFIGURATION_ZONE_ACTIVITY_LOG",
+      "lable": "Manage Zones",
+      "linked_entity": "0c50dc41-6565-40d2-8f3d-7a2b6fc5d0bb"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "1196ea70-cfc8-48f8-8bfd-af1932bf10f1",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-11T06:38:39.552Z",
+      "core_generic_updated_at": "2025-08-21T17:06:50.117Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "CONFIGURATION_BUCKET_ACTIVITY_LOG",
+      "lable": null,
+      "linked_entity": "5a1ab9f9-84ba-4ef4-b1e6-6e98e42ed6ef"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "3a652da1-23e3-4baf-a332-421f0a9fdccb",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-22T09:52:44.669Z",
+      "core_generic_updated_at": "2025-08-22T09:52:44.669Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "CONFIGURATION_AREA_ACTIVITY_LOG",
+      "lable": "Manage Sub-area",
+      "linked_entity": "0c50dc41-6565-40d2-8f3d-7a2b6fc5d0bb"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "517563ad-8a20-45cf-b472-d83cdbcdd9d1",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-22T09:50:54.552Z",
+      "core_generic_updated_at": "2025-08-22T09:50:54.552Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "CONFIGURATION_REGION_ACTIVITY_LOG",
+      "lable": "Manage Region",
+      "linked_entity": "0c50dc41-6565-40d2-8f3d-7a2b6fc5d0bb"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "5ad31af9-7642-4fa0-bcb6-68ae4b9b03bc",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T17:08:41.222Z",
+      "core_generic_updated_at": "2025-08-21T17:08:41.222Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "USER_UPDATE_ACTIVITY_LOG",
+      "lable": null,
+      "linked_entity": "7c07f05f-6a33-4d5c-8fdd-6f5e78ebea35"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "5e98ccdd-a87d-4f41-aeff-f3f97569c81e",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-22T09:52:01.657Z",
+      "core_generic_updated_at": "2025-08-22T09:52:01.657Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "CONFIGURATION_PINCODE_ACTIVITY_LOG",
+      "lable": "Manage Pin Codes",
+      "linked_entity": "0c50dc41-6565-40d2-8f3d-7a2b6fc5d0bb"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "62c69e18-6879-41a2-9119-8bfa547a4ccf",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T17:14:20.081Z",
+      "core_generic_updated_at": "2025-08-21T17:14:20.081Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "USER_PERMISSION_ASSIGNMENT_ACTIVITY_LOG",
+      "lable": null,
+      "linked_entity": "7c07f05f-6a33-4d5c-8fdd-6f5e78ebea35"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "64a4c107-1e5c-4397-bff1-196d4f76befb",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-22T09:51:39.794Z",
+      "core_generic_updated_at": "2025-08-22T09:51:39.794Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "CONFIGURATION_CITY_ACTIVITY_LOG",
+      "lable": "Manage City/Area",
+      "linked_entity": "0c50dc41-6565-40d2-8f3d-7a2b6fc5d0bb"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "9ade90fb-24d3-4b23-8014-40a27813c92c",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-10T12:01:57.267Z",
+      "core_generic_updated_at": "2025-08-21T17:06:45.619Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "CONFIGURATION_PROCESS_ACTIVITY_LOG",
+      "lable": null,
+      "linked_entity": "5a1ab9f9-84ba-4ef4-b1e6-6e98e42ed6ef"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "a6d7b1ac-8ace-4a1b-9c7b-a3f1ca06427e",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-11T08:45:42.451Z",
+      "core_generic_updated_at": "2025-08-21T17:06:37.433Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "CONFIGURATION_MONTHLY_CYCLE_ACTIVITY_LOG",
+      "lable": null,
+      "linked_entity": "5a1ab9f9-84ba-4ef4-b1e6-6e98e42ed6ef"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "be8bde4c-aea5-4c5a-986c-5eaf83a3227b",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-10T14:04:20.819Z",
+      "core_generic_updated_at": "2025-08-21T17:06:18.051Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "LOGIN_ACTIVITY_LOG",
+      "lable": null,
+      "linked_entity": "d80d1e51-7118-488c-beb7-b0361860345c"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "eb7ceee8-23bd-49fe-a8e5-0f18e867d637",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-21T17:07:39.809Z",
+      "core_generic_updated_at": "2025-08-21T17:08:28.840Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "USER_CREATE_ACTIVITY_LOG",
+      "lable": null,
+      "linked_entity": "7c07f05f-6a33-4d5c-8fdd-6f5e78ebea35"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitytypemodel",
+    "pk": "f183af03-1349-4460-be7f-3225e6b27ba2",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-11T08:48:20.051Z",
+      "core_generic_updated_at": "2025-08-22T09:43:07.031Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "CONFIGURATION_PRODUCT_ASSIGNMENT_ACTIVITY_LOG",
+      "lable": "Process Product Assignment",
+      "linked_entity": "5a1ab9f9-84ba-4ef4-b1e6-6e98e42ed6ef"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitymonitoringmethodtypecolorpreferencemodel",
+    "pk": "1ebf89a8-216b-4d73-ac6d-3feb2f91fe34",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T12:00:50.208Z",
+      "core_generic_updated_at": "2025-08-25T12:00:50.208Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "method": "Activated",
+      "color": "#1F7635"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitymonitoringmethodtypecolorpreferencemodel",
+    "pk": "2a098b6e-74d8-4eb4-adae-8242458e2ed9",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T12:01:43.325Z",
+      "core_generic_updated_at": "2025-08-25T12:01:43.325Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "method": "Inactivated",
+      "color": "#9F251E"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitymonitoringmethodtypecolorpreferencemodel",
+    "pk": "7102c7f2-6a8e-4eda-8811-6298d1a0e3cd",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T12:00:38.714Z",
+      "core_generic_updated_at": "2025-08-25T12:00:38.714Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "method": "Created",
+      "color": "#1F7635"
+    }
+  },
+  {
+    "model": "activity_monitoring.activitymonitoringmethodtypecolorpreferencemodel",
+    "pk": "8d9de14b-e41a-44e5-90f0-fa5961cc7dd7",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-08-25T12:01:29.120Z",
+      "core_generic_updated_at": "2025-08-25T12:01:29.120Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "method": "Updated",
+      "color": "#004999"
+    }
+  }
+]
