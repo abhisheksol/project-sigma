@@ -11,11 +11,12 @@ from user_config.user_auth.api.v1.utils.authentication.jwt_response_payload_hand
 
 class OtpverifyHandler(CoreGenericBaseHandler):
     def validate(self):
-        user = self.data.get("user")
+        phone_number = self.data.get("phone_number")
         mobile_otp = self.data.get("mobile_otp")
 
-        self.user_instance = UserModel.objects.get(id=user)
-        otp = MobileOTPModel.objects.filter(user=user, mobile_otp=mobile_otp, is_expired=False).first()
+        self.user_instance : UserModel = UserModel.objects.get(phone_number=phone_number)
+        print("user instance in otp verify handler=>",self.user_instance.login_id)
+        otp = MobileOTPModel.objects.filter(user=self.user_instance, mobile_otp=mobile_otp, is_expired=False).first()
 
         if otp is None:
             self.set_error_message(error_message="Invalid OTP", key="mobile_otp")

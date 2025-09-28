@@ -12,7 +12,7 @@ class OtpGenerateHandler(CoreGenericBaseHandler):
         print("otp generate handler=>",self.data.get('user'))
         # generate otp logic here random number
 
-        self.user_instance : UserModel= UserModel.objects.get(id=self.data.get('user'))
+        self.user_instance : UserModel= UserModel.objects.get(phone_number=self.data.get('phone_number'))
         
 
         if self.user_instance is None:
