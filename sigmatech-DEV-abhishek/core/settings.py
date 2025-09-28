@@ -79,6 +79,8 @@ THIRD_PARTY_APPS = [
     "drf_yasg",
     "daphne",
     "channels",
+    'django_extensions',
+
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True

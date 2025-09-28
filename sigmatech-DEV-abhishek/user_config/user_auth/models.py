@@ -13,7 +13,7 @@ from user_config.user_auth.enums import UserRoleEnum
 
 
 # Create your models here.
-
+# Get a single role where role_name="Admin".
 
 class UserRoleModel(CoreGenericModel):
     id = models.UUIDField(
@@ -188,3 +188,27 @@ class LoginAnalyticsModel(CoreGenericModel):
 
     class Meta:
         db_table = "USER_LOGIN_ANALYTICS_TABLE"
+
+
+
+# mobile otp and expired time
+class MobileOTPModel(CoreGenericModel):
+    id = models.UUIDField(
+        db_column="MOBILE_OTP_ID",
+        default=uuid.uuid1,
+        unique=True,
+        primary_key=True,
+        editable=False,
+    )
+    user = models.ForeignKey(
+        UserModel,
+        on_delete=models.CASCADE,
+        related_name="MobileOTPModel_user",
+        db_column="USER_ID",
+    )
+    mobile_otp = models.CharField(max_length=6, db_column="MOBILE_OTP")
+    is_expired = models.BooleanField(default=False, db_column="IS_EXPIRED")
+
+    class Meta:
+        db_table = "MOBILE_OTP_TABLE"
+

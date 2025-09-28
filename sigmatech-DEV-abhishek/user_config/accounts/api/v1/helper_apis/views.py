@@ -7,6 +7,9 @@ leverages role-based access control to filter data based on the authenticated us
 and optional query parameters (e.g., user_id, region, city, pincode).
 """
 
+from store.configurations.loan_config.models import (
+    LoanConfigurationsProductAssignmentModel,
+)
 from user_config.accounts.api.v1.utils.queryset.region_hierarchal_queryset import (
     get_user_assigned_area_queryset,
     get_user_assigned_city_queryset,
@@ -16,6 +19,9 @@ from user_config.accounts.api.v1.utils.queryset.region_hierarchal_queryset impor
 )
 from user_config.accounts.api.v1.utils.queryset.user_reports_to_queryset import (
     get_user_reports_queryset,
+)
+from user_config.accounts.api.v1.utils.user_assigned_process_queryset import (
+    get_reporting_user_assigned_product_assignment_instance,
 )
 from user_config.user_auth.utils.custom_authentication.custom_authentication import (
     CustomAuthentication,
@@ -33,6 +39,7 @@ from store.configurations.region_config.models import (
     RegionConfigurationZoneModel,
 )
 from .serializers import (
+    ProductAssignmentHelperSerializer,
     UserManagementUserAreaHelperListModelSerializer,
     UserManagementUserCityHelperListModelSerializer,
     UserManagementUserPincodeHelperListModelSerializer,
@@ -110,7 +117,7 @@ class UserReportsToHelperListAPIView(CoreGenericGetAPIView, generics.GenericAPIV
             queryset=self.queryset, params=params, request_user=self.request.user
         )
         if queryset.exists():
-            return queryset.distinct("pk")
+            return queryset.distinct()
         return queryset.none()
 
     def get_serializer_class(self):
@@ -387,4 +394,26 @@ class UserManagementUserAreaHelperListAPIView(
         """
         return {
             "GET": UserManagementUserAreaHelperListModelSerializer,
+        }.get(self.request.method)
+
+
+# ! ------------------------------- Abhishek -------------------------------
+
+
+class ProductAssignmentHelperAPIView(CoreGenericGetAPIView, generics.GenericAPIView):
+    queryset = LoanConfigurationsProductAssignmentModel.objects.all()
+
+    def get_queryset(self):
+
+        user_id: str = self.request.GET.dict().get("user_id")
+        if user_id is None:
+            return self.queryset.all()
+
+        return get_reporting_user_assigned_product_assignment_instance(
+            queryset=self.queryset, user_id=user_id
+        )
+
+    def get_serializer_class(self):
+        return {
+            "GET": ProductAssignmentHelperSerializer,
         }.get(self.request.method)

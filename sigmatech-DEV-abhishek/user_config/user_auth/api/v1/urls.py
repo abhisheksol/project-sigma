@@ -34,6 +34,17 @@ authenticate_urlpatterns: List = [
         auth_views.UserAuthUserModelResetPasswordAPIView.as_view(),
         name="UserAuthUserModelResetPasswordAPIView",
     ),
+    path(
+        "user-otp-generate-api/",
+        auth_views.UserManagementMobileOtpGenericAPIView.as_view(),
+        name="UserManagementMobileOtpGenericAPIView",
+    ),
+    path(
+        "user-otp-verify-api/",
+        auth_views.UserManagementMobileOtpVerifyGenericAPIView.as_view(),
+        name="UserManagementMobileOtpVerifyGenericAPIView",
+    ),
+
 ]
 
 

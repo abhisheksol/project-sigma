@@ -15,6 +15,10 @@ from store.configurations.region_config.models import (
     RegionConfigurationRegionModel,
     RegionConfigurationZoneModel,
 )
+from store.configurations.loan_config.models import (
+    LoanConfigurationsProductAssignmentModel,
+)
+from core_utils.utils.enums import CoreUtilsStatusEnum
 
 
 class UserRoleHelperListSerializer(CoreGenericSerializerMixin, serializers.Serializer):
@@ -119,3 +123,28 @@ class UserManagementUserAreaHelperListModelSerializer(
             "label",
             "disabled",
         ]
+
+
+# !------------------------------ Abhishek ------------------------------
+
+
+class ProductAssignmentHelperSerializer(
+    CoreGenericHelperAPISerializerMethodField, serializers.ModelSerializer
+):
+    value = serializers.UUIDField(source="pk", read_only=True)
+    label = serializers.SerializerMethodField()
+    disabled = serializers.SerializerMethodField()
+
+    class Meta:
+        model = LoanConfigurationsProductAssignmentModel
+        fields = ["label", "value", "disabled", "status"]
+
+    def get_label(self, obj):
+        return f"{obj.process.title}-{obj.product.title}"
+
+    def get_disabled(self, obj):
+        return not (
+            obj.process.status == CoreUtilsStatusEnum.ACTIVATED.value
+            and obj.product.status == CoreUtilsStatusEnum.ACTIVATED.value
+            and obj.status == CoreUtilsStatusEnum.ACTIVATED.value
+        )

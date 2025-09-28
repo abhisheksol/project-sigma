@@ -39,6 +39,11 @@ helper_list_urlpattern: list = [
         helper_list_views.UserManagementUserAreaHelperListAPIView.as_view(),
         name="UserManagementUserAreaHelperListAPIView",
     ),
+    path(
+        "region-configuration-user-assigned-products-helper-list-api/",
+        helper_list_views.ProductAssignmentHelperAPIView.as_view(),
+        name="Region-configurationUserAssignedProductsHelperGenericAPIView",
+    ),
 ]
 
 user_management_urlpatterns: list = [
@@ -62,6 +67,7 @@ user_management_urlpatterns: list = [
         user_management_views.UserManagementAssignmentAPIView.as_view(),
         name="UserManagementAssignmentAPIView",
     ),
+    
 ]
 
 urlpatterns: list = [*helper_list_urlpattern, *user_management_urlpatterns]

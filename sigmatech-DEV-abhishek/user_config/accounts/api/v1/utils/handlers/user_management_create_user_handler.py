@@ -193,11 +193,13 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
             if not self.zone_payload_id:
                 return "zone_id", FIELD_REQUIRED_ERROR_MESSAGE
             try:
+                print("========--------=> ZONE INSTANCE: ")
                 self.zone_instance: RegionConfigurationZoneModel = (
                     get_user_assigned_zone_queryset(
                         user_instance=self.reports_to_instance
                     ).get(pk=self.zone_payload_id)
                 )
+                print("========--------=> ZONE INSTANCEd: ", self.zone_instance)
                 self.logger.info(f"Validated Zone ID: {self.zone_payload_id}")
                 return None, None
             except RegionConfigurationZoneModel.DoesNotExist:

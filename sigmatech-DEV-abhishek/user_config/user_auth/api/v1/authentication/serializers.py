@@ -16,10 +16,16 @@ from user_config.user_auth.api.v1.utils.handler.forgot_password_handler import (
     UserAuthUserForgotPasswordHandler,
     UserAuthUserResetPasswordHandler,
 )
+from user_config.user_auth.api.v1.utils.handler.otp_genrate_handler import (
+    OtpGenerateHandler
+)
+from user_config.user_auth.api.v1.utils.handler.otpverifyhandler import (
+    OtpverifyHandler,
+)
 from user_config.user_auth.api.v1.utils.handler.logout_handler import (
     UserAuthUserModelLogoutHandler,
 )
-from user_config.user_auth.models import BlackListTokenModel
+from user_config.user_auth.models import BlackListTokenModel, MobileOTPModel
 from django.contrib.auth import get_user_model
 from django.utils.translation import gettext as _gettext
 
@@ -120,3 +126,90 @@ class UserAuthUserModelResetPasswordSerializer(
     queryset = get_user_model().objects.all()
     token = serializers.CharField()
     password = serializers.CharField()
+
+
+
+class UserManagementUserCreateOtpModelSerializer(
+    CoreGenericSerializerMixin, serializers.ModelSerializer
+):  
+    handler_class = OtpGenerateHandler
+    # mobile_otp = serializers.CharField(required=True)
+    user = serializers.UUIDField(required=True)
+    # is_expired = serializers.BooleanField(required=False, default=False)
+    class Meta:
+        model = MobileOTPModel
+        fields = [
+            # "mobile_otp",
+            "user",
+            # "is_expired"
+        ]
+
+
+
+class UserManagementUserVerifyOtpModelSerializer(
+    CoreGenericSerializerMixin, serializers.Serializer
+):
+    handler_class = OtpverifyHandler
+    user = serializers.UUIDField(required=True)
+    mobile_otp = serializers.CharField(required=True)
+
+    class Meta:
+        model = MobileOTPModel
+        fields = [
+            "user",
+            "mobile_otp"
+        ]
+
+
+UserModel = get_user_model()
+
+from core_utils.utils.jwt_token_utils import encode_jwt
+
+class OTPVerifySerializer(serializers.Serializer):
+    user = serializers.UUIDField(required=True)
+    mobile_otp = serializers.CharField(required=True)
+
+    def validate(self, data):
+        user_id = data.get("user")
+        mobile_otp = data.get("mobile_otp")
+
+        try:
+            user_instance = UserModel.objects.get(id=user_id)
+        except UserModel.DoesNotExist:
+            raise serializers.ValidationError("User not found")
+
+        otp_instance = MobileOTPModel.objects.filter(
+            user=user_instance,
+            mobile_otp=mobile_otp,
+            is_expired=False
+        ).first()
+
+        if not otp_instance:
+            raise serializers.ValidationError("Invalid OTP")
+
+        self.user_instance = user_instance
+        return data
+
+    def create(self, validated_data):
+        # Generate JWT directly using encode_jwt
+        token = encode_jwt(user_id=str(self.user_instance.pk))
+
+        # Optionally, store token in BlackListTokenModel
+        BlackListTokenModel.objects.create(
+            user=self.user_instance,
+            token=token,
+            is_login=True
+        )
+
+        # Prepare response payload (similar to login)
+        response_payload = {
+            "user": {
+                "id": str(self.user_instance.pk),
+                "login_id": self.user_instance.login_id,
+                "username": self.user_instance.username,
+                "email": self.user_instance.email,
+            },
+            "token": token
+        }
+
+        return response_payload
