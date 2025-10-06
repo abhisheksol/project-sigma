@@ -1,0 +1,1 @@
+CORE_UTILS_DEV_ERROR_MESSAGE = "Dev Error"

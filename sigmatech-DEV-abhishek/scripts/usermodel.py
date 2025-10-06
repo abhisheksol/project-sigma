@@ -1,44 +1,41 @@
-from user_config.user_auth.models import UserModel, UserRoleModel
-from user_config.accounts.models import UserDetailModel
-from store.configurations.region_config.models import RegionConfigurationRegionModel
+from user_config.user_auth.models import UserModel
+from store.operations.case_management.models import (
+    CaseManagementCaseModel,
+)
 
-def run():
-    # 1️⃣ Get the role
-    role = UserModel.objects.get(phone_number="9876543211")  # or any role you want
-    print("Role fetched:", role)
+from user_config.accounts.models import (
+    UserDetailModel,
+)
+# def run():
 
-    # 2️⃣ Create a new user
-    # user = UserModel.objects.create(
-    #     login_id="newlogin123",
-    #     username="New User",
-    #     email="newuser@example.com",
-    #     user_role=role,
-    #     password="securepassword123",  # will be hashed automatically if you use set_password()
-    #     phone_number="9876543211",
-    #     is_superuser=False,
-    #     is_staff=True
-    # )
+# get all pincode from the case,management
+# customer_office_pin_code
+pincodes= CaseManagementCaseModel.objects.all()
 
-    # # Hash password properly
-    # user.set_password("securepassword123")
-    # user.save()
+pincodes[0].customer_office_pin_code
 
-    # # 3️⃣ Create UserDetailModel for this new user
-    # region_instance = RegionConfigurationRegionModel.objects.get(
-    #     id="6851979e-96c2-11f0-8953-b48c9d5559d8"
-    # )
 
-    # detail = UserDetailModel.objects.create(
-    #     user=user,
-    #     blood_group="A+",
-    #     vehicle_number="1234",
-    #     emergency_phone_number="9876543210",
-    #     emergency_contact_relation_name="Brother",
-    #     emergency_contact_relation="Brother"
-    # )
+a=pincodes[0].customer_office_pin_code
 
-    # # If assigned_region is ManyToManyField
-    # detail.assigned_region.set([region_instance])
-    # detail.save()
 
-    # print("User and detail created:", user, detail)
+# ***********************************************
+
+# Q2)fetch all user per pincode working 
+
+
+
+
+user = UserModel.objects.filter(
+    UserDetailModel_user__assigned_pincode__pincode__pincode=a.pincode.pincode
+)
+
+
+
+user
+
+# Q3) get assigned case for that pincode 
+
+case= CaseManagementCaseModel.objects.filter(
+    customer_office_pin_code_pincode_pincode= 413006
+)
+case.count()

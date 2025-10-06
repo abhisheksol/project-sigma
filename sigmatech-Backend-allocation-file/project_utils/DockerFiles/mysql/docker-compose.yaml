@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+  aptagrim_mysql_database:
+    image: mysql:latest
+    restart: always
+    environment:
+      - MYSQL_DATABASE=APTAGRIM_MYSQL
+      - MYSQL_USER=aptagrim
+      - MYSQL_PASSWORD=Abcd.1234
+      - MYSQL_ROOT_PASSWORD=root_password
+    ports:
+      - 9060:3306
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
+# ENGINE=django.db.backends.mysql
+# DB_NAME=APTAGRIM_MYSQL
+# DB_USER=aptagrim
+# DB_PASSWORD=Abcd.1234
+# DB_HOST=aptagrim_mysql_database  # Use the service name from docker-compose
+# DB_PORT=3306
