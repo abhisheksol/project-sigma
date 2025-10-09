@@ -9,25 +9,30 @@ from core_utils.utils.generics.views.generic_views import (
 from rest_framework.response import Response
 
 from store.operations.referal_files.models import ReferalFileModel, FieldOfficerAssignment
-# class referral_file_listing(
-#      CoreGenericPutAPIView,
-#     CoreGenericDeleteAPIView,
-#     CoreGenericListCreateAPIView,
-#     generics.ListCreateAPIView,
-#     generics.GenericAPIView,
-# ):
-#     print("running get_serializer method............")
-#     queryset=FieldOfficerAssignment.objects.all()
 
-#     def get_serializer_class(self):
-#         return {
-#             "GET": RefferralFileListingModelSerializer,
-#         }.get(self.request.method)
+from store.operations.case_management.models import (
+    CaseManagementCaseModel,
+)
+from store.operations.referal_files.v1.serializers import RefferralFileListingModelSerializer
+class referral_file_listing(
+     CoreGenericPutAPIView,
+    CoreGenericDeleteAPIView,
+    CoreGenericListCreateAPIView,
+    generics.ListCreateAPIView,
+    generics.GenericAPIView,
+):
+    print("running get_serializer method............")
+    queryset=CaseManagementCaseModel.objects.all()
+
+    def get_serializer_class(self):
+        return {
+            "GET": RefferralFileListingModelSerializer,
+        }.get(self.request.method)
         
-from rest_framework.generics import ListAPIView
-from store.operations.referal_files.models import FieldOfficerAssignment
-from store.operations.referal_files.v1.serializers import FieldOfficerListingSerializer
+# from rest_framework.generics import ListAPIView
+# from store.operations.referal_files.models import FieldOfficerAssignment
+# from store.operations.referal_files.v1.serializers import FieldOfficerListingSerializer
 
-class referral_file_listing(ListAPIView):
-    queryset = FieldOfficerAssignment.objects.all()
-    serializer_class = FieldOfficerListingSerializer
+# class referral_file_listing(ListAPIView):
+#     queryset = FieldOfficerAssignment.objects.all()
+#     serializer_class = FieldOfficerListingSerializer

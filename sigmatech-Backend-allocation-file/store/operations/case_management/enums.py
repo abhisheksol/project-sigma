@@ -7,7 +7,7 @@ class CaseLifecycleStageEnum(EnumChoices):
     TELECALLER_ALLOCATION = "Telecaller"
     FIELD_OPERATIONS = "Field Operations"
     FLOW = "Flow"
-
+    UNASSIGNED = "UNASSIGNED"
 
 class RiskTypesEnum(EnumChoices):
     CRITICAL = "CRITICAL".capitalize()

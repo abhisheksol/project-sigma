@@ -111,25 +111,25 @@ class AllocationFilePayloadValidator:
             self.logger.debug(f"Loan config validation result: {error}")
             return error
 
-        try:
-            # Fetch the default active template associated with the process/product
-            self.template_instance: ProcessTemplatePreferenceModel = (
-                get_default_process_product_assigned_template_instance(
-                    product_assignment_instance=self.product_assignment_instance
-                )
-            )
+        # try:
+        #     # Fetch the default active template associated with the process/product
+        #     self.template_instance: ProcessTemplatePreferenceModel = (
+        #         get_default_process_product_assigned_template_instance(
+        #             product_assignment_instance=self.product_assignment_instance
+        #         )
+        #     )
 
-        except ProcessTemplatePreferenceModel.DoesNotExist:
-            # Template does not exist or is inactive
-            error: Dict[str, str] = {
-                "error_message": INCORRECT_TEMPLATE_INACTIVE_FOR_PROCESS_ASSIGNED_PRODUCT_ERROR_MESSAGE,
-                "key": "file_url",
-            }
-            self.logger.debug(f"Loan config validation result: {error}")
-            return error
+        # except ProcessTemplatePreferenceModel.DoesNotExist:
+        #     # Template does not exist or is inactive
+        #     error: Dict[str, str] = {
+        #         "error_message": INCORRECT_TEMPLATE_INACTIVE_FOR_PROCESS_ASSIGNED_PRODUCT_ERROR_MESSAGE,
+        #         "key": "file_url",
+        #     }
+        #     self.logger.debug(f"Loan config validation result: {error}")
+        #     return error
 
-        self.logger.debug("Loan config validation passed")
-        return None
+        # self.logger.debug("Loan config validation passed")
+        # return None
 
     def _get_set_of_values(self, field_name: str) -> List:
         """

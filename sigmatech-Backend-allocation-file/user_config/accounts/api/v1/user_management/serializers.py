@@ -12,6 +12,8 @@ from user_config.accounts.api.v1.utils.handlers.user_management_update_user_hand
 from user_config.accounts.api.v1.utils.handlers.user_reassignment_handler import (
     UserManagementUserReAssignmentHandler,
 )
+from store.operations.case_management.models import CaseManagementCaseModel
+from user_config.accounts.models import UserDetailModel
 from user_config.accounts.api.v1.utils.user_table_field_utils import (
     get_user_instance_assigned_area_queryset,
     get_user_instance_assigned_city_queryset,
@@ -30,7 +32,7 @@ from store.configurations.region_config.models import (
 )
 from django.db.models.query import QuerySet
 from core_utils.utils.enums import CoreUtilsStatusEnum
-
+from user_config.accounts.api.v1.user_management.handlerfo import FoAssignmentHandler 
 
 class UserManagementUserCreateModelSerializer(
     CoreGenericSerializerMixin, serializers.ModelSerializer
@@ -373,3 +375,26 @@ class UserManagementUserReassignmentSerializer(
     assignment_data = UserManagementAssignmentSerializer(many=True, required=True)
     queryset = UserModel.objects.all()
     handler_class = UserManagementUserReAssignmentHandler
+
+
+
+
+ 
+class EligibleFOListByCaseSerializer(serializers.ModelSerializer):
+    label = serializers.CharField(source="user.username", read_only=True)
+    user_id = serializers.UUIDField(source="user.id", read_only=True)
+ 
+    class Meta:
+        model = UserDetailModel
+        fields = ["user_id", "label", "profile_picture"]
+
+
+class FoAssignmentSerializer(CoreGenericSerializerMixin, serializers.Serializer):
+    handler_class = FoAssignmentHandler
+
+    case_id = serializers.UUIDField()
+    fo_id = serializers.UUIDField()
+
+    class Meta:
+        model = CaseManagementCaseModel
+        fields = ["case_id", "fo_id"]

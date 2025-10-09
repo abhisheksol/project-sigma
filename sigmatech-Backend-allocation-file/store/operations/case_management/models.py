@@ -2,9 +2,6 @@ import uuid
 from django.db import models
 from core_utils.utils.generics.generic_models import CoreGenericModel
 from store.configurations.loan_config.template_config.enums import SQLDataTypeEnum
-from store.configurations.loan_config.template_config.models import (
-    ProcessTemplateFieldMappingModel,
-)
 from store.operations.allocation_files.models import AllocationFileModel
 from store.operations.referal_files.models import ReferalFileModel
 from store.operations.case_management.enums import (
@@ -21,34 +18,7 @@ from store.configurations.region_config.models import (
     RegionConfigurationCityModel,
     RegionConfigurationPincodeModel,
 )
-
-
-class CaseLifecycleStageModel(CoreGenericModel):
-    """
-    Model to store lifecycle stages for case management.
-    """
-
-    id = models.UUIDField(
-        unique=True,
-        primary_key=True,
-        default=uuid.uuid1,
-        db_column="CASE_LIFE_CYCLE_STAGE_ID",
-        editable=False,
-    )
-    title = models.CharField(
-        max_length=255,
-        choices=CaseLifecycleStageEnum.choices(),
-        db_column="CASE_LIFE_CYCLE_STAGE",
-    )
-
-    class Meta:
-        db_table = "CASE_LIFE_CYCLE_STAGE_TABLE"
-        indexes = [
-            models.Index(fields=["title"], name="idx_stage_title"),
-        ]
-
-    def __str__(self) -> str:
-        return self.title
+from user_config.user_auth.models import UserModel
 
 
 class CaseLifecycleDispositionModel(CoreGenericModel):
@@ -132,17 +102,16 @@ class CaseManagementCaseModel(CoreGenericModel):
     )
     referal_file = models.ForeignKey(
         ReferalFileModel,
-        on_delete=models.CASCADE,
+        on_delete=models.SET_NULL,
         related_name="CaseManagementCaseModel_referal_file",
         db_column="REFERAL_FILE_ID",
         null=True,
         blank=True,
     )
-    status = models.ForeignKey(
-        CaseLifecycleStageModel,
-        on_delete=models.CASCADE,
-        related_name="CaseManagementCaseModel_status",
-        null=True,
+    status = models.CharField(
+        max_length=256,
+        choices=CaseLifecycleStageEnum.choices(),
+        default=CaseLifecycleStageEnum.UNASSIGNED.value,
         blank=True,
         db_column="STATUS_ID",
     )
@@ -161,7 +130,14 @@ class CaseManagementCaseModel(CoreGenericModel):
         null=True,
         blank=True,
     )
-
+    assigned_user_for_field_operations = models.ForeignKey(
+        UserModel,
+        on_delete=models.CASCADE,
+        related_name="CaseManagementCaseModel_assigned_user_for_field_operations",
+        null=True,
+        blank=True,
+        db_column="ASSIGNED_USER_FOR_FIELD_OPERATIONS",
+    )
     risk = models.CharField(
         max_length=32,
         choices=RiskTypesEnum.choices(),
@@ -185,18 +161,6 @@ class CaseManagementCaseModel(CoreGenericModel):
         blank=True,
         null=True,
         db_column="BUCKET_ID",
-    )
-    bucket_name = models.CharField(
-        max_length=255, null=True, blank=True, db_column="BUCKET_NAME"
-    )
-    # ? this is a ref field just for tracking purpose
-    field_mapping = models.ForeignKey(
-        ProcessTemplateFieldMappingModel,
-        on_delete=models.CASCADE,
-        related_name="CaseManagementCaseModel_field_mapping",
-        null=True,
-        blank=True,
-        db_column="TEMPLATE_FIELD_MAPPING_ID",
     )
     # Customer Personal Details
     customer_name = models.CharField(
@@ -472,13 +436,6 @@ class CaseManagementCaseModel(CoreGenericModel):
         null=True,
         db_column="LAST_PURCHASE_AMOUNT",
     )
-
-    # billing_cycle = models.CharField(
-    #     max_length=50,
-    #     blank=True,
-    #     null=True,
-    #     db_column="BILLING_CYCLE",
-    # )
     risk_statement = models.TextField(
         blank=True,
         null=True,
@@ -607,6 +564,28 @@ class CaseManagementCaseModel(CoreGenericModel):
         null=True,
         db_column="RESIDENTIAL_COUNTRY",
     )
+    residential_address_co_ordinate_latitude = models.DecimalField(
+        max_digits=20,
+        max_length=40,
+        decimal_places=20,
+        null=True,
+        blank=True,
+        db_column="RESIDENTIAL_ADDRESS_CO_ORDINATE_LATITUDE",
+    )
+    residential_address_co_ordinate_longitude = models.DecimalField(
+        max_digits=20,
+        max_length=40,
+        decimal_places=20,
+        null=True,
+        blank=True,
+        db_column="RESIDENTIAL_ADDRESS_CO_ORDINATE_LONGITUDE",
+    )
+    residential_address_eloc = models.CharField(
+        max_length=100,
+        db_column="RESIDENTIAL_ADDRESS_ELOC",
+        null=True,
+        blank=True,
+    )
     address_2_type = models.CharField(
         max_length=255,
         blank=True,
@@ -671,6 +650,30 @@ class CaseManagementCaseModel(CoreGenericModel):
         null=True,
         db_column="CUSTOMER_OFFICE_COUNTRY",
     )
+    customer_address_co_ordinate_latitude = models.DecimalField(
+        max_digits=20,
+        max_length=40,
+        decimal_places=20,
+        null=True,
+        blank=True,
+        db_column="CUSTOMER_ADDRESS_CO_ORDINATE_LATITUDE",
+    )
+    customer_address_co_ordinate_longitude = models.DecimalField(
+        max_digits=20,
+        max_length=40,
+        decimal_places=20,
+        null=True,
+        blank=True,
+        db_column="CUSTOMER_ADDRESS_CO_ORDINATE_LONGITUDE",
+    )
+    customer_address_eloc = models.CharField(
+        max_length=100,
+        db_column="CUSTOMER_ADDRESS_ELOC",
+        null=True,
+        blank=True,
+    )
+
+    
 
     class Meta:
         db_table = "CASE_MANAGEMENT_TABLE"

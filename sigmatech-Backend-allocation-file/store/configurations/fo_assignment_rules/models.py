@@ -43,7 +43,7 @@ class ConfigurationFOAssignmentRulesModel(CoreGenericModel):
         default=False, db_column="IS_MAX_CASES_PER_DAY_ENABLED"
     )
     no_of_max_cases_per_day = models.IntegerField(
-        default=15, db_column="NO_OF_MAX_CASES_PER_DAY"
+        default=1, db_column="NO_OF_MAX_CASES_PER_DAY"
     )
 
     is_high_priority_to_top_fos_enabled = models.BooleanField(
