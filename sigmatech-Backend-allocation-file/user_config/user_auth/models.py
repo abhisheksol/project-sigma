@@ -210,3 +210,59 @@ class MobileOTPModel(CoreGenericModel):
 
     class Meta:
         db_table = "MOBILE_OTP_TABLE"
+
+
+from django.db import models
+from core_utils.utils.generics.generic_models import CoreGenericModel
+from user_config.user_auth.models import UserModel
+# ...existing code...
+from enum import Enum
+
+class FoStatusenum(Enum):
+    ON_DUTY = "ON_DUTY"
+    OFF_DUTY = "OFF_DUTY"
+
+    @classmethod
+    def choices(cls):
+        return [(member.value, member.name.replace("_", " ").title()) for member in cls]
+# ...existing code...
+
+ 
+class FoAttendanceModel(CoreGenericModel):
+    fo_user = models.ForeignKey(
+        UserModel,
+        on_delete=models.CASCADE,
+        related_name="attendance_records",
+        db_column="FO_USER_ID",
+    )
+    date = models.DateField(
+        db_column="DATE"
+    )
+    duty_on = models.TimeField(
+        null=True,
+        blank=True,
+        db_column="DUTY_ON",
+    )
+    duty_off = models.TimeField(
+        null=True,
+        blank=True,
+        db_column="DUTY_OFF",
+    )
+ 
+    fo_status = models.CharField(
+        max_length=20,
+        default=FoStatusenum.OFF_DUTY.value,
+        db_column="FO_STATUS",
+        choices=FoStatusenum.choices(),
+    )
+ 
+    class Meta:
+        db_table = "FO_ATTENDANCE_TABLE"
+        indexes = [
+            models.Index(fields=["fo_user"]),
+            models.Index(fields=["date"]),
+        ]
+ 
+    def __str__(self):
+        return f"{self.fo_user.username} - {self.date}"
+ 

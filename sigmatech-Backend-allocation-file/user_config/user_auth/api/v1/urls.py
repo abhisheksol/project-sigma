@@ -44,6 +44,11 @@ authenticate_urlpatterns: List = [
         auth_views.UserManagementMobileOtpVerifyGenericAPIView.as_view(),
         name="UserManagementMobileOtpVerifyGenericAPIView",
     ),
+    path(
+        "fo-attendance-api/",
+        generic_views.FoOperationsAttendanceGetAPIView.as_view(),
+        name="FoOperationsAttendanceGetAPIView",
+    ),
 ]
 
 
