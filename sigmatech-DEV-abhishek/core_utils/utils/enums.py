@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import List
+from typing import List, Optional
 
 
 class EnumChoices(Enum):
@@ -12,6 +12,26 @@ def list_enum_values(enum_cls: Enum) -> List[str]:
     return [e.value for e in enum_cls]
 
 
+def core_utils_list_enum_keys(enum_cls: Enum) -> List[str]:
+    return [e.name for e in enum_cls]
+
+
+def get_enum_value_with_key(enum_class: Enum, key: str) -> Optional[str]:
+    for e in enum_class:
+
+        if str(e.name) == str(key):
+            return e.value
+    return None
+
+
+def get_enum_key_with_value(enum_class: Enum, value: str) -> Optional[str]:
+    for e in enum_class:
+
+        if str(e.value) == str(value):
+            return e.name
+    return None
+
+
 class CoreUtilsStatusEnum(EnumChoices):
     ACTIVATED = "ACTIVATED"
     DEACTIVATED = "DEACTIVATED"
@@ -19,12 +39,6 @@ class CoreUtilsStatusEnum(EnumChoices):
 
 def status_list_enum_values() -> List[str]:
     return list_enum_values(enum_cls=CoreUtilsStatusEnum)
-
-
-class AccountsApplicationFlowEnum(EnumChoices):
-    TRU_OPERATE = "TRU_OPERATE"
-    TRU_PLANT = "TRU_PLANT"
-    APPLICATION = "APPLICATION"
 
 
 class AuthOtpTypeEnum(EnumChoices):
@@ -39,7 +53,7 @@ class AccountsGenderEnum(EnumChoices):
 
 
 class APIMethodsEnum(EnumChoices):
-    GET = "GET"
-    POST = "POST"
-    PUT = "PUT"
-    DELETE = "DELETE"
+    GET = "Get"
+    POST = "Post"
+    PUT = "Put"
+    DELETE = "Delete"

@@ -77,8 +77,7 @@ class LoanConfigurationsMonthlyCycleModel(CoreGenericModel):
         db_column="CYCLE_ID",
         default=uuid.uuid4,
     )
-    title = models.CharField(
-        max_length=100,
+    title = models.IntegerField(
         unique=True,
         db_column="CYCLE_NAME",
     )

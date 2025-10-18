@@ -46,7 +46,7 @@ from rest_framework import generics, filters, permissions
 from django_filters.rest_framework import DjangoFilterBackend
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
-
+from django.db.models import Count
 
 # ----------------------------------- Region Configuration View ----------------------------------
 
@@ -186,7 +186,8 @@ class RegionConfigurationPincodeGenericAPIView(
     success_message = PINCODE_SUCCESS_MESSAGE
 
     def get_queryset(self):
-        return RegionConfigurationPincodeModel.objects.with_details()
+        qs = RegionConfigurationPincodeModel.objects.with_details()
+        return qs.annotate(assigned_fo_count=Count("UserDetailModel_assigned_pincode"))
 
     def get_serializer_class(self):
 

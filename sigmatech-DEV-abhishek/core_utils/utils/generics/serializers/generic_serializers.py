@@ -21,8 +21,8 @@ class CoreGenericGetQuerysetSerializer:
             if hasattr(self, "queryset") and self.queryset is not None:
                 return self.queryset.all()
             return self.Meta.model.objects.all()
-        except Exception:
-            raise Exception("Queryset is not defined for the serializer.")
+        except:
+            print("Queryset is not defined for the serializer.")
 
 
 class CoreGenericMultipleObjectDeleteSerializer(CoreGenericGetQuerysetSerializer):

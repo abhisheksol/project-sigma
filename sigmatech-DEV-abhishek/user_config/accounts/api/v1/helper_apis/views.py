@@ -39,6 +39,7 @@ from store.configurations.region_config.models import (
     RegionConfigurationZoneModel,
 )
 from .serializers import (
+    FolistingHelperSerializer,
     ProductAssignmentHelperSerializer,
     UserManagementUserAreaHelperListModelSerializer,
     UserManagementUserCityHelperListModelSerializer,
@@ -49,7 +50,7 @@ from .serializers import (
     UserRoleHelperListSerializer,
 )
 from rest_framework import generics, permissions
-from typing import Dict
+from typing import Dict, Optional
 from django.db.models.query import QuerySet
 
 
@@ -275,6 +276,7 @@ class UserManagementUserCityHelperListAPIView(
                 if params.get("user_id")
                 else self.request.user
             ),
+            zone=str(params.get("zone")).split(",") if params.get("zone") else [],
         )
 
     def get_serializer_class(self):
@@ -319,6 +321,12 @@ class UserManagementUserPincodeHelperListAPIView(
             QuerySet: Filtered queryset of pincodes assigned to the user, optionally restricted by city.
         """
         params: Dict = self.request.GET.dict()
+        search: Optional[str] = params.get("search")
+        search_filter_set: Optional[Dict[str, str]] = {}
+        if search:
+            search_filter_set: Optional[Dict[str, str]] = {
+                "pincode__pincode__icontains": search
+            }
         if params.get("city"):
             return get_user_assigned_pincode_queryset(
                 queryset=self.queryset,
@@ -328,8 +336,8 @@ class UserManagementUserPincodeHelperListAPIView(
                     if params.get("user_id")
                     else self.request.user
                 ),
-            )
-        return self.queryset.none()
+            ).filter(**search_filter_set)
+        return self.queryset.all().filter(**search_filter_set)
 
     def get_serializer_class(self):
         """
@@ -373,6 +381,10 @@ class UserManagementUserAreaHelperListAPIView(
             QuerySet: Filtered queryset of areas assigned to the user, optionally restricted by pincode.
         """
         params: Dict = self.request.GET.dict()
+        search: Optional[str] = params.get("search")
+        search_filter_set: Optional[Dict[str, str]] = {}
+        if search:
+            search_filter_set: Optional[Dict[str, str]] = {"title__icontains": search}
         if params.get("pincode"):
             return get_user_assigned_area_queryset(
                 queryset=self.queryset,
@@ -382,8 +394,9 @@ class UserManagementUserAreaHelperListAPIView(
                     if params.get("user_id")
                     else self.request.user
                 ),
-            )
-        return self.queryset.none()
+            ).filter(**search_filter_set)
+
+        return self.queryset.all().filter(**search_filter_set)
 
     def get_serializer_class(self):
         """
@@ -395,9 +408,6 @@ class UserManagementUserAreaHelperListAPIView(
         return {
             "GET": UserManagementUserAreaHelperListModelSerializer,
         }.get(self.request.method)
-
-
-# ! ------------------------------- Abhishek -------------------------------
 
 
 class ProductAssignmentHelperAPIView(CoreGenericGetAPIView, generics.GenericAPIView):
@@ -416,4 +426,23 @@ class ProductAssignmentHelperAPIView(CoreGenericGetAPIView, generics.GenericAPIV
     def get_serializer_class(self):
         return {
             "GET": ProductAssignmentHelperSerializer,
+        }.get(self.request.method)
+
+
+
+class FolistingHelperAPIView(
+    CoreGenericGetAPIView, generics.GenericAPIView
+):
+    queryset = UserModel.objects.all()
+    authentication_classes = [CustomAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        return self.queryset.all()
+
+
+    def get_serializer_class(self):
+
+        return {
+            "GET": FolistingHelperSerializer,
         }.get(self.request.method)

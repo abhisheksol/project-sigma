@@ -35,16 +35,15 @@ authenticate_urlpatterns: List = [
         name="UserAuthUserModelResetPasswordAPIView",
     ),
     path(
-        "user-otp-generate-api/",
-        auth_views.UserManagementMobileOtpGenericAPIView.as_view(),
-        name="UserManagementMobileOtpGenericAPIView",
+        "forget-password-mobile-api/",
+        auth_views.UserAuthUserModelForgotPasswordMobileAPIView.as_view(),
+        name="UserAuthUserModelForgotPasswordMobileAPIView",
     ),
-    path(
-        "user-otp-verify-api/",
-        auth_views.UserManagementMobileOtpVerifyGenericAPIView.as_view(),
-        name="UserManagementMobileOtpVerifyGenericAPIView",
-    ),
-
+    # path(
+    #     "reset-password-mobile-api/",
+    #     auth_views.UserAuthUserModelResetPasswordMobileAPIView.as_view(),
+    #     name="UserAuthUserModelResetPasswordMobileAPIView",
+    # ),
 ]
 
 

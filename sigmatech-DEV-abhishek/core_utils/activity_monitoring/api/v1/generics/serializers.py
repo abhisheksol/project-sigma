@@ -53,7 +53,7 @@ class ActivityMonitoringLinkedEntityModelSerializer(serializers.ModelSerializer)
 
 class ActivityTypeHelperListModelSerializer(serializers.ModelSerializer):
     value = serializers.CharField(source="id")
-    label = serializers.CharField(source="title")
+    label = serializers.CharField(source="lable")
 
     class Meta:
         model = ActivityTypeModel

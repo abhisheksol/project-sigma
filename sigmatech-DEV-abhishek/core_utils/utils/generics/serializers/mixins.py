@@ -35,7 +35,7 @@ class CoreGenericSerializerMixin(CoreGenericGetQuerysetSerializer):
         Returns:
             Type: Initialized handler instance with context.
         """
-        self.custom_validator = self.handler_class(
+        self.custom_validator: object = self.handler_class(
             request=self.context["request"],
             queryset=self.get_queryset(),
             context=self.context,
@@ -156,7 +156,9 @@ class CoreGenericBaseHandler(CoreGenericCrudHandlerUtils):
         """
         return self.request.parser_context["kwargs"]
 
-    def required_field_validation(self) -> Optional[Dict[str, str]]:
+    def required_field_validation(
+        self, required_fields: Dict[str, str]
+    ) -> Optional[Dict[str, str]]:
         """
         Validate that all required fields are provided.
 
@@ -164,14 +166,15 @@ class CoreGenericBaseHandler(CoreGenericCrudHandlerUtils):
             Optional[Dict[str, str]]: Error message with the missing key if validation fails,
                                       None otherwise.
         """
-        for key in self.required_fields.keys():
+        for key in required_fields.keys():
             if not self.data.get(key):
                 return {
                     "error_message": self.required_fields[key],
                     "key": key,
                 }
+        return {}
 
-    def is_valid(
+    def is_validation_list_of_methods_valid(
         self, validation_methods: Optional[Dict[Callable, Dict]]
     ) -> Optional[Dict[str, str]]:
         """
@@ -180,7 +183,9 @@ class CoreGenericBaseHandler(CoreGenericCrudHandlerUtils):
         Returns:
              -> Optional[Dict[str, str]]: Dict if error exists
         """
-        for method, args in enumerate(validation_methods()):
-            result: Optional[Dict[str, str]] = method(**args)
+        for method in validation_methods:
+            print("method", method)
+            result: Optional[Dict[str, str]] = method()
             if result:
                 return result
+        return {}

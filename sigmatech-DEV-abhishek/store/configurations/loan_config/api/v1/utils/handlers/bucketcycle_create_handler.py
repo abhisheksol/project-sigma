@@ -86,6 +86,7 @@ class BucketCreateHandler(CoreGenericBaseHandler):
 
             # Perform create using shared utility
             instance: LoanConfigurationsBucketModel = self.queryset.create(**data)
+            self.set_toast_message_value(value=f'"{instance.title}')
             self.update_core_generic_created_by(instance=instance)
 
             self.context["logger"].info(

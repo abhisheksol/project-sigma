@@ -6,7 +6,7 @@ from core_utils.utils.generics.serializers.mixins import CoreGenericSerializerMi
 from user_config.accounts.api.v1.utils.handlers.user_role_helper_list_handler import (
     UserRoleHelperListHanlder,
 )
-from user_config.user_auth.models import UserRoleModel
+from user_config.user_auth.models import UserModel, UserRoleModel
 from django.contrib.auth import get_user_model
 from store.configurations.region_config.models import (
     RegionConfigurationAreaModel,
@@ -142,9 +142,21 @@ class ProductAssignmentHelperSerializer(
     def get_label(self, obj):
         return f"{obj.process.title}-{obj.product.title}"
 
-    def get_disabled(self, obj):
-        return not (
+    def get_value(self, obj):
+        return (
             obj.process.status == CoreUtilsStatusEnum.ACTIVATED.value
             and obj.product.status == CoreUtilsStatusEnum.ACTIVATED.value
             and obj.status == CoreUtilsStatusEnum.ACTIVATED.value
         )
+
+
+
+class FolistingHelperSerializer(
+    CoreGenericHelperAPISerializerMethodField, serializers.ModelSerializer
+):
+   
+    label= serializers.CharField(source="username", allow_blank=True, default="")
+    value= serializers.UUIDField(source="id")
+    class Meta:
+        model = UserModel
+        fields = ["label", "value", "status"]

@@ -28,7 +28,6 @@ class ProcessCreateHandler(CoreGenericBaseHandler):
     _method: str = ActivityMonitoringMethodTypeEnumChoices.CREATE.value
 
     def validate(self):
-        print("================>")
         """
         Validates the incoming data for creating a LoanConfigurationsProcessModel.
 

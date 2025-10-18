@@ -44,3 +44,17 @@ USER_HAS_REPORTING_USERS_DYNAMIC_ERROR_MESSAGE = {
     "area_id": "Cannot update area because the user has reporting users associated.",
     "status": "Cannot update status because the user has reporting users associated.",
 }
+
+INVALID_PRODUCT_ASSIGNMENT_ERROR_MESSAGE = (
+    "Product is not assigned to reporting user or invalid product"
+)
+
+
+INVALID_PRODUCT_ASSIGNMENT_ERROR_KEY = "product_assignment_id"
+
+
+INVALID_PRODUCT_UNASSIGNMENT_ERROR_KEY = "product_unassignment_id"
+
+INVALID_PRODUCT_UNASSIGNMENT_ERROR_MESSAGE = (
+    "Cannot unassign product because a subordinate has it assigned"
+)

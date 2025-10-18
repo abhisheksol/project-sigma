@@ -12,6 +12,9 @@ from store.configurations.region_config.models import (
     RegionConfigurationCityModel,
     RegionConfigurationPincodeModel,
 )
+from store.configurations.region_config.api.v1.helper_apis.dependence import (
+    can_edit_pincode,
+)
 
 
 class RegionConfigurationPincodeUpdateHandler(RegionConfigurationPincodeCreateHandler):
@@ -26,6 +29,16 @@ class RegionConfigurationPincodeUpdateHandler(RegionConfigurationPincodeCreateHa
         # ID NOT FOUND
         if not self.queryset.filter(id=self.data["id"]).exists():
             return self.set_error_message(PINCODE_ID_NOT_FOUND, key="id")
+
+        # getting pincode instance
+
+        if self.data.get("id"):
+            try:
+                self.instance: RegionConfigurationPincodeModel = self.queryset.get(
+                    id=self.data["id"]
+                )
+            except RegionConfigurationPincodeModel.DoesNotExist:
+                return self.set_error_message(PINCODE_ID_NOT_FOUND, key="id")
 
         if "city" in self.data:
             try:
@@ -49,6 +62,12 @@ class RegionConfigurationPincodeUpdateHandler(RegionConfigurationPincodeCreateHa
             enum_cls=CoreUtilsStatusEnum
         ):
             return self.set_error_message("Invalid status", key="status")
+
+        # -------------------------------------------------
+
+        error = can_edit_pincode(self.instance)
+        if error:
+            return self.set_error_message(error, key="status")
 
     def create(self):
         with transaction.atomic():

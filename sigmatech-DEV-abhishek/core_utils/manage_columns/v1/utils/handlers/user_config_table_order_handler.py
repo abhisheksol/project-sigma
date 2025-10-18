@@ -121,7 +121,12 @@ class UserConfigManageColumnHandler(CoreGenericBaseHandler):
         self.logger.debug(
             f"Serializer keys for {self.data['feature']}: {serializer_keys}"
         )
-
+        print(
+            "set(self.active_title + self.in_active_title)",
+            set(self.active_title + self.in_active_title),
+        )
+        print(set(serializer_keys))
+        print(set(serializer_keys) - set(self.active_title + self.in_active_title))
         # Step 6: Ensure all serializer fields are accounted for
         if set(self.active_title + self.in_active_title) != set(serializer_keys):
             self.logger.error(

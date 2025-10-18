@@ -29,7 +29,7 @@ class ProductFilterSet(django_filters.FilterSet):
 
 
 class MonthlyCycleFilterSet(django_filters.FilterSet):
-    title = django_filters.CharFilter(field_name="title", lookup_expr="icontains")
+    title = django_filters.NumberFilter(field_name="title", lookup_expr="exact")
 
     class Meta:
         model = LoanConfigurationsMonthlyCycleModel

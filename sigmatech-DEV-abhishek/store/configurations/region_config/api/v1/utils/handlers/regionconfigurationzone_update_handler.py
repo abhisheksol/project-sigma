@@ -14,13 +14,16 @@ from store.configurations.region_config.models import (
     RegionConfigurationRegionModel,
     RegionConfigurationZoneModel,
 )
+from store.configurations.region_config.api.v1.helper_apis.dependence import (
+    can_edit_zone,
+)
 
 
 class RegionConfigurationZoneUpdateHandler(CoreGenericBaseHandler):
     region_instance: Optional[RegionConfigurationRegionModel] = None
     instance: RegionConfigurationZoneModel
 
-    _activity_type: str = "CONFIGURATION_ZONE_ACTIVITY_LOG"
+    _activity_type: str = "CONFIGURATION_STATE_ACTIVITY_LOG"
     _method: str = ActivityMonitoringMethodTypeEnumChoices.UPDATE.value
 
     def validate(self):
@@ -49,6 +52,12 @@ class RegionConfigurationZoneUpdateHandler(CoreGenericBaseHandler):
             enum_cls=CoreUtilsStatusEnum
         ):
             return self.set_error_message(INVALID_STATUS_ERROR_MESSAGE, key="status")
+
+        # -------------------------------------------------
+
+        error = can_edit_zone(self.instance)
+        if error:
+            return self.set_error_message(error, key="status")
 
     def create(self):
 

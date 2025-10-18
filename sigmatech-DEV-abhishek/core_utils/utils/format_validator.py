@@ -94,3 +94,22 @@ def is_format_validator_url(url: str) -> bool:
         r"(\/[a-zA-Z0-9@:%_\+.~#?&//=~-]*)?$"  # path/query/etc.
     )
     return re.match(pattern, url) is not None
+
+
+def is_format_validator_phone(phone: str) -> bool:
+    """
+    Validates whether the provided phone number is in correct format.
+
+    Rules:
+        - May start with +91 or 0 (optional)
+        - Must contain exactly 10 digits
+        - Allows spaces or hyphens as separators
+
+    Args:
+        phone (str): The phone number to validate.
+
+    Returns:
+        bool: True if valid, False otherwise.
+    """
+    pattern: str = r"^(?:\+91|0)?[-.\s]?\d{10}$"
+    return re.match(pattern, phone) is not None

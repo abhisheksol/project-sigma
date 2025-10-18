@@ -3,6 +3,7 @@ from core_utils.activity_monitoring.enums import ActivityMonitoringMethodTypeEnu
 from core_utils.utils.generics.serializers.mixins import CoreGenericBaseHandler
 from store.configurations.loan_config.api.v1.utils.constants import (
     MONTHLY_CYCLE_TITLE_ALREADY_EXISTS_ERROR_MESSAGE,
+    MONTHLY_CYCLE_TITLE_INVALID_ERROR_MESSAGE,
     MONTHLY_CYCLE_TITLE_REQUIRED_ERROR_MESSAGE,
 )
 from store.configurations.loan_config.models import LoanConfigurationsMonthlyCycleModel
@@ -31,6 +32,13 @@ class MonthlyCycleCreateHandler(CoreGenericBaseHandler):
         Returns:
             - Sets an error message via `self.set_error_message()` if validation fails.
         """
+        # check the No should be 1 -30 and 99 only
+        title = self.data.get("title")
+
+        if not isinstance(title, int) or (title not in range(1, 31) and title != 99):
+            return self.set_error_message(
+                MONTHLY_CYCLE_TITLE_INVALID_ERROR_MESSAGE, key="title"
+            )
 
         if not self.data.get("title"):
             return self.set_error_message(
@@ -38,7 +46,7 @@ class MonthlyCycleCreateHandler(CoreGenericBaseHandler):
             )
 
         # Check if a Monthly Cycle with the same title already exists
-        if self.queryset.filter(title__iexact=self.data.get("title")).exists():
+        if self.queryset.filter(title=self.data.get("title")).exists():
             return self.set_error_message(
                 MONTHLY_CYCLE_TITLE_ALREADY_EXISTS_ERROR_MESSAGE, key="title"
             )
@@ -62,6 +70,7 @@ class MonthlyCycleCreateHandler(CoreGenericBaseHandler):
                 description=self.data.get("description"),
                 # Note: status is not saved here — you may add it if needed
             )
+            self.set_toast_message_value(value=str(instance.title))
             self.update_core_generic_created_by(instance=instance)
 
             self.context["logger"].info(

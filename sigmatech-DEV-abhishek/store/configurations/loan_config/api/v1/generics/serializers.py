@@ -171,6 +171,8 @@ class LoanConfigurationsMonthlyCycleCreateModelSerializer(
 ):
     handler_class = MonthlyCycleCreateHandler
 
+    title = serializers.IntegerField(required=True)
+
     class Meta:
         model = LoanConfigurationsMonthlyCycleModel
         fields = [

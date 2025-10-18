@@ -142,18 +142,18 @@ class CoreGenericUtils:
         if len(payload.keys()) == 2 and "status" in payload.keys():
             if payload["status"] == CoreUtilsStatusEnum.ACTIVATED.value:
                 success_message: str = (
-                    self.toast_message_value + " " + "activated successfully"
+                    str(self.toast_message_value) + " " + "activated successfully"
                 )
                 status: str = CoreUtilsStatusEnum.ACTIVATED.value
             if payload["status"] == CoreUtilsStatusEnum.DEACTIVATED.value:
                 success_message: str = (
-                    self.toast_message_value + " " + "inactivated successfully"
+                    str(self.toast_message_value) + " " + "inactivated successfully"
                 )
                 status: str = CoreUtilsStatusEnum.DEACTIVATED.value
 
         # Prefix toast message if it exists
         elif isinstance(success_message, str):
-            success_message: str = self.toast_message_value + " " + success_message
+            success_message: str = str(self.toast_message_value) + " " + success_message
 
         # Store message in activity log
         self.add_toast_message_to_activity_log(

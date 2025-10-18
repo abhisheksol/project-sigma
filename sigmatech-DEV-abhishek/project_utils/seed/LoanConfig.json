@@ -1,0 +1,210 @@
+[
+  {
+    "model": "loan_config.loanconfigurationsprocessmodel",
+    "pk": "74b4db60-3fd1-4447-b92a-ff25d144433c",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:51:32.368Z",
+      "core_generic_updated_at": "2025-09-25T08:51:32.370Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "ICICI Bank",
+      "logo": null,
+      "contact_person_name": "Karthik",
+      "contact_person_email": "suresh.kumar@test.com",
+      "contact_person_phone_number": "9885678905"
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsprocessmodel",
+    "pk": "a46774a3-a400-403d-8b33-3dd1996cadfd",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T06:24:03.917Z",
+      "core_generic_updated_at": "2025-09-25T06:24:03.920Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Axis Bank",
+      "logo": null,
+      "contact_person_name": "John smith",
+      "contact_person_email": "john@axisbank.com",
+      "contact_person_phone_number": "9874563210"
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsprocessmodel",
+    "pk": "af4ef705-9369-4b09-9db8-d7dabd2e2d61",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:52:51.408Z",
+      "core_generic_updated_at": "2025-09-25T08:52:51.410Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "HDFC",
+      "logo": null,
+      "contact_person_name": "Vijay",
+      "contact_person_email": "Rohitkumar@gmail.com",
+      "contact_person_phone_number": "9705705262"
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsprocessmodel",
+    "pk": "ca6c6c7c-0cd1-45d0-b439-9422ea3b423f",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-10-07T07:02:21.337Z",
+      "core_generic_updated_at": "2025-10-07T07:02:21.341Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "SBI",
+      "logo": null,
+      "contact_person_name": "Abhilash",
+      "contact_person_email": "ablis3h@gmail.com",
+      "contact_person_phone_number": "2345425467"
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsproductsmodel",
+    "pk": "711db6f6-d533-4a18-84d1-65a8b00aed0c",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-22T12:16:59.591Z",
+      "core_generic_updated_at": "2025-09-22T12:16:59.591Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Two Wheeler",
+      "description": null
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsproductsmodel",
+    "pk": "a659927b-5e43-4156-b28b-4a44df7e9c12",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-22T12:17:03.981Z",
+      "core_generic_updated_at": "2025-09-22T12:17:03.981Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Personal Loan",
+      "description": null
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsproductsmodel",
+    "pk": "eb3176f9-1b4d-4ccd-aab0-7f65ec32a7dc",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-22T12:16:55.247Z",
+      "core_generic_updated_at": "2025-09-22T12:16:55.247Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Credit Card",
+      "description": null
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsproductassignmentmodel",
+    "pk": "01e6b658-75d6-456e-af05-2e9d55b86626",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:53:24.332Z",
+      "core_generic_updated_at": "2025-09-25T08:53:24.334Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "process": "af4ef705-9369-4b09-9db8-d7dabd2e2d61",
+      "product": "711db6f6-d533-4a18-84d1-65a8b00aed0c",
+      "min_due_percentage": 78.0,
+      "refer_back_percentage": 80.0
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsproductassignmentmodel",
+    "pk": "01e9d27f-fcb3-4eda-9272-341a06377bbf",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:53:09.793Z",
+      "core_generic_updated_at": "2025-09-25T08:53:09.795Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "process": "af4ef705-9369-4b09-9db8-d7dabd2e2d61",
+      "product": "a659927b-5e43-4156-b28b-4a44df7e9c12",
+      "min_due_percentage": 10.0,
+      "refer_back_percentage": 1.0
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsproductassignmentmodel",
+    "pk": "04555b5c-977c-40b3-8567-aa01eccd81d6",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:51:51.530Z",
+      "core_generic_updated_at": "2025-09-25T08:51:51.532Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "process": "74b4db60-3fd1-4447-b92a-ff25d144433c",
+      "product": "eb3176f9-1b4d-4ccd-aab0-7f65ec32a7dc",
+      "min_due_percentage": 10.0,
+      "refer_back_percentage": 5.0
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsproductassignmentmodel",
+    "pk": "21438996-a9b2-4da1-ad43-1f1bb611373c",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T06:24:25.602Z",
+      "core_generic_updated_at": "2025-09-25T06:24:25.604Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "process": "a46774a3-a400-403d-8b33-3dd1996cadfd",
+      "product": "711db6f6-d533-4a18-84d1-65a8b00aed0c",
+      "min_due_percentage": 2.0,
+      "refer_back_percentage": 2.0
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsproductassignmentmodel",
+    "pk": "4376f7f7-e0cb-420c-9581-4e22e665e51c",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T06:24:20.997Z",
+      "core_generic_updated_at": "2025-09-25T06:24:21.000Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "process": "a46774a3-a400-403d-8b33-3dd1996cadfd",
+      "product": "a659927b-5e43-4156-b28b-4a44df7e9c12",
+      "min_due_percentage": 2.0,
+      "refer_back_percentage": 2.0
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsproductassignmentmodel",
+    "pk": "9b6878fa-8278-4b8e-811e-7562d71d157a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T06:24:15.699Z",
+      "core_generic_updated_at": "2025-09-25T06:24:15.701Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "process": "a46774a3-a400-403d-8b33-3dd1996cadfd",
+      "product": "eb3176f9-1b4d-4ccd-aab0-7f65ec32a7dc",
+      "min_due_percentage": 1.0,
+      "refer_back_percentage": 1.0
+    }
+  },
+  {
+    "model": "loan_config.loanconfigurationsproductassignmentmodel",
+    "pk": "eb0c00dc-6541-40a8-a511-b896bd2c57fa",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:51:58.964Z",
+      "core_generic_updated_at": "2025-09-25T08:51:58.966Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "process": "74b4db60-3fd1-4447-b92a-ff25d144433c",
+      "product": "711db6f6-d533-4a18-84d1-65a8b00aed0c",
+      "min_due_percentage": 5.0,
+      "refer_back_percentage": 5.0
+    }
+  }
+]

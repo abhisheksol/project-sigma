@@ -1,0 +1,1417 @@
+[
+  {
+    "model": "region_config.regionconfigurationregionmodel",
+    "pk": "37263594-99df-11f0-b320-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T07:14:03.065Z",
+      "core_generic_updated_at": "2025-09-25T07:14:03.070Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "North Region",
+      "description": "The North Region represents the geographical area covering northern states/cities"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationregionmodel",
+    "pk": "487dd80a-99df-11f0-8e73-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T07:14:32.172Z",
+      "core_generic_updated_at": "2025-09-25T07:14:32.175Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "South Region",
+      "description": "The South Region represents the geographical area covering Southern states/cities"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationregionmodel",
+    "pk": "611d2816-99df-11f0-a305-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T07:15:13.454Z",
+      "core_generic_updated_at": "2025-09-25T07:15:13.456Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "East Region",
+      "description": "The East Region represents the geographical area covering Eastern states/cities"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationregionmodel",
+    "pk": "76c0ecfd-99df-11f0-b17c-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T07:15:49.759Z",
+      "core_generic_updated_at": "2025-09-25T07:15:49.761Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "West Region",
+      "description": "The West Region represents the geographical area covering Western states/cities"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "12beedec-99e0-11f0-8ac0-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T07:20:11.471Z",
+      "core_generic_updated_at": "2025-09-25T07:23:54.992Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Maharashtra",
+      "region": "37263594-99df-11f0-b320-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "12d7eb28-9af4-11f0-bc41-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-26T16:15:52.732Z",
+      "core_generic_updated_at": "2025-09-26T16:16:03.312Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Haryana",
+      "region": "37263594-99df-11f0-b320-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "195de157-a293-11f0-9763-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-10-06T09:01:51.796Z",
+      "core_generic_updated_at": "2025-10-06T09:02:15.949Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Goa",
+      "region": "76c0ecfd-99df-11f0-b17c-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "26b33c18-99ea-11f0-964c-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:32:19.916Z",
+      "core_generic_updated_at": "2025-09-25T08:32:19.917Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Andhra Pradesh",
+      "region": "487dd80a-99df-11f0-8e73-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "2e6bf68b-99ea-11f0-b2da-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:32:32.871Z",
+      "core_generic_updated_at": "2025-09-25T08:32:32.872Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Uttar Pradesh",
+      "region": "37263594-99df-11f0-b320-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "5105f4d5-99ea-11f0-9b9f-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:33:30.922Z",
+      "core_generic_updated_at": "2025-09-26T16:14:35.476Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Jharkhand",
+      "region": "611d2816-99df-11f0-a305-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "6933df00-99ec-11f0-b9f6-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:48:30.482Z",
+      "core_generic_updated_at": "2025-09-29T12:18:43.609Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Rajasthan",
+      "region": "76c0ecfd-99df-11f0-b17c-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "b83096cb-99e0-11f0-8587-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T07:24:49.040Z",
+      "core_generic_updated_at": "2025-09-25T07:24:49.042Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Telangana",
+      "region": "487dd80a-99df-11f0-8e73-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "be9afe33-99e0-11f0-8a1f-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T07:24:59.803Z",
+      "core_generic_updated_at": "2025-09-25T07:24:59.805Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Gujarat",
+      "region": "76c0ecfd-99df-11f0-b17c-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "df9b1050-99e9-11f0-a064-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:30:20.639Z",
+      "core_generic_updated_at": "2025-09-25T08:53:52.402Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Karnataka",
+      "region": "487dd80a-99df-11f0-8e73-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationzonemodel",
+    "pk": "f5e36f2d-99e0-11f0-bbb7-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T07:26:32.553Z",
+      "core_generic_updated_at": "2025-09-25T07:26:32.555Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Arunachal Pradesh",
+      "region": "611d2816-99df-11f0-a305-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "4b80f4f5-99f0-11f0-ba2a-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:16:18.643Z",
+      "core_generic_updated_at": "2025-09-25T09:16:18.645Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Bengaluru (Bangalore)",
+      "zone": "df9b1050-99e9-11f0-a064-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "51f6c240-99f0-11f0-b5b0-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:16:29.481Z",
+      "core_generic_updated_at": "2025-09-25T09:16:29.483Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Mysuru (Mysore)",
+      "zone": "df9b1050-99e9-11f0-a064-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "5aeffcad-99e1-11f0-8ab6-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T07:29:22.085Z",
+      "core_generic_updated_at": "2025-09-26T07:25:41.182Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Mumbai",
+      "zone": "12beedec-99e0-11f0-8ac0-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "a5a71a4f-9aa7-11f0-9008-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-26T07:08:47.789Z",
+      "core_generic_updated_at": "2025-09-26T07:08:47.791Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Lucknow",
+      "zone": "2e6bf68b-99ea-11f0-b2da-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "b3bd5e37-9aa7-11f0-b371-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-26T07:09:11.423Z",
+      "core_generic_updated_at": "2025-09-26T07:09:11.425Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Varanasi",
+      "zone": "2e6bf68b-99ea-11f0-b2da-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "b7ee1211-99ed-11f0-ae41-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:57:52.061Z",
+      "core_generic_updated_at": "2025-09-25T08:57:52.064Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Hyderabad",
+      "zone": "b83096cb-99e0-11f0-8587-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "bccc1242-9aa7-11f0-8d57-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-26T07:09:26.619Z",
+      "core_generic_updated_at": "2025-09-26T07:09:26.621Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Pune",
+      "zone": "12beedec-99e0-11f0-8ac0-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "bf89a329-99ed-11f0-96e8-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:58:04.825Z",
+      "core_generic_updated_at": "2025-09-26T07:25:49.742Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Karimnagar",
+      "zone": "b83096cb-99e0-11f0-8587-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "c53d91bd-9aa7-11f0-8546-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-26T07:09:40.784Z",
+      "core_generic_updated_at": "2025-09-26T07:09:40.786Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Chhatrapati Sambhajinagar",
+      "zone": "12beedec-99e0-11f0-8ac0-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "c75308fe-99ed-11f0-9f5e-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:58:17.889Z",
+      "core_generic_updated_at": "2025-09-25T08:58:17.891Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Warangal Urban",
+      "zone": "b83096cb-99e0-11f0-8587-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "ce67960a-99ed-11f0-be3a-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:58:29.768Z",
+      "core_generic_updated_at": "2025-09-25T08:58:29.769Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Nalgonda",
+      "zone": "b83096cb-99e0-11f0-8587-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "e2d0aa5f-99ed-11f0-8b57-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:59:04.011Z",
+      "core_generic_updated_at": "2025-09-25T08:59:04.013Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Khammam",
+      "zone": "b83096cb-99e0-11f0-8587-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationcitymodel",
+    "pk": "e995c84e-9aa7-11f0-9c46-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-26T07:10:41.761Z",
+      "core_generic_updated_at": "2025-09-29T06:41:19.479Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "city_name": "Nagpurr",
+      "zone": "12beedec-99e0-11f0-8ac0-0200d830ba7a",
+      "description": ""
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "2283efb7-99ee-11f0-850f-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:00:50.899Z",
+      "core_generic_updated_at": "2025-09-25T09:00:50.899Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 11515,
+      "city": "bf89a329-99ed-11f0-96e8-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "2286dc2c-99ee-11f0-9eda-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:00:50.901Z",
+      "core_generic_updated_at": "2025-09-25T09:00:50.901Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 10457,
+      "city": "bf89a329-99ed-11f0-96e8-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "2286f4c1-99ee-11f0-9b3b-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:00:50.902Z",
+      "core_generic_updated_at": "2025-09-25T09:00:50.902Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 732,
+      "city": "bf89a329-99ed-11f0-96e8-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "22870b4c-99ee-11f0-819e-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:00:50.902Z",
+      "core_generic_updated_at": "2025-09-25T09:00:50.902Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 19119,
+      "city": "bf89a329-99ed-11f0-96e8-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "22872157-99ee-11f0-a1dc-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:00:50.903Z",
+      "core_generic_updated_at": "2025-09-25T09:00:50.905Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 573,
+      "city": "bf89a329-99ed-11f0-96e8-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "8259ea3e-99ee-11f0-bb4c-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:03:31.668Z",
+      "core_generic_updated_at": "2025-09-25T09:03:31.668Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 10449,
+      "city": "c75308fe-99ed-11f0-9f5e-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "825a1fc8-99ee-11f0-baa3-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:03:31.669Z",
+      "core_generic_updated_at": "2025-09-25T09:03:31.669Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 333,
+      "city": "c75308fe-99ed-11f0-9f5e-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "825a3a2a-99ee-11f0-87d1-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:03:31.670Z",
+      "core_generic_updated_at": "2025-09-25T09:03:31.670Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 2212,
+      "city": "c75308fe-99ed-11f0-9f5e-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "825a4e1d-99ee-11f0-9272-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:03:31.670Z",
+      "core_generic_updated_at": "2025-09-25T09:03:31.672Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 10479,
+      "city": "c75308fe-99ed-11f0-9f5e-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "a3041b85-99ee-11f0-846b-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:04:26.470Z",
+      "core_generic_updated_at": "2025-09-25T09:04:26.470Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 10464,
+      "city": "ce67960a-99ed-11f0-be3a-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "a30440e1-99ee-11f0-bd74-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:04:26.471Z",
+      "core_generic_updated_at": "2025-09-25T09:04:26.471Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 15825,
+      "city": "ce67960a-99ed-11f0-be3a-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "a30463ee-99ee-11f0-a0c0-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:04:26.472Z",
+      "core_generic_updated_at": "2025-09-25T09:04:26.472Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 664,
+      "city": "ce67960a-99ed-11f0-be3a-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "a30481c8-99ee-11f0-bad9-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:04:26.473Z",
+      "core_generic_updated_at": "2025-09-25T09:04:26.473Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 662,
+      "city": "ce67960a-99ed-11f0-be3a-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "a304a5d3-99ee-11f0-819d-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:04:26.474Z",
+      "core_generic_updated_at": "2025-09-25T09:04:26.476Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 765,
+      "city": "ce67960a-99ed-11f0-be3a-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "c3b173ed-99ee-11f0-ac43-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:05:21.293Z",
+      "core_generic_updated_at": "2025-09-25T09:05:21.293Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 11522,
+      "city": "e2d0aa5f-99ed-11f0-8b57-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "c3b19104-99ee-11f0-8e19-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:05:21.294Z",
+      "core_generic_updated_at": "2025-09-25T09:05:21.294Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 37,
+      "city": "e2d0aa5f-99ed-11f0-8b57-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "c3b1a1e7-99ee-11f0-8ea5-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:05:21.295Z",
+      "core_generic_updated_at": "2025-09-25T09:05:21.295Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 40,
+      "city": "e2d0aa5f-99ed-11f0-8b57-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "c3b1b113-99ee-11f0-9fa7-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:05:21.295Z",
+      "core_generic_updated_at": "2025-09-25T09:05:21.295Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 25,
+      "city": "e2d0aa5f-99ed-11f0-8b57-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "c3b1c032-99ee-11f0-91c4-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:05:21.295Z",
+      "core_generic_updated_at": "2025-09-25T09:05:21.297Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 53,
+      "city": "e2d0aa5f-99ed-11f0-8b57-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "ddd3e014-9a0d-11f0-8187-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.539Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.539Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 19149,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "ddd5c644-9a0d-11f0-972b-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.551Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.551Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 2,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "ddd74b03-9a0d-11f0-aed0-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.561Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.561Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 19148,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "ddd8aefe-9a0d-11f0-b9bd-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.570Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.570Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 7,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "ddda0b5a-9a0d-11f0-8e7e-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.579Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.579Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 4,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "dddb5bba-9a0d-11f0-ba2a-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.588Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.588Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 5,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "dddc9e3c-9a0d-11f0-a817-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.596Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.596Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 2015,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "dddde456-9a0d-11f0-b06c-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.604Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.604Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 10491,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "dde02ed0-9a0d-11f0-abb6-0200d830ba7a",
+    "fields": {
+      "status": "DEACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.619Z",
+      "core_generic_updated_at": "2025-09-25T16:15:45.345Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 480,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "dde16edc-9a0d-11f0-bec4-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.627Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.627Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 18532,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "dde2b41b-9a0d-11f0-8dd5-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.636Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.636Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 633,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "ffbf7275-99ed-11f0-8877-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:59:52.552Z",
+      "core_generic_updated_at": "2025-09-25T08:59:52.552Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 17601,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "ffbf9b74-99ed-11f0-b42d-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:59:52.553Z",
+      "core_generic_updated_at": "2025-09-25T08:59:52.553Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 9,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "ffbfaf18-99ed-11f0-92e4-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:59:52.553Z",
+      "core_generic_updated_at": "2025-09-25T08:59:52.553Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 17604,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "ffbfc18f-99ed-11f0-8281-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:59:52.554Z",
+      "core_generic_updated_at": "2025-09-25T08:59:52.554Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 15903,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationpincodemodel",
+    "pk": "ffbfd3ae-99ed-11f0-9654-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T08:59:52.554Z",
+      "core_generic_updated_at": "2025-09-25T08:59:52.556Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "pincode": 10509,
+      "city": "b7ee1211-99ed-11f0-ae41-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "0017b9b2-99ef-11f0-9645-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:07:02.627Z",
+      "core_generic_updated_at": "2025-09-25T09:07:02.629Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Karimnagar (City)",
+      "pincode": "2286dc2c-99ee-11f0-9eda-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "01f95297-99f0-11f0-814c-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:14:15.280Z",
+      "core_generic_updated_at": "2025-09-25T09:14:15.282Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Nellipaka",
+      "pincode": "c3b1a1e7-99ee-11f0-8ea5-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "06481d8c-99ef-11f0-beba-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:07:13.011Z",
+      "core_generic_updated_at": "2025-09-25T09:07:13.013Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Jagtial",
+      "pincode": "2283efb7-99ee-11f0-850f-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "07fa6e36-99f0-11f0-b8f1-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:14:25.354Z",
+      "core_generic_updated_at": "2025-09-25T09:14:25.356Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Sattupalli",
+      "pincode": "c3b1c032-99ee-11f0-91c4-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "0c285938-9a19-11f0-88e1-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:08:01.731Z",
+      "core_generic_updated_at": "2025-09-25T14:08:01.733Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Lothkunta",
+      "pincode": "ddda0b5a-9a0d-11f0-8e7e-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "0d43269d-99ef-11f0-a1e1-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:07:24.722Z",
+      "core_generic_updated_at": "2025-09-25T09:07:24.724Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Manthani",
+      "pincode": "2286f4c1-99ee-11f0-9b3b-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "173d8a77-99ef-11f0-b68f-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:07:41.462Z",
+      "core_generic_updated_at": "2025-09-25T09:07:41.465Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Peddapalli",
+      "pincode": "22870b4c-99ee-11f0-819e-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "1ead16e2-99ef-11f0-87bb-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:07:53.938Z",
+      "core_generic_updated_at": "2025-09-25T09:07:53.940Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Sircilla",
+      "pincode": "22872157-99ee-11f0-a1dc-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "21c2cfaa-9a19-11f0-bfaa-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:08:37.976Z",
+      "core_generic_updated_at": "2025-09-25T14:08:37.977Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Kompally",
+      "pincode": "ddd8aefe-9a0d-11f0-b9bd-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "30517eab-9a19-11f0-b6a0-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:09:02.399Z",
+      "core_generic_updated_at": "2025-09-25T14:09:02.401Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Nanakramguda",
+      "pincode": "ddd74b03-9a0d-11f0-aed0-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "42b2ff87-99ef-11f0-8394-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:08:54.374Z",
+      "core_generic_updated_at": "2025-09-25T09:08:54.376Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Warangal (City)",
+      "pincode": "8259ea3e-99ee-11f0-bb4c-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "45b5791d-9a19-11f0-8ce8-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:09:38.286Z",
+      "core_generic_updated_at": "2025-09-29T06:38:21.175Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Nizampeet",
+      "pincode": "ddd5c644-9a0d-11f0-972b-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "76c6463a-99ef-11f0-9b45-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:10:21.742Z",
+      "core_generic_updated_at": "2025-09-25T09:10:21.744Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Kazipet",
+      "pincode": "825a1fc8-99ee-11f0-baa3-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "8223406f-99ef-11f0-9e65-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:10:40.806Z",
+      "core_generic_updated_at": "2025-09-25T09:10:40.809Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Banjipet",
+      "pincode": "825a3a2a-99ee-11f0-87d1-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "89ceed32-99ef-11f0-b043-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:10:53.675Z",
+      "core_generic_updated_at": "2025-09-25T09:10:53.677Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Bapujinagar",
+      "pincode": "825a4e1d-99ee-11f0-9272-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "94e924a4-99ef-11f0-895b-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:11:12.302Z",
+      "core_generic_updated_at": "2025-09-25T09:11:12.304Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Beat Bazar",
+      "pincode": "8259ea3e-99ee-11f0-bb4c-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "9edea8d9-99ef-11f0-806f-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:11:29.011Z",
+      "core_generic_updated_at": "2025-09-25T09:11:29.012Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Nalgonda (City)",
+      "pincode": "a3041b85-99ee-11f0-846b-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "a5b31eee-99ef-11f0-93f8-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:11:40.469Z",
+      "core_generic_updated_at": "2025-09-25T09:11:40.472Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Miryalguda",
+      "pincode": "a30440e1-99ee-11f0-bd74-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "ae8047ab-99ef-11f0-9aa8-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:11:55.236Z",
+      "core_generic_updated_at": "2025-09-25T09:11:55.238Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Devarakonda",
+      "pincode": "a30463ee-99ee-11f0-a0c0-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "b598bd60-99ef-11f0-9e14-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:12:07.140Z",
+      "core_generic_updated_at": "2025-09-25T09:12:07.142Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Chityala",
+      "pincode": "a30481c8-99ee-11f0-bad9-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "be66f78e-99ef-11f0-a858-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:12:21.913Z",
+      "core_generic_updated_at": "2025-09-25T09:12:21.916Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Damaracherla",
+      "pincode": "a304a5d3-99ee-11f0-819d-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "c86f2325-9a18-11f0-8791-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:06:08.131Z",
+      "core_generic_updated_at": "2025-09-25T14:06:08.136Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Bollaram",
+      "pincode": "dde02ed0-9a0d-11f0-abb6-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "c9fef245-99ef-11f0-9937-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:12:41.364Z",
+      "core_generic_updated_at": "2025-09-25T09:12:41.366Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Khammam (City)",
+      "pincode": "c3b173ed-99ee-11f0-ac43-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "d181c261-99ee-11f0-9fcc-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:05:44.469Z",
+      "core_generic_updated_at": "2025-09-25T09:05:44.471Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Amberpet",
+      "pincode": "ffbf7275-99ed-11f0-8877-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "d26cdbf7-99ef-11f0-9227-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:12:55.506Z",
+      "core_generic_updated_at": "2025-09-25T09:12:55.508Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Palair",
+      "pincode": "c3b19104-99ee-11f0-8e19-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "d8805f0b-99ee-11f0-ac47-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:05:56.204Z",
+      "core_generic_updated_at": "2025-09-25T09:05:56.206Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Anandbagh",
+      "pincode": "ffbf9b74-99ed-11f0-b42d-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "dc96fb4a-9a18-11f0-a976-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:06:41.926Z",
+      "core_generic_updated_at": "2025-09-25T14:06:41.928Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Neredmet",
+      "pincode": "dddde456-9a0d-11f0-b06c-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "ddd4881a-9a0d-11f0-ab54-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.543Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.543Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Banjara Hills",
+      "pincode": "ddd3e014-9a0d-11f0-8187-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "ddd62696-9a0d-11f0-a815-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.553Z",
+      "core_generic_updated_at": "2025-09-25T14:09:43.685Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Kukatpally",
+      "pincode": "ddd5c644-9a0d-11f0-972b-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "ddd7abd2-9a0d-11f0-a559-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.563Z",
+      "core_generic_updated_at": "2025-09-25T14:09:08.052Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Gachibowli",
+      "pincode": "ddd74b03-9a0d-11f0-aed0-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "ddd8fa34-9a0d-11f0-bd48-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.572Z",
+      "core_generic_updated_at": "2025-09-25T14:08:43.895Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Gajularamaram",
+      "pincode": "ddd8aefe-9a0d-11f0-b9bd-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "ddda5d80-9a0d-11f0-9b1f-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.581Z",
+      "core_generic_updated_at": "2025-09-25T14:08:12.166Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Malkajgiri",
+      "pincode": "ddda0b5a-9a0d-11f0-8e7e-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "dddbb050-9a0d-11f0-8bba-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.590Z",
+      "core_generic_updated_at": "2025-09-25T14:07:42.973Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Secunderabad",
+      "pincode": "dddb5bba-9a0d-11f0-ba2a-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "dddcee46-9a0d-11f0-a431-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.598Z",
+      "core_generic_updated_at": "2025-09-25T14:07:14.999Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Alwal",
+      "pincode": "dddc9e3c-9a0d-11f0-a817-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "ddde4145-9a0d-11f0-974b-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.606Z",
+      "core_generic_updated_at": "2025-09-25T14:06:47.851Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Kapra",
+      "pincode": "dddde456-9a0d-11f0-b06c-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "dde089c8-9a0d-11f0-8df9-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.621Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.621Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Medchal",
+      "pincode": "dde02ed0-9a0d-11f0-abb6-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "dde1bb9c-9a0d-11f0-aa85-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.629Z",
+      "core_generic_updated_at": "2025-09-25T12:47:59.629Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Shamirpet",
+      "pincode": "dde16edc-9a0d-11f0-bec4-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "dde3043d-9a0d-11f0-800c-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:47:59.638Z",
+      "core_generic_updated_at": "2025-09-25T14:06:14.538Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Patancheru",
+      "pincode": "dde2b41b-9a0d-11f0-8dd5-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "e418b0cf-99ee-11f0-a203-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:06:15.657Z",
+      "core_generic_updated_at": "2025-09-25T09:06:15.659Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Ameerpet",
+      "pincode": "ffbfaf18-99ed-11f0-92e4-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "ec28d9f5-99ee-11f0-b07c-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:06:29.185Z",
+      "core_generic_updated_at": "2025-09-25T09:06:29.187Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Banjara Hills",
+      "pincode": "ffbfc18f-99ed-11f0-8281-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "ed3f56e6-9a18-11f0-8279-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:07:09.873Z",
+      "core_generic_updated_at": "2025-09-25T14:07:09.874Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Quthbullapur",
+      "pincode": "dddc9e3c-9a0d-11f0-a817-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "f60942ae-99ee-11f0-bd4b-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:06:45.755Z",
+      "core_generic_updated_at": "2025-09-25T09:06:45.757Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Balanagar",
+      "pincode": "ffbfd3ae-99ed-11f0-9654-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "f8d10dc2-99ef-11f0-9c2b-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T09:13:59.917Z",
+      "core_generic_updated_at": "2025-09-25T09:13:59.918Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Chintakani",
+      "pincode": "c3b1b113-99ee-11f0-9fa7-0200d830ba7a"
+    }
+  },
+  {
+    "model": "region_config.regionconfigurationareamodel",
+    "pk": "fc0079e6-9a18-11f0-b332-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:07:34.626Z",
+      "core_generic_updated_at": "2025-09-25T14:07:34.628Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "title": "Bowenpally",
+      "pincode": "dddb5bba-9a0d-11f0-ba2a-0200d830ba7a"
+    }
+  }
+]

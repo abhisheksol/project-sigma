@@ -21,7 +21,7 @@ from user_config.accounts.models import UserDetailModel
 from user_config.user_auth.models import UserModel
 from user_config.user_auth.enums import UserRoleEnum
 from django.db.models.query_utils import Q
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 # Role access rules by hierarchy level
 # Defines which roles can access each level of the location hierarchy
@@ -155,6 +155,7 @@ def get_user_assigned_city_queryset(
     queryset: QuerySet[
         RegionConfigurationCityModel
     ] = RegionConfigurationCityModel.objects.all(),
+    zone: Optional[List[str]] = [],
 ) -> QuerySet[RegionConfigurationCityModel]:
     """
     Retrieves a queryset of cities that the user is authorized to access.
@@ -173,9 +174,12 @@ def get_user_assigned_city_queryset(
         QuerySet[RegionConfigurationCityModel]: Filtered queryset of cities the user can access.
     """
     filter_set: Dict = {}
-    assigned_zone_queryset = get_user_assigned_zone_queryset(
-        user_instance=user_instance
+    assigned_zone_queryset: QuerySet[RegionConfigurationZoneModel] = (
+        get_user_assigned_zone_queryset(user_instance=user_instance)
     )
+    zone_filters: Dict = {}
+    if zone:
+        zone_filters["zone__pk__in"] = zone
 
     if user_instance.user_role.role == UserRoleEnum.MANAGER.value:
         # Managers access cities within their assigned zones
@@ -196,7 +200,7 @@ def get_user_assigned_city_queryset(
             "pk", flat=True
         )
 
-    return queryset.filter(**filter_set)
+    return queryset.filter(**filter_set).filter(**zone_filters)
 
 
 def get_user_assigned_pincode_queryset(
@@ -223,20 +227,30 @@ def get_user_assigned_pincode_queryset(
         QuerySet[RegionConfigurationPincodeModel]: Filtered queryset of pincodes the user can access.
     """
     filter_set: Dict = {}
-    assigned_city_queryset = get_user_assigned_city_queryset(
-        user_instance=user_instance
+    assigned_city_queryset: QuerySet[RegionConfigurationCityModel] = (
+        get_user_assigned_city_queryset(user_instance=user_instance)
     )
 
     # Apply city filter if provided
     if city:
-        queryset = queryset.filter(city__pk__in=city)
+        queryset: QuerySet[RegionConfigurationCityModel] = queryset.filter(
+            city__pk__in=city
+        )
 
-    if user_instance.user_role.role in [
-        UserRoleEnum.MANAGER.value,
-        UserRoleEnum.SUPERVISOR.value,
-    ]:
+    if user_instance.user_role.role == UserRoleEnum.MANAGER.value:
         # Managers and Supervisors access pincodes within their assigned cities
         filter_set["city__pk__in"] = assigned_city_queryset.values_list("pk", flat=True)
+    elif user_instance.user_role.role == UserRoleEnum.SUPERVISOR.value:
+        if user_instance.UserDetailModel_user.assigned_pincode.all().exists():
+            filter_set[
+                "pk__in"
+            ] = user_instance.UserDetailModel_user.assigned_pincode.all().values_list(
+                "pk", flat=True
+            )
+        else:
+            filter_set["city__pk__in"] = assigned_city_queryset.values_list(
+                "pk", flat=True
+            )
 
     elif user_instance.user_role.role == UserRoleEnum.FIELD_OFFICER.value:
         # Field Officers access only their directly assigned pincodes
@@ -281,14 +295,22 @@ def get_user_assigned_area_queryset(
     if pincode:
         queryset = queryset.filter(pincode__pk__in=pincode)
 
-    if user_instance.user_role.role in [
-        UserRoleEnum.MANAGER.value,
-        UserRoleEnum.SUPERVISOR.value,
-    ]:
+    if user_instance.user_role.role == UserRoleEnum.MANAGER.value:
         # Managers and Supervisors access areas within their assigned pincodes
         filter_set["pincode__pk__in"] = assigned_pincode_queryset.values_list(
             "pk", flat=True
         )
+    elif user_instance.user_role.role == UserRoleEnum.SUPERVISOR.value:
+        if user_instance.UserDetailModel_user.assigned_area.all().exists():
+            filter_set[
+                "pk__in"
+            ] = user_instance.UserDetailModel_user.assigned_area.all().values_list(
+                "pk", flat=True
+            )
+        else:
+            filter_set["pincode__pk__in"] = assigned_pincode_queryset.values_list(
+                "pk", flat=True
+            )
 
     elif user_instance.user_role.role == UserRoleEnum.FIELD_OFFICER.value:
         # Field Officers access only their directly assigned areas

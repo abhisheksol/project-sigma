@@ -224,6 +224,7 @@ class RegionConfigurationPincodeListModelSerializer(
     area_count = serializers.SerializerMethodField()
     zone = serializers.UUIDField(source="city.zone.id", read_only=True)
     pincode_value = serializers.CharField(source="pincode", read_only=True)
+    assigned_fo_count = serializers.SerializerMethodField()
 
     class Meta:
         model = RegionConfigurationPincodeModel
@@ -238,6 +239,7 @@ class RegionConfigurationPincodeListModelSerializer(
             "zone",
             "pincode_value",
             "status",
+            "assigned_fo_count",
         ]
 
     def get_city_name(self, obj):
@@ -251,6 +253,10 @@ class RegionConfigurationPincodeListModelSerializer(
 
     def get_area_count(self, obj):
         return getattr(obj, "area_count", 0)
+
+    def get_assigned_fo_count(self, obj):
+        value = getattr(obj, "assigned_fo_count", 0)
+        return "OGL" if value == 0 else value
 
 
 class RegionConfigurationPincodeCreateModelSerializer(

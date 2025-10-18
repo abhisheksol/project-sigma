@@ -1,0 +1,1159 @@
+[
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "07d9504a-99fd-11f0-b9f4-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T10:47:28.921Z",
+      "core_generic_updated_at": "2025-09-29T12:27:08.933Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": ["487dd80a-99df-11f0-8e73-0200d830ba7a"],
+      "assigned_zone": [],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "124689be-9a26-11f0-a781-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T15:41:15.721Z",
+      "core_generic_updated_at": "2025-09-25T15:41:15.739Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": [
+        "dde2b41b-9a0d-11f0-8dd5-0200d830ba7a",
+        "dde16edc-9a0d-11f0-bec4-0200d830ba7a"
+      ],
+      "assigned_area": [
+        "dde3043d-9a0d-11f0-800c-0200d830ba7a",
+        "dde1bb9c-9a0d-11f0-aa85-0200d830ba7a"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "12f11d61-9a18-11f0-aeb8-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:01:03.937Z",
+      "core_generic_updated_at": "2025-09-29T12:21:11.375Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": [
+        "ddd3e014-9a0d-11f0-8187-0200d830ba7a",
+        "ffbfc18f-99ed-11f0-8281-0200d830ba7a"
+      ],
+      "assigned_area": [
+        "ec28d9f5-99ee-11f0-b07c-0200d830ba7a",
+        "ddd4881a-9a0d-11f0-ab54-0200d830ba7a"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "29e553de-9a2c-11f0-93e2-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T16:24:52.320Z",
+      "core_generic_updated_at": "2025-09-25T16:24:52.339Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": ["ddd74b03-9a0d-11f0-aed0-0200d830ba7a"],
+      "assigned_area": ["30517eab-9a19-11f0-b6a0-0200d830ba7a"]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "2f5f961a-9a0f-11f0-8830-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:57:26.139Z",
+      "core_generic_updated_at": "2025-09-29T12:21:05.204Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": [
+        "ddd3e014-9a0d-11f0-8187-0200d830ba7a",
+        "ffbfc18f-99ed-11f0-8281-0200d830ba7a"
+      ],
+      "assigned_area": [
+        "ec28d9f5-99ee-11f0-b07c-0200d830ba7a",
+        "ddd4881a-9a0d-11f0-ab54-0200d830ba7a"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "3a1c2675-99d7-11f0-ade2-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T06:16:52.366Z",
+      "core_generic_updated_at": "2025-09-25T06:16:52.366Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "46c75c43-9a0c-11f0-896f-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:36:36.948Z",
+      "core_generic_updated_at": "2025-09-29T12:20:29.889Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": ["b83096cb-99e0-11f0-8587-0200d830ba7a"],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "751b0715-9af3-11f0-945b-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-26T16:11:28.392Z",
+      "core_generic_updated_at": "2025-09-29T06:55:08.214Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": [
+        "dde2b41b-9a0d-11f0-8dd5-0200d830ba7a",
+        "dde16edc-9a0d-11f0-bec4-0200d830ba7a"
+      ],
+      "assigned_area": ["dde3043d-9a0d-11f0-800c-0200d830ba7a"]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "8109ddb1-9a1f-11f0-9c33-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:54:15.087Z",
+      "core_generic_updated_at": "2025-09-25T14:54:15.111Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": [
+        "dddde456-9a0d-11f0-b06c-0200d830ba7a",
+        "dddc9e3c-9a0d-11f0-a817-0200d830ba7a"
+      ],
+      "assigned_area": [
+        "dddcee46-9a0d-11f0-a431-0200d830ba7a",
+        "ed3f56e6-9a18-11f0-8279-0200d830ba7a",
+        "ddde4145-9a0d-11f0-974b-0200d830ba7a"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "9f7aafba-9dd3-11f0-a3f7-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-30T08:01:09.046Z",
+      "core_generic_updated_at": "2025-09-30T08:01:09.065Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": [
+        "ddd3e014-9a0d-11f0-8187-0200d830ba7a",
+        "ffbfc18f-99ed-11f0-8281-0200d830ba7a"
+      ],
+      "assigned_area": [
+        "ec28d9f5-99ee-11f0-b07c-0200d830ba7a",
+        "ddd4881a-9a0d-11f0-ab54-0200d830ba7a"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "a195edb6-99fc-11f0-ba06-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T10:44:37.295Z",
+      "core_generic_updated_at": "2025-09-29T12:19:25.662Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": ["37263594-99df-11f0-b320-0200d830ba7a"],
+      "assigned_zone": [],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "b31ff7da-9a19-11f0-a0ed-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:12:42.178Z",
+      "core_generic_updated_at": "2025-09-30T05:57:42.256Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": [
+        "ddd74b03-9a0d-11f0-aed0-0200d830ba7a",
+        "ddd8aefe-9a0d-11f0-b9bd-0200d830ba7a"
+      ],
+      "assigned_area": [
+        "21c2cfaa-9a19-11f0-bfaa-0200d830ba7a",
+        "30517eab-9a19-11f0-b6a0-0200d830ba7a"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "b8f339d4-99fe-11f0-bcb9-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T10:59:35.585Z",
+      "core_generic_updated_at": "2025-09-29T12:19:44.299Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": ["611d2816-99df-11f0-a305-0200d830ba7a"],
+      "assigned_zone": [],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "be631928-9dc0-11f0-84aa-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-30T05:46:00.501Z",
+      "core_generic_updated_at": "2025-09-30T05:48:19.138Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": ["b83096cb-99e0-11f0-8587-0200d830ba7a"],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "c719dc32-9a1f-11f0-b651-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:56:12.644Z",
+      "core_generic_updated_at": "2025-09-25T14:56:12.659Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": [
+        "dddde456-9a0d-11f0-b06c-0200d830ba7a",
+        "dddc9e3c-9a0d-11f0-a817-0200d830ba7a"
+      ],
+      "assigned_area": [
+        "dddcee46-9a0d-11f0-a431-0200d830ba7a",
+        "ed3f56e6-9a18-11f0-8279-0200d830ba7a",
+        "ddde4145-9a0d-11f0-974b-0200d830ba7a"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "cc0cb38c-9a1b-11f0-8cff-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:27:42.946Z",
+      "core_generic_updated_at": "2025-09-25T14:27:42.968Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": [
+        "ddda0b5a-9a0d-11f0-8e7e-0200d830ba7a",
+        "dddb5bba-9a0d-11f0-ba2a-0200d830ba7a"
+      ],
+      "assigned_area": [
+        "ddda5d80-9a0d-11f0-9b1f-0200d830ba7a",
+        "0c285938-9a19-11f0-88e1-0200d830ba7a",
+        "dddbb050-9a0d-11f0-8bba-0200d830ba7a",
+        "fc0079e6-9a18-11f0-b332-0200d830ba7a"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "cda5c3df-9a09-11f0-a110-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:18:54.690Z",
+      "core_generic_updated_at": "2025-09-29T12:20:22.886Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": ["12beedec-99e0-11f0-8ac0-0200d830ba7a"],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "d4a24578-9a0c-11f0-8041-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T12:40:34.916Z",
+      "core_generic_updated_at": "2025-09-29T12:20:58.483Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": ["b83096cb-99e0-11f0-8587-0200d830ba7a"],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "ded71bea-99fe-11f0-bd12-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T11:00:39.064Z",
+      "core_generic_updated_at": "2025-09-29T12:51:53.860Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": ["487dd80a-99df-11f0-8e73-0200d830ba7a"],
+      "assigned_zone": [],
+      "assigned_city": [],
+      "assigned_pincode": [],
+      "assigned_area": []
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "e5287c93-9a25-11f0-a041-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T15:40:00.025Z",
+      "core_generic_updated_at": "2025-09-25T15:40:00.050Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": [
+        "dde2b41b-9a0d-11f0-8dd5-0200d830ba7a",
+        "dde16edc-9a0d-11f0-bec4-0200d830ba7a"
+      ],
+      "assigned_area": [
+        "dde3043d-9a0d-11f0-800c-0200d830ba7a",
+        "dde1bb9c-9a0d-11f0-aa85-0200d830ba7a"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "e8c255a6-9a1a-11f0-8f47-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:21:21.635Z",
+      "core_generic_updated_at": "2025-09-25T14:21:21.654Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": [
+        "ddd74b03-9a0d-11f0-aed0-0200d830ba7a",
+        "ddd8aefe-9a0d-11f0-b9bd-0200d830ba7a"
+      ],
+      "assigned_area": [
+        "21c2cfaa-9a19-11f0-bfaa-0200d830ba7a",
+        "30517eab-9a19-11f0-b6a0-0200d830ba7a"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userdetailmodel",
+    "pk": "eeb4b06e-9a1d-11f0-9645-0200d830ba7a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-25T14:43:00.072Z",
+      "core_generic_updated_at": "2025-09-26T05:09:19.650Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "profile_picture": null,
+      "blood_group": null,
+      "vehicle_number": null,
+      "emergency_phone_number": null,
+      "emergency_contact_relation_name": null,
+      "emergency_contact_relation": null,
+      "assigned_region": [],
+      "assigned_zone": [],
+      "assigned_city": ["b7ee1211-99ed-11f0-ae41-0200d830ba7a"],
+      "assigned_pincode": [
+        "ddda0b5a-9a0d-11f0-8e7e-0200d830ba7a",
+        "dddb5bba-9a0d-11f0-ba2a-0200d830ba7a"
+      ],
+      "assigned_area": [
+        "ddda5d80-9a0d-11f0-9b1f-0200d830ba7a",
+        "0c285938-9a19-11f0-88e1-0200d830ba7a",
+        "dddbb050-9a0d-11f0-8bba-0200d830ba7a",
+        "fc0079e6-9a18-11f0-b332-0200d830ba7a"
+      ]
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "03d0fa4b-d2d1-46b5-9b4c-dfb0a96c1959",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:34.366Z",
+      "core_generic_updated_at": "2025-09-29T12:19:34.366Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "07d9504a-99fd-11f0-b9f4-0200d830ba7a",
+      "product_assignment": "4376f7f7-e0cb-420c-9581-4e22e665e51c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "0b8d69e0-1e83-4cac-9f75-607b74343200",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:44.282Z",
+      "core_generic_updated_at": "2025-09-29T12:19:44.282Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "b8f339d4-99fe-11f0-bcb9-0200d830ba7a",
+      "product_assignment": "9b6878fa-8278-4b8e-811e-7562d71d157a"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "0d530215-c178-4ea1-8ebc-8fbc6ab0e2d9",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:44.294Z",
+      "core_generic_updated_at": "2025-09-29T12:19:44.294Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "b8f339d4-99fe-11f0-bcb9-0200d830ba7a",
+      "product_assignment": "01e6b658-75d6-456e-af05-2e9d55b86626"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "13767c42-adb0-47c8-b5eb-ef48fb637985",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:34.372Z",
+      "core_generic_updated_at": "2025-09-29T12:19:34.372Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "07d9504a-99fd-11f0-b9f4-0200d830ba7a",
+      "product_assignment": "01e9d27f-fcb3-4eda-9272-341a06377bbf"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "1661f485-ecdf-4653-8677-03a044bf57e4",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:21:05.196Z",
+      "core_generic_updated_at": "2025-09-29T12:21:05.196Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "2f5f961a-9a0f-11f0-8830-0200d830ba7a",
+      "product_assignment": "9b6878fa-8278-4b8e-811e-7562d71d157a"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "1dc7e9e7-7605-4471-a930-4a22672a78c2",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:44.286Z",
+      "core_generic_updated_at": "2025-09-29T12:19:44.286Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "b8f339d4-99fe-11f0-bcb9-0200d830ba7a",
+      "product_assignment": "21438996-a9b2-4da1-ad43-1f1bb611373c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "1e102581-be78-4f4d-bb31-5ecab9faeaed",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:20:58.477Z",
+      "core_generic_updated_at": "2025-09-29T12:20:58.477Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "d4a24578-9a0c-11f0-8041-0200d830ba7a",
+      "product_assignment": "4376f7f7-e0cb-420c-9581-4e22e665e51c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "1f7d98b8-204a-454b-ba9b-547bd847e696",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:52.524Z",
+      "core_generic_updated_at": "2025-09-29T12:19:52.524Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "ded71bea-99fe-11f0-bd12-0200d830ba7a",
+      "product_assignment": "21438996-a9b2-4da1-ad43-1f1bb611373c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "1f8a6fae-d059-4102-ad65-20fea6c13f18",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-30T05:46:00.507Z",
+      "core_generic_updated_at": "2025-09-30T05:46:00.507Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "be631928-9dc0-11f0-84aa-0200d830ba7a",
+      "product_assignment": "04555b5c-977c-40b3-8567-aa01eccd81d6"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "2279ba4d-24e1-4c5b-b808-22a644ba0427",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:34.369Z",
+      "core_generic_updated_at": "2025-09-29T12:19:34.369Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "07d9504a-99fd-11f0-b9f4-0200d830ba7a",
+      "product_assignment": "04555b5c-977c-40b3-8567-aa01eccd81d6"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "23185878-2baf-46de-9f75-568a67607dd7",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:52.521Z",
+      "core_generic_updated_at": "2025-09-29T12:19:52.521Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "ded71bea-99fe-11f0-bd12-0200d830ba7a",
+      "product_assignment": "9b6878fa-8278-4b8e-811e-7562d71d157a"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "2a03a43f-a76a-4355-a956-52ba9f618ff1",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:20:22.882Z",
+      "core_generic_updated_at": "2025-09-29T12:20:22.882Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "cda5c3df-9a09-11f0-a110-0200d830ba7a",
+      "product_assignment": "04555b5c-977c-40b3-8567-aa01eccd81d6"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "2bc09939-8767-4dc2-8085-affc88f016fd",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:20:58.479Z",
+      "core_generic_updated_at": "2025-09-29T12:20:58.479Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "d4a24578-9a0c-11f0-8041-0200d830ba7a",
+      "product_assignment": "21438996-a9b2-4da1-ad43-1f1bb611373c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "2fd920be-7599-4673-a6de-62c05ceeae00",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:25.644Z",
+      "core_generic_updated_at": "2025-09-29T12:19:25.644Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "a195edb6-99fc-11f0-ba06-0200d830ba7a",
+      "product_assignment": "01e9d27f-fcb3-4eda-9272-341a06377bbf"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "3909850c-e0bc-4761-8ac6-8852e91ddfb9",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:25.636Z",
+      "core_generic_updated_at": "2025-09-29T12:19:25.636Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "a195edb6-99fc-11f0-ba06-0200d830ba7a",
+      "product_assignment": "4376f7f7-e0cb-420c-9581-4e22e665e51c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "39e5916b-4703-46f2-9782-eab250661079",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:20:29.885Z",
+      "core_generic_updated_at": "2025-09-29T12:20:29.885Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "46c75c43-9a0c-11f0-896f-0200d830ba7a",
+      "product_assignment": "21438996-a9b2-4da1-ad43-1f1bb611373c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "4639adcc-b889-416d-b25c-f907dc2fde0a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:21:11.372Z",
+      "core_generic_updated_at": "2025-09-29T12:21:11.372Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "12f11d61-9a18-11f0-aeb8-0200d830ba7a",
+      "product_assignment": "9b6878fa-8278-4b8e-811e-7562d71d157a"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "4f10695e-e1e9-44b6-8b76-e6bfb4dfd70d",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:52.530Z",
+      "core_generic_updated_at": "2025-09-29T12:19:52.530Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "ded71bea-99fe-11f0-bd12-0200d830ba7a",
+      "product_assignment": "01e9d27f-fcb3-4eda-9272-341a06377bbf"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "53bd2333-190b-47b7-9643-07681269bcbb",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:25.642Z",
+      "core_generic_updated_at": "2025-09-29T12:19:25.642Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "a195edb6-99fc-11f0-ba06-0200d830ba7a",
+      "product_assignment": "eb0c00dc-6541-40a8-a511-b896bd2c57fa"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "55a2b5f3-88ed-478b-a90e-fc77f92855b5",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:44.292Z",
+      "core_generic_updated_at": "2025-09-29T12:19:44.292Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "b8f339d4-99fe-11f0-bcb9-0200d830ba7a",
+      "product_assignment": "01e9d27f-fcb3-4eda-9272-341a06377bbf"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "59340a0e-78bd-4abf-a207-2fa262c0dea3",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:34.374Z",
+      "core_generic_updated_at": "2025-09-29T12:19:34.374Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "07d9504a-99fd-11f0-b9f4-0200d830ba7a",
+      "product_assignment": "01e6b658-75d6-456e-af05-2e9d55b86626"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "595cca31-ae16-47d8-bdff-e2e7194f962e",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:25.646Z",
+      "core_generic_updated_at": "2025-09-29T12:19:25.646Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "a195edb6-99fc-11f0-ba06-0200d830ba7a",
+      "product_assignment": "01e6b658-75d6-456e-af05-2e9d55b86626"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "5a3d685c-6ae2-468d-990d-96043df24696",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-30T05:46:00.507Z",
+      "core_generic_updated_at": "2025-09-30T05:46:00.507Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "be631928-9dc0-11f0-84aa-0200d830ba7a",
+      "product_assignment": "eb0c00dc-6541-40a8-a511-b896bd2c57fa"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "5b727e66-6fa2-4a1b-86e5-69970bada538",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:34.364Z",
+      "core_generic_updated_at": "2025-09-29T12:19:34.364Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "07d9504a-99fd-11f0-b9f4-0200d830ba7a",
+      "product_assignment": "9b6878fa-8278-4b8e-811e-7562d71d157a"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "5db206d1-2b43-4246-93e1-22e212956b08",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:24:13.827Z",
+      "core_generic_updated_at": "2025-09-29T12:24:13.827Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "b31ff7da-9a19-11f0-a0ed-0200d830ba7a",
+      "product_assignment": "21438996-a9b2-4da1-ad43-1f1bb611373c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "6918f477-da6e-4d1f-ab91-578175c17ddb",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:44.289Z",
+      "core_generic_updated_at": "2025-09-29T12:19:44.289Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "b8f339d4-99fe-11f0-bcb9-0200d830ba7a",
+      "product_assignment": "04555b5c-977c-40b3-8567-aa01eccd81d6"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "6d4c36f4-8fc8-441e-8f6d-f1103d9c5f1c",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:20:22.880Z",
+      "core_generic_updated_at": "2025-09-29T12:20:22.880Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "cda5c3df-9a09-11f0-a110-0200d830ba7a",
+      "product_assignment": "21438996-a9b2-4da1-ad43-1f1bb611373c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "6ece5663-e20f-494c-9aba-bd9dccde13b8",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:20:22.876Z",
+      "core_generic_updated_at": "2025-09-29T12:20:22.876Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "cda5c3df-9a09-11f0-a110-0200d830ba7a",
+      "product_assignment": "4376f7f7-e0cb-420c-9581-4e22e665e51c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "749a5e62-ea5b-46e8-8e67-1d1c71c3e186",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:44.284Z",
+      "core_generic_updated_at": "2025-09-29T12:19:44.284Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "b8f339d4-99fe-11f0-bcb9-0200d830ba7a",
+      "product_assignment": "4376f7f7-e0cb-420c-9581-4e22e665e51c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "7da86aa6-4db2-4f02-a0df-b4503dc25228",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-30T08:01:09.065Z",
+      "core_generic_updated_at": "2025-09-30T08:01:09.065Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "9f7aafba-9dd3-11f0-a3f7-0200d830ba7a",
+      "product_assignment": "9b6878fa-8278-4b8e-811e-7562d71d157a"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "7e4c3f39-f572-4f4d-91c2-2ca0744379e0",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:34.368Z",
+      "core_generic_updated_at": "2025-09-29T12:19:34.368Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "07d9504a-99fd-11f0-b9f4-0200d830ba7a",
+      "product_assignment": "21438996-a9b2-4da1-ad43-1f1bb611373c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "81d2b307-b5ef-49d3-a817-78e05d5faa77",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:21:05.198Z",
+      "core_generic_updated_at": "2025-09-29T12:21:05.198Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "2f5f961a-9a0f-11f0-8830-0200d830ba7a",
+      "product_assignment": "4376f7f7-e0cb-420c-9581-4e22e665e51c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "828786ab-0294-4eaa-9bc7-eb52b6f68a38",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:52.528Z",
+      "core_generic_updated_at": "2025-09-29T12:19:52.528Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "ded71bea-99fe-11f0-bd12-0200d830ba7a",
+      "product_assignment": "eb0c00dc-6541-40a8-a511-b896bd2c57fa"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "a2b751a1-81b1-4037-8e4f-ee222c37441e",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:44.290Z",
+      "core_generic_updated_at": "2025-09-29T12:19:44.290Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "b8f339d4-99fe-11f0-bcb9-0200d830ba7a",
+      "product_assignment": "eb0c00dc-6541-40a8-a511-b896bd2c57fa"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "a3346f6a-5c9b-4981-9e99-22667710535e",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:20:29.880Z",
+      "core_generic_updated_at": "2025-09-29T12:20:29.880Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "46c75c43-9a0c-11f0-896f-0200d830ba7a",
+      "product_assignment": "9b6878fa-8278-4b8e-811e-7562d71d157a"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "a39a0fc1-f217-461e-bdff-20501b032ed3",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:34.371Z",
+      "core_generic_updated_at": "2025-09-29T12:19:34.371Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "07d9504a-99fd-11f0-b9f4-0200d830ba7a",
+      "product_assignment": "eb0c00dc-6541-40a8-a511-b896bd2c57fa"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "ac5c13eb-63c8-45c7-bba9-4aa56ced108e",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:52.526Z",
+      "core_generic_updated_at": "2025-09-29T12:19:52.526Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "ded71bea-99fe-11f0-bd12-0200d830ba7a",
+      "product_assignment": "04555b5c-977c-40b3-8567-aa01eccd81d6"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "b50b3e5f-449a-4985-a7eb-2196c69a5a30",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-30T08:01:09.065Z",
+      "core_generic_updated_at": "2025-09-30T08:01:09.065Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "9f7aafba-9dd3-11f0-a3f7-0200d830ba7a",
+      "product_assignment": "4376f7f7-e0cb-420c-9581-4e22e665e51c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "b98ebda8-b6e6-48e5-ad2d-7baf57e02692",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:24:13.826Z",
+      "core_generic_updated_at": "2025-09-29T12:24:13.826Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "b31ff7da-9a19-11f0-a0ed-0200d830ba7a",
+      "product_assignment": "9b6878fa-8278-4b8e-811e-7562d71d157a"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "c3f368ed-1424-43a5-92b9-18e4b71cd61a",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:20:58.476Z",
+      "core_generic_updated_at": "2025-09-29T12:20:58.476Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "d4a24578-9a0c-11f0-8041-0200d830ba7a",
+      "product_assignment": "9b6878fa-8278-4b8e-811e-7562d71d157a"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "ca09b55c-cf48-46eb-b205-bb58106175d6",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:25.640Z",
+      "core_generic_updated_at": "2025-09-29T12:19:25.640Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "a195edb6-99fc-11f0-ba06-0200d830ba7a",
+      "product_assignment": "04555b5c-977c-40b3-8567-aa01eccd81d6"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "de83e5c8-f394-406e-9140-e0490d8054f8",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:52.532Z",
+      "core_generic_updated_at": "2025-09-29T12:19:52.532Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "ded71bea-99fe-11f0-bd12-0200d830ba7a",
+      "product_assignment": "01e6b658-75d6-456e-af05-2e9d55b86626"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "ec69f059-dbf2-4ebe-858b-2c140f8d17ed",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:25.638Z",
+      "core_generic_updated_at": "2025-09-29T12:19:25.638Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "a195edb6-99fc-11f0-ba06-0200d830ba7a",
+      "product_assignment": "21438996-a9b2-4da1-ad43-1f1bb611373c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "ee0c3e83-1867-4473-b158-a7ffd260c341",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:52.523Z",
+      "core_generic_updated_at": "2025-09-29T12:19:52.523Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "ded71bea-99fe-11f0-bd12-0200d830ba7a",
+      "product_assignment": "4376f7f7-e0cb-420c-9581-4e22e665e51c"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "f1abaf27-13aa-49fc-ae66-4b2a9b1462c1",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:19:25.633Z",
+      "core_generic_updated_at": "2025-09-29T12:19:25.633Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "a195edb6-99fc-11f0-ba06-0200d830ba7a",
+      "product_assignment": "9b6878fa-8278-4b8e-811e-7562d71d157a"
+    }
+  },
+  {
+    "model": "accounts.userassignedprodudctsmodel",
+    "pk": "f2342ef4-ba0e-4fde-9ca6-f95aee4ab018",
+    "fields": {
+      "status": "ACTIVATED",
+      "core_generic_created_at": "2025-09-29T12:20:29.883Z",
+      "core_generic_updated_at": "2025-09-29T12:20:29.883Z",
+      "core_generic_created_by": null,
+      "core_generic_updated_by": null,
+      "user": "46c75c43-9a0c-11f0-896f-0200d830ba7a",
+      "product_assignment": "4376f7f7-e0cb-420c-9581-4e22e665e51c"
+    }
+  }
+]

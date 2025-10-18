@@ -17,7 +17,6 @@ from store.configurations.loan_config.models import (
     LoanConfigurationsMonthlyCycleModel,
 )
 from store.configurations.region_config.models import (
-    RegionConfigurationAreaModel,
     RegionConfigurationCityModel,
     RegionConfigurationPincodeModel,
 )
@@ -571,14 +570,21 @@ class CaseManagementCaseModel(CoreGenericModel):
         null=True,
         db_column="RESIDENTIAL_ADDRESS_4",
     )
-
+    # !city
     residential_customer_city = models.CharField(
         max_length=100,
         blank=True,
         null=True,
         db_column="RESIDENTIAL_CUSTOMER_CITY",
     )
-
+    # residential_customer_city = models.ForeignKey(
+    #     RegionConfigurationCityModel,
+    #     on_delete=models.CASCADE,
+    #     related_name="CaseManagementCaseAddressModel_region_config_city",
+    #     blank=True,
+    #     null=True,
+    #     db_column="REGION_CONFIG_CUSTOMER_CITY",
+    # )
     residential_pin_code = models.ForeignKey(
         RegionConfigurationPincodeModel,
         on_delete=models.CASCADE,
@@ -586,14 +592,6 @@ class CaseManagementCaseModel(CoreGenericModel):
         blank=True,
         null=True,
         db_column="RESIDENTIAL_PIN_CODE",
-    )
-    residential_sub_area = models.ForeignKey(
-        RegionConfigurationAreaModel,
-        on_delete=models.CASCADE,
-        related_name="CaseManagementCaseAddressModel_residential_area",
-        blank=True,
-        null=True,
-        db_column="RESIDENTIAL_SUB_AREA_ID",
     )
     residential_customer_state = models.CharField(
         max_length=100,
@@ -643,17 +641,21 @@ class CaseManagementCaseModel(CoreGenericModel):
         null=True,
         db_column="CUSTOMER_OFFICE_CITY",
     )
-    
-    
-
-    
-    customer_sub_area = models.ForeignKey(
-        RegionConfigurationAreaModel,
+    # customer_office_city = models.ForeignKey(
+    #     RegionConfigurationCityModel,
+    #     on_delete=models.CASCADE,
+    #     related_name="CaseManagementCaseAddressModel_region_config_city",
+    #     blank=True,
+    #     null=True,
+    #     db_column="REGION_CONFIG_CUSTOMER_CITY",
+    # )
+    customer_office_pin_code = models.ForeignKey(
+        RegionConfigurationPincodeModel,
         on_delete=models.CASCADE,
-        related_name="CaseManagementCaseAddressModel_customer_sub_area",
+        related_name="CaseManagementCaseAddressModel_customer_office_pin_code",
         blank=True,
         null=True,
-        db_column="CUSTOMER_OFFICE_SUB_AREA_ID",
+        db_column="PIN_CODE_ID",
     )
     customer_office_state = models.CharField(
         max_length=100,

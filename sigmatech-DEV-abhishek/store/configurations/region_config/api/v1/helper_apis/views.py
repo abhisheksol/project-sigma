@@ -56,7 +56,6 @@ class RegionConfigurationZoneHelperGenericAPIView(
         if region_ids:
             # convert "id1,id2,id3" → ["id1", "id2", "id3"]
             region_ids = region_ids.split(",")
-            print("==========>", region_ids)
             queryset = queryset.filter(region_id__in=region_ids)
 
         return queryset
@@ -80,18 +79,18 @@ class RegionConfigurationAllCityHelperGenericAPIView(
     def get_queryset(self):
         queryset = super().get_queryset()
 
-        # ✅ search by name (at least 3 chars)
+        #  search by name (at least 3 chars)
         search = self.request.GET.get("search")
         if search and len(search) >= 3:
             queryset = queryset.filter(name__istartswith=search)
 
-        # ✅ filter by zone_id (single or multiple)
+        #  filter by zone_id (single or multiple)
         zone_ids = self.request.query_params.get("zone")
         if zone_ids:
             zone_ids = zone_ids.split(",")
             queryset = queryset.filter(zone_id__in=zone_ids)
 
-        # ✅ optional: filter by region_id via relation
+        #  optional: filter by region_id via relation
         region_ids = self.request.query_params.get("region")
         if region_ids:
             region_ids = region_ids.split(",")

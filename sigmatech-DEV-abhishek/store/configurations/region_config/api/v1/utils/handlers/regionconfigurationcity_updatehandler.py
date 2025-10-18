@@ -14,6 +14,9 @@ from store.configurations.region_config.api.v1.utils.handlers.constants import (
     INVALID_STATUS_ERROR_MESSAGE,
     ZONE_ID_NOT_FOUND,
 )
+from store.configurations.region_config.api.v1.helper_apis.dependence import (
+    can_edit_city,
+)
 
 
 class RegionConfigurationCityUpdateHandler(CoreGenericBaseHandler):
@@ -63,6 +66,12 @@ class RegionConfigurationCityUpdateHandler(CoreGenericBaseHandler):
             enum_cls=CoreUtilsStatusEnum
         ):
             return self.set_error_message(INVALID_STATUS_ERROR_MESSAGE, key="status")
+
+        # ----------------------------------
+
+        error = can_edit_city(self.instance)
+        if error:
+            return self.set_error_message(error, key="status")
 
     def create(self):
         with transaction.atomic():

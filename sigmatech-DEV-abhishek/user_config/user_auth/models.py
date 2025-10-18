@@ -1,3 +1,5 @@
+from django.contrib.auth import get_user_model
+from django.db import models
 import uuid
 
 from django.apps import apps
@@ -13,7 +15,7 @@ from user_config.user_auth.enums import UserRoleEnum
 
 
 # Create your models here.
-# Get a single role where role_name="Admin".
+
 
 class UserRoleModel(CoreGenericModel):
     id = models.UUIDField(
@@ -36,8 +38,8 @@ class UserRoleModel(CoreGenericModel):
     def __str__(self):
         return self.title
 
-    # class Meta:
-    #     db_table = "USER_ROLE_TABLE"
+    class Meta:
+        db_table = "USER_ROLE_TABLE"
 
 
 class CustomUserManager(BaseUserManager):
@@ -190,25 +192,8 @@ class LoginAnalyticsModel(CoreGenericModel):
         db_table = "USER_LOGIN_ANALYTICS_TABLE"
 
 
-
-# mobile otp and expired time
-class MobileOTPModel(CoreGenericModel):
-    id = models.UUIDField(
-        db_column="MOBILE_OTP_ID",
-        default=uuid.uuid1,
-        unique=True,
-        primary_key=True,
-        editable=False,
-    )
-    user = models.ForeignKey(
-        UserModel,
-        on_delete=models.CASCADE,
-        related_name="MobileOTPModel_user",
-        db_column="USER_ID",
-    )
-    mobile_otp = models.CharField(max_length=6, db_column="MOBILE_OTP")
-    is_expired = models.BooleanField(default=False, db_column="IS_EXPIRED")
-
-    class Meta:
-        db_table = "MOBILE_OTP_TABLE"
-
+class OTPModel(CoreGenericModel):
+    user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    otp = models.CharField(max_length=6)
+    expires_at = models.DateTimeField()
+    is_used = models.BooleanField(default=False)

@@ -63,3 +63,5 @@ BUCKET_SUCCESS_MESSAGE = {
     "POST": "Bucket Created Successfully",
     "PUT": "Bucket Updated Successfully",
 }
+
+MONTHLY_CYCLE_TITLE_INVALID_ERROR_MESSAGE = "Title must be a number between 1-30 or 99."

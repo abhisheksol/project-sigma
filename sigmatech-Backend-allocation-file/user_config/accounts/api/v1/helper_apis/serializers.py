@@ -1,3 +1,4 @@
+from cProfile import label
 from rest_framework import serializers
 from core_utils.utils.generics.serializers.generic_serializers import (
     CoreGenericHelperAPISerializerMethodField,
@@ -6,7 +7,7 @@ from core_utils.utils.generics.serializers.mixins import CoreGenericSerializerMi
 from user_config.accounts.api.v1.utils.handlers.user_role_helper_list_handler import (
     UserRoleHelperListHanlder,
 )
-from user_config.user_auth.models import UserRoleModel
+from user_config.user_auth.models import UserModel, UserRoleModel
 from django.contrib.auth import get_user_model
 from store.configurations.region_config.models import (
     RegionConfigurationAreaModel,
@@ -148,3 +149,16 @@ class ProductAssignmentHelperSerializer(
             and obj.product.status == CoreUtilsStatusEnum.ACTIVATED.value
             and obj.status == CoreUtilsStatusEnum.ACTIVATED.value
         )
+
+
+
+
+class FolistingHelperSerializer(
+    CoreGenericHelperAPISerializerMethodField, serializers.ModelSerializer
+):
+    value= serializers.UUIDField(source="id", read_only=True),
+    label= serializers.CharField(source="username", allow_blank=True, default="")
+
+    class Meta:
+        model = UserModel
+        fields = ["label", "value", "status"]

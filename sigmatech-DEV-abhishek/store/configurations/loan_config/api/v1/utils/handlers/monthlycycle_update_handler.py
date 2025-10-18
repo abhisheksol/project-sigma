@@ -51,12 +51,11 @@ class MonthlyCycleUpdateHandler(CoreGenericBaseHandler):
                 MONTHLY_CYCLE_NOT_FOUND_ERROR_MESSAGE, key="id"
             )
 
-        title: Union[str, None] = self.data.get("title")
+        title: Union[int, None] = self.data.get("title")
+        print(1)
         if (
-            title
-            and self.queryset.filter(title__iexact=title)
-            .exclude(id=self.data["id"])
-            .exists()
+            title is not None
+            and self.queryset.filter(title=title).exclude(id=self.data["id"]).exists()
         ):
             return self.set_error_message(
                 MONTHLY_CYCLE_TITLE_ALREADY_EXISTS_ERROR_MESSAGE, key="title"
@@ -82,6 +81,7 @@ class MonthlyCycleUpdateHandler(CoreGenericBaseHandler):
             - `self.update_model_instance()` to apply partial updates to the model.
         """
         with transaction.atomic():
+
             # Fetch the existing instance by ID
             instance: LoanConfigurationsMonthlyCycleModel = self.queryset.get(
                 id=self.data["id"]

@@ -196,12 +196,7 @@ class UserDetailModel(CoreGenericModel):
         db_table = "USER_DETAIL_TABLE"
 
     def __str__(self):
-        if self.user and self.user.username:
-            return self.user.username
-        elif self.user:
-            return f"User {self.user.id}"
-        else:
-            return "User Detail (No User)"
+        return self.user.username
 
 
 class UserAssignedProdudctsModel(CoreGenericModel):

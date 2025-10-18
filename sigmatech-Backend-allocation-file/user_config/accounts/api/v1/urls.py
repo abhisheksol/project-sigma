@@ -48,7 +48,12 @@ helper_list_urlpattern: list = [
         "assigned-fo-to-caselist-api/",
         user_management_views.EligibleFOListByCaseGenericAPIView.as_view(),
         name="AssignFOToCaseListGenericAPIView",
-    )
+    ),
+    path(
+        "fo-listing-helper-api/",
+        helper_list_views.FolistingHelperAPIView.as_view(),
+        name="UserAssignedProductsHelperListAPIView",
+    ), 
 ]
 
 
@@ -77,6 +82,7 @@ user_management_urlpatterns: list = [
          user_management_views.FOAssignCaseAPIView.as_view(),
          name="FOAssignCaseAPIView",
          ),
+    
 ]
 
 urlpatterns: list = [*helper_list_urlpattern, *user_management_urlpatterns]

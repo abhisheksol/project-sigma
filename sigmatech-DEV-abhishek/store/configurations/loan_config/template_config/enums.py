@@ -96,8 +96,8 @@ class CustomAllocationFileTemplateReservedFieldsEnum(EnumChoices):
     RESIDENTIAL_COUNTRY = "residential_country"
 
     # CUSTOMER_DEMOGRAPHIC_DETAILS → OFFICE_EMPLOYER_ADDRESS
-    CUSTOMER_EMPLOYER_OFFICE_NAME = "customer_employer_office_name"
     ADDRESS_2_TYPE = "address_2_type"
+    CUSTOMER_EMPLOYER = "customer_employer_office_name"
     CUSTOMER_EMPLOYER_ADDRESS_1 = "customer_employer_address_1"
     CUSTOMER_EMPLOYER_ADDRESS_2 = "customer_employer_address_2"
     CUSTOMER_EMPLOYER_ADDRESS_3 = "customer_employer_address_3"
@@ -116,8 +116,6 @@ class CustomAllocationFileTemplateReservedFieldsEnum(EnumChoices):
     LOAN_ACCOUNT_NUMBER = "loan_account_number"
     CARD_NUMBER = "card_number"
     CRN_NUMBER = "crn_number"
-    PRODUCT_TYPE = "product_type"
-    PROCESS_NAME = "process_name"
     POOL_TYPE = "pool_type"
     VEHICLE_NUMBER = "vehicle_number"
     ASSET_MAKE = "asset_make"
@@ -154,7 +152,6 @@ class CustomAllocationFileTemplateReservedFieldsEnum(EnumChoices):
     RISK_STATEMENT = "risk_statement"
     DELINQUENCY_STRING = "delinquency_string"
     CURRENT_DPD = "current_dpd"
-    BUCKET = "bucket"
     ALLOCATION_TYPE = "allocation_type"
     NACH_STATUS = "nach_status"
     REASON_OF_BOUNCE = "reason_of_bounce"
@@ -164,3 +161,9 @@ class CustomAllocationFileTemplateReservedFieldsEnum(EnumChoices):
     REFERENCE_CONTACT_NUMBER_1 = "reference_contact_number_1"
     REFERENCE_NAME_2 = "reference_name_2"
     REFERENCE_CONTACT_NUMBER_2 = "reference_contact_number_2"
+
+    # PROCESS_CONFIG DETAILS
+    PROCESS_NAME = "process_id"
+    PRODUCT_TYPE = "product_id"
+    BILLING_CYCLE = "billing_cycle"
+    BUCKET = "bucket"

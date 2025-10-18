@@ -3,7 +3,9 @@ from typing import List, Optional
 from user_config.accounts.api.v1.utils.handlers.user_management_create_user_handler import (
     UserManagementCreateUserHandler,
 )
-
+from django.db.models import Value
+from django.db.models import CharField, Value
+from django.db.models.functions import Concat
 from user_config.accounts.api.v1.utils.handlers.user_management_update_user_handler import (
     UserManagementUpdateUserHandler,
 )
@@ -27,6 +29,7 @@ from store.configurations.region_config.models import (
     RegionConfigurationZoneModel,
 )
 from django.db.models.query import QuerySet
+from core_utils.utils.enums import CoreUtilsStatusEnum
 
 
 class UserManagementUserCreateModelSerializer(
@@ -74,7 +77,7 @@ class UserManagementUserCreateModelSerializer(
 class UserManagementUserUpdateModelSerializer(
     CoreGenericSerializerMixin, serializers.ModelSerializer
 ):
-    print("update is running ....")
+
     id = serializers.UUIDField(required=True)
     username = serializers.CharField(required=False)
     login_id = serializers.CharField(required=False)
@@ -97,7 +100,7 @@ class UserManagementUserUpdateModelSerializer(
     product_assignment_id = serializers.ListField(
         child=serializers.UUIDField(), required=False, allow_empty=True
     )
-    unproduct_assignment_id = serializers.ListField(
+    product_unassignment_id = serializers.ListField(
         child=serializers.UUIDField(), required=False, allow_empty=True
     )
 
@@ -121,7 +124,7 @@ class UserManagementUserUpdateModelSerializer(
             "area_id",
             "status",
             "product_assignment_id",
-            "unproduct_assignment_id"
+            "product_unassignment_id",
         ]
 
 
@@ -171,14 +174,14 @@ class UserManagementUserListModelSerializer(
     assigned_city = serializers.SerializerMethodField()
     assigned_area = serializers.SerializerMethodField()
     has_reporting_users = serializers.SerializerMethodField()
-    product_assignment_id = serializers.SerializerMethodField()
+    product_assignment_name = serializers.SerializerMethodField()
 
     class Meta:
         model = UserModel
         fields = [
             "id",
             "username",
-            "user_role__title",   
+            "user_role__title",
             "assigned_area",
             "assigned_region",
             "assigned_pincode",
@@ -187,24 +190,12 @@ class UserManagementUserListModelSerializer(
             "email",
             "status",
             "has_reporting_users",
-            "product_assignment_id",
+            "product_assignment_name",
         ]
 
-    def get_product_assignment_id(self, obj):
-        return list(
-            obj.UserAssignedProdudctsModel_user.values_list(
-                "product_assignment_id", flat=True
-            )
-        )
-
-    # 🔥 Debugging override
-    def to_representation(self, instance):
-        data = super().to_representation(instance)
-        print("\n=== 🔥🔥SERIALIZER DEBU🔥🔥 ===")
-        for key, value in data.items():
-            print(f"{key}: {value}")
-        print("========================\n")
-        return data
+    def get_product_assignment_name(self, obj):
+        # Extract the annotated "assignment" values from the prefetch
+        return [a.assignment for a in getattr(obj, "product_assignment_name", [])]
 
 
 class UserManagementUserDetailsModelSerializer(
@@ -240,6 +231,7 @@ class UserManagementUserDetailsModelSerializer(
         default=None,
         allow_blank=True,
     )
+    product_assignment_name = serializers.SerializerMethodField()
 
     assigned_region = serializers.SerializerMethodField()
     assigned_zone = serializers.SerializerMethodField()
@@ -271,7 +263,24 @@ class UserManagementUserDetailsModelSerializer(
             "assigned_city",
             "assigned_zone",
             "has_reporting_users",
+            "product_assignment_name",
         ]
+
+    def get_product_assignment_name(self, obj):
+        return list(
+            obj.UserAssignedProdudctsModel_user.filter(
+                status=CoreUtilsStatusEnum.ACTIVATED.value
+            )
+            .annotate(
+                display_name=Concat(
+                    "product_assignment__process__title",
+                    Value("-"),
+                    "product_assignment__product__title",
+                    output_field=CharField(),
+                )
+            )
+            .values_list("display_name", flat=True)
+        )
 
 
 class UserManagementUserUpdateDetailsModelSerializer(
@@ -285,6 +294,7 @@ class UserManagementUserUpdateDetailsModelSerializer(
     profile_picture = serializers.CharField(
         source="UserDetailModel_user.profile_picture", default=None, allow_blank=True
     )
+    product_assignment_id = serializers.SerializerMethodField()
 
     class Meta:
         model = UserModel
@@ -303,7 +313,16 @@ class UserManagementUserUpdateDetailsModelSerializer(
             "email",
             "status",
             "profile_picture",
+            "product_assignment_id",
         ]
+
+    def get_product_assignment_id(self, obj: UserModel):
+        # return all product_assignment ids assigned to this user (only active ones if needed)
+        return list(
+            obj.UserAssignedProdudctsModel_user.filter(
+                status=CoreUtilsStatusEnum.ACTIVATED.value
+            ).values_list("product_assignment", flat=True)
+        )
 
     def get_region_id(self, obj: UserModel):
         assigned_region: QuerySet[RegionConfigurationRegionModel] = (
@@ -351,7 +370,6 @@ class UserManagementAssignmentSerializer(serializers.Serializer):
 class UserManagementUserReassignmentSerializer(
     CoreGenericSerializerMixin, serializers.Serializer
 ):
-    assignment_data = UserManagementAssignmentSerializer(
-        many=True, required=True)
+    assignment_data = UserManagementAssignmentSerializer(many=True, required=True)
     queryset = UserModel.objects.all()
     handler_class = UserManagementUserReAssignmentHandler

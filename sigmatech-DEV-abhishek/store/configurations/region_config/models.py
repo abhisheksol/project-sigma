@@ -124,7 +124,7 @@ class RegionConfigurationAreaModel(CoreGenericModel):
     id = models.UUIDField(
         primary_key=True, default=uuid.uuid1, editable=False, db_column="AREA_ID"
     )
-    title = models.CharField(max_length=255, unique=True, db_column="AREA_NAME")
+    title = models.CharField(max_length=255, db_column="AREA_NAME")
     pincode = models.ForeignKey(
         RegionConfigurationPincodeModel,
         on_delete=models.CASCADE,

@@ -426,3 +426,19 @@ class ProductAssignmentHelperAPIView(CoreGenericGetAPIView, generics.GenericAPIV
         return {
             "GET": ProductAssignmentHelperSerializer,
         }.get(self.request.method)
+
+
+
+class FolistingHelperAPIView(
+    CoreGenericGetAPIView, generics.GenericAPIView
+):
+    queryset = UserModel.objects.all()
+    authentication_classes = [CustomAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
+
+
+    def get_serializer_class(self):
+
+        return {
+            "GET": "FolistingHelperSerializer",
+        }.get(self.request.method)

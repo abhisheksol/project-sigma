@@ -8,11 +8,11 @@ REGION_TITLE_LENGTH_ERROR_MESSAGE = "Title length should be less than 50"
 REGION_DESCRIPTION_LENGTH_ERROR_MESSAGE = "Description length should be less than 100"
 # ------------------ ZONE ERRORS ------------------
 
-REGION_CONFIGRATION_ZONE_ALREADY_EXISTS = "Region Configuration Zone Already Exists"
+REGION_CONFIGRATION_ZONE_ALREADY_EXISTS = "Region Configuration State Already Exists"
 REGION_ID_REQUIRED = "Region ID Is Required"
-INCORRECT_ZONE_ID = "Incorrect Zone ID"
-ZONE_ID_REQUIRED = "Zone ID Is Required"
-ZONE_ID_NOT_FOUND = "Zone ID Not Found"
+INCORRECT_ZONE_ID = "Incorrect State ID"
+ZONE_ID_REQUIRED = "State ID Is Required"
+ZONE_ID_NOT_FOUND = "State ID Not Found"
 
 # ------------------ CITY ERRORS ------------------
 
@@ -42,11 +42,11 @@ INVALID_STATUS_ERROR_MESSAGE = "Invalid Status Name"
 
 PINCODE_NOT_BELONGS_TO_CITY = "Pincode does not belong to given City"
 
-ZONE_ID_REQUIRED = "Zone ID Is Required"
+ZONE_ID_REQUIRED = "State ID Is Required"
 
-ZONE_ID_NOT_FOUND = "Zone not found"
+ZONE_ID_NOT_FOUND = "State not found"
 
-CITY_NOT_BELONGS_TO_ZONE = "City does not belong to this zone"
+CITY_NOT_BELONGS_TO_ZONE = "City does not belong to this state"
 
 INVALID_PINCODES_ERROR_MESSAGE = "Invalid Pincodes: {pincodes}"
 
@@ -69,9 +69,9 @@ REGION_SUCCESS_MESSAGE = {
 }
 
 ZONE_SUCCESS_MESSAGE = {
-    "GET": "Zone List Fetched Successfully",
-    "POST": "Zone Created Successfully",
-    "PUT": "Zone Updated Successfully",
+    "GET": "State List Fetched Successfully",
+    "POST": "State Created Successfully",
+    "PUT": "State Updated Successfully",
 }
 
 CITY_SUCCESS_MESSAGE = {

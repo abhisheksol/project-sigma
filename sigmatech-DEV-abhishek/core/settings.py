@@ -59,6 +59,7 @@ CUSTOM_APPS = [
     "store.configurations",
     "store.configurations.loan_config",
     "store.configurations.region_config",
+    "store.configurations.fo_assignment_rules",
     "core_utils.activity_monitoring",
     "core_utils.manage_columns",
     "store.operations",
@@ -66,7 +67,7 @@ CUSTOM_APPS = [
     "store.operations.case_management",
     "store.operations.referal_files",
     "store.configurations.loan_config.template_config",
-    "store.timepass",
+    "store.paidfile"
 ]
 
 THIRD_PARTY_APPS = [
@@ -79,8 +80,6 @@ THIRD_PARTY_APPS = [
     "drf_yasg",
     "daphne",
     "channels",
-    'django_extensions',
-
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
@@ -175,7 +174,7 @@ REST_FRAMEWORK = {
     ),
     "DEFAULT_RENDERER_CLASSES": [
         "rest_framework.renderers.JSONRenderer",
-        # "rest_framework.renderers.BrowsableAPIRenderer",
+        "rest_framework.renderers.BrowsableAPIRenderer",
     ],
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",
     "PAGE_SIZE": 10,

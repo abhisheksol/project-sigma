@@ -46,14 +46,18 @@ from user_config.accounts.api.v1.utils.role_based_utils import (
 from user_config.accounts.api.v1.utils.update_default_permissions import (
     assign_default_all_permissions,
 )
-from user_config.accounts.api.v1.utils.user_assigned_process_queryset import get_reporting_user_assigned_product_assignment_instance
+from user_config.accounts.api.v1.utils.user_assigned_process_queryset import (
+    get_reporting_user_assigned_product_assignment_instance,
+)
 from user_config.accounts.models import UserAssignedProdudctsModel, UserDetailModel
 from user_config.user_auth.models import UserModel, UserRoleModel
 from user_config.user_auth.enums import UserRoleEnum
 from user_config.user_auth.utils.email_templates.user_create_email_template import (
     user_create_send_email,
 )
-from store.configurations.loan_config.models import LoanConfigurationsProductAssignmentModel
+from store.configurations.loan_config.models import (
+    LoanConfigurationsProductAssignmentModel,
+)
 
 
 # Define uniqueness constraints for users
@@ -110,7 +114,8 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
     pincode_payload_id: List[str]
     area_payload_id: List[str]
     reporting_user_assigned_product_assignment_queryset: QuerySet[
-        LoanConfigurationsProductAssignmentModel]
+        LoanConfigurationsProductAssignmentModel
+    ]
 
     def set_payload(self):
         """Extract hierarchical IDs from request payload."""
@@ -119,8 +124,7 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
         self.city_payload_id = self.data.get("city_id", [])
         self.pincode_payload_id = self.data.get("pincode_id", [])
         self.area_payload_id = self.data.get("area_id", [])
-        self.product_assignment_payload_id = self.data.get(
-            "product_assignment_id", [])
+        self.product_assignment_payload_id = self.data.get("product_assignment_id", [])
 
     def validate(self):
         """
@@ -135,16 +139,18 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
         validation_methods: List[Callable] = [
             self.check_user_details_unique_and_required,
             self.validate_region_level_fields,
-            self.validate_process_level_fields
+            self.validate_process_level_fields,
         ]
-
+        print(1)
         for method in validation_methods:
+            print("method", method)
             field, error = method()
             if field:
                 self.logger.warning(
-                    f"Validation failed at {field}: {error}", )
+                    f"Validation failed at {field}: {error}",
+                )
                 return self.set_error_message(error_message=error, key=field)
-
+        print(2)
         self.logger.info(
             f"All validations passed successfully for user: {self.data.get("username")}",
         )
@@ -152,15 +158,22 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
     def validate_process_level_fields(self) -> Tuple[Optional[str], Optional[str]]:
         if not self.product_assignment_payload_id:
             return "product_assignment_id", FIELD_REQUIRED_ERROR_MESSAGE
+
         if not self.reports_to_instance:
             return None, None
-        self.reporting_user_assigned_product_assignment_queryset: QuerySet[LoanConfigurationsProductAssignmentModel] = get_reporting_user_assigned_product_assignment_instance(
+        self.reporting_user_assigned_product_assignment_queryset: QuerySet[
+            LoanConfigurationsProductAssignmentModel
+        ] = get_reporting_user_assigned_product_assignment_instance(
             user_id=self.reports_to_instance.id,
+            queryset=LoanConfigurationsProductAssignmentModel.objects.all(),
         )
         if not self.reporting_user_assigned_product_assignment_queryset.filter(
-            id__in=self.product_assignment_payload_id
+            id__in=self.product_assignment_payload_id,
         ).exists():
-            return "product_assignment_id", "Product is not assigned to reporting user or invalid product"
+            return (
+                "product_assignment_id",
+                "Product is not assigned to reporting user or invalid product",
+            )
         return None, None
 
     def validate_region_level_fields(self) -> Tuple[Optional[str], Optional[str]]:
@@ -182,8 +195,7 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
                         user_instance=self.request.user
                     ).get(pk=self.region_payload_id)
                 )
-                self.logger.info("Validated Region ID: %s",
-                                 self.region_payload_id)
+                self.logger.info("Validated Region ID: %s", self.region_payload_id)
                 return None, None
             except RegionConfigurationRegionModel.DoesNotExist:
                 return "region_id", INCORRECT_REGION_ID_ERROR_MESSAGE
@@ -193,13 +205,11 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
             if not self.zone_payload_id:
                 return "zone_id", FIELD_REQUIRED_ERROR_MESSAGE
             try:
-                print("========--------=> ZONE INSTANCE: ")
                 self.zone_instance: RegionConfigurationZoneModel = (
                     get_user_assigned_zone_queryset(
                         user_instance=self.reports_to_instance
                     ).get(pk=self.zone_payload_id)
                 )
-                print("========--------=> ZONE INSTANCEd: ", self.zone_instance)
                 self.logger.info(f"Validated Zone ID: {self.zone_payload_id}")
                 return None, None
             except RegionConfigurationZoneModel.DoesNotExist:
@@ -264,7 +274,7 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
         # Username check
         if not self.data.get("username"):
             return "username", f"username {FIELD_REQUIRED_ERROR_MESSAGE}"
-
+        print(3, self.queryset)
         # Check uniqueness for login_id, email, phone_number
         for field in USER_UNIQUE_AND_REQUIRED_FIELD:
             if not self.data.get(field["field"]):
@@ -276,7 +286,7 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
                 **{field["field"]: self.data[field["field"]]}
             ).exists():
                 return field["field"], field["error_message"]
-
+        print(4)
         # Validate email format
         if not is_format_validator_email(email=self.data["email"]):
             return "email", USER_MANAGEMENT_EMAIL_INCORRECT_FORMAT
@@ -366,8 +376,7 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
 
             # Assign regions/zones/cities/pincodes/areas if validated
             if self.region_instance:
-                user_detail_instance.assigned_region.add(
-                    self.region_payload_id)
+                user_detail_instance.assigned_region.add(self.region_payload_id)
                 self.logger.info(f"Assigned Region: {self.region_payload_id}")
 
             if self.zone_instance:
@@ -381,8 +390,7 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
                 )
 
             if self.pincode_queryset.exists():
-                user_detail_instance.assigned_pincode.set(
-                    self.pincode_queryset)
+                user_detail_instance.assigned_pincode.set(self.pincode_queryset)
                 self.logger.info(
                     f"Assigned Pincodes: {list(self.pincode_queryset.values_list("pk", flat=True))}"
                 )
@@ -394,16 +402,20 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
                         self.area_queryset.values_list("pk", flat=True))}"
                 )
 
-                # !==================================================================
-
             if self.product_assignment_payload_id:
-                valid_product_qs = LoanConfigurationsProductAssignmentModel.objects.filter(
-                    pk__in=self.product_assignment_payload_id
+                valid_product_qs = (
+                    LoanConfigurationsProductAssignmentModel.objects.filter(
+                        pk__in=self.product_assignment_payload_id
+                    )
                 )
-            
-            print("================> VALID PRODUCT QS: ", valid_product_qs)
 
-             # Bulk create for efficiency
+                if not valid_product_qs.exists():
+                    return (
+                        "product_assignment_id",
+                        "Product is not assigned to reporting user or invalid product",
+                    )
+
+            # Bulk create for efficiency
             UserAssignedProdudctsModel.objects.bulk_create(
                 [
                     UserAssignedProdudctsModel(
@@ -413,7 +425,6 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
                 ],
                 ignore_conflicts=True,  # avoids duplicate entries due to unique_together
             )
-            # != == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == =
 
             user_detail_instance.save()
 
@@ -422,8 +433,7 @@ class UserManagementCreateUserHandler(CoreGenericBaseHandler):
             # Set activity log details
             self.set_toast_message_value(value=user_instance.username)
             self.update_core_generic_created_by(instance=user_instance)
-            user_create_send_email(
-                user_instance=user_instance, password=password)
+            user_create_send_email(user_instance=user_instance, password=password)
 
         self.logger.info(
             f"User creation completed successfully for: {user_instance.username}"

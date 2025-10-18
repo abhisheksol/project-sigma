@@ -16,18 +16,16 @@ from user_config.user_auth.api.v1.utils.handler.forgot_password_handler import (
     UserAuthUserForgotPasswordHandler,
     UserAuthUserResetPasswordHandler,
 )
-from user_config.user_auth.api.v1.utils.handler.otp_genrate_handler import (
-    OtpGenerateHandler
-)
-from user_config.user_auth.api.v1.utils.handler.otpverifyhandler import (
-    OtpverifyHandler,
-)
 from user_config.user_auth.api.v1.utils.handler.logout_handler import (
     UserAuthUserModelLogoutHandler,
 )
-from user_config.user_auth.models import BlackListTokenModel, MobileOTPModel
+from user_config.user_auth.models import BlackListTokenModel
 from django.contrib.auth import get_user_model
 from django.utils.translation import gettext as _gettext
+from user_config.user_auth.api.v1.utils.handler.forgotpassword_mobile_handler import (
+    UserAuthUserForgotPasswordMobileHandler,
+)
+
 
 # Logger setup with application context
 logger: logging.LoggerAdapter = logging.LoggerAdapter(
@@ -128,36 +126,18 @@ class UserAuthUserModelResetPasswordSerializer(
     password = serializers.CharField()
 
 
-
-class UserManagementUserCreateOtpModelSerializer(
-    CoreGenericSerializerMixin, serializers.ModelSerializer
-):  
-    handler_class = OtpGenerateHandler
-    # mobile_otp = serializers.CharField(required=True)
-    phone_number = serializers.CharField(required=True)
-    # is_expired = serializers.BooleanField(required=False, default=False)
-    class Meta:
-        model = MobileOTPModel
-        fields = [
-            # "mobile_otp",
-            "phone_number",
-            # "is_expired"
-        ]
+# mobile otp reset
 
 
-
-class UserManagementUserVerifyOtpModelSerializer(
+class UserAuthUserModelForgotPasswordMobileSerializer(
     CoreGenericSerializerMixin, serializers.Serializer
 ):
-    handler_class = OtpverifyHandler
-    phone_number = serializers.CharField(required=True)
-    mobile_otp = serializers.CharField(required=True)
-
-    class Meta:
-        model = MobileOTPModel
-        fields = [
-            "phone_number",
-            "mobile_otp"
-        ]
+    queryset = get_user_model().objects.all()
+    handler_class = UserAuthUserForgotPasswordMobileHandler
+    login_id = serializers.CharField()
 
 
+# class UserAuthUserModelResetPasswordMobileSerializer(serializers.Serializer):
+#     handler_class = UserAuthUserResetPasswordMobileHandler
+#     otp = serializers.CharField()
+#     password = serializers.CharField()

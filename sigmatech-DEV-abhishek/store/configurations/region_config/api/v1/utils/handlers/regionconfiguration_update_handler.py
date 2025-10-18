@@ -12,6 +12,9 @@ from store.configurations.region_config.api.v1.utils.handlers.constants import (
     REGION_CONFIGRATION_ID_REQUIRED,
 )
 from store.configurations.region_config.models import RegionConfigurationRegionModel
+from store.configurations.region_config.api.v1.helper_apis.dependence import (
+    can_edit_region,
+)
 
 
 class RegionConfigurationUpdateHandler(CoreGenericBaseHandler):
@@ -41,6 +44,12 @@ class RegionConfigurationUpdateHandler(CoreGenericBaseHandler):
             enum_cls=CoreUtilsStatusEnum
         ):
             return self.set_error_message(INVALID_STATUS_ERROR_MESSAGE, key="status")
+
+        # -------------------------------------------------
+
+        error = can_edit_region(self.instance)
+        if error:
+            return self.set_error_message(error, key="status")
 
     def create(self):
         with transaction.atomic():

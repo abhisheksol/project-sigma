@@ -20,7 +20,7 @@ from typing import Optional
 class RegionConfigurationZoneCreateHandler(CoreGenericBaseHandler):
     region_instance: RegionConfigurationRegionModel
 
-    _activity_type: str = "CONFIGURATION_ZONE_ACTIVITY_LOG"
+    _activity_type: str = "CONFIGURATION_STATE_ACTIVITY_LOG"
     _method: str = ActivityMonitoringMethodTypeEnumChoices.CREATE.value
 
     def validate(self):
